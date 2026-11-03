@@ -1,0 +1,5340 @@
+ncores = 960
+3D hydro port with MPI
+Built: Mar 21 2019 15:15:01
+Disabled sbrk
+-- Read parameters from /homeappl/home/dcutting/Projects/single-precision-3d-hydro-new-eta/run/data/alph-0.11-vw-0.92-Nb-8-L-960-dx-1.0-seed-2/input-test-BAG:
+-- dx 1, dt 0.2, steps 14001
+-- Lx 960, Ly 960, Lz 960
+-- Cav 0, C 0.103925,
+-- alpha 0.167705, gamma 0.0427051, lambda 0.0731763
+-- gstar 106.75
+-- T0 0.707107, Tconst 0.365706
+-- interval 100, fftinterval 100
+-- silointerval 0, silosliceinterval 200,checkpointinterval -1
+-- uetcstart -1
+-- bubbles 8, scale 2
+-- initnorm -1
+-- initcutoff -1
+-- initlength -1
+-- silodir "/wrk/dcutting/silage/alph-0.11-vw-0.92-Nb-8-L-960-dx-1.0-seed-2/"
+-- checkpointdir "cp/"
+-- seed 4321
+-- bubble
+-- gws sourced by FLUID only
+<No nucleation>
+phimin not set, defaulting to broken phase value. 
+R_critical not set, defaulting to gaussian ansatz. 
+-- Calculated bubble profile parameters: 
+-- surface_tension 0.25504, phimin 2 
+-- R_critical 7.5164, R_scaled 15.0328 
+Constant potential term found 
+-- V0 -0.0690983 
+Putting 884736000 sites on 960 nodes
+slicing: size of x=40 y=24
+(meaning 24 nodes in x, 40 nodes in y)
+Each node will need 1048320 = 921600 + 126720 entries to store halo
+- Allocated fields.
+Checking for valid checkpoint
+Unable to access "cp//checkpoint-integrity"
+- Zeroed fields.
+Nucleating first bubble
+Nucleating at (0, 0, 0)
+Nucleation attempt took 0.050000
+Trying to nucleate a bubble (safe distance = 21)
+Nucleating at (234, 664, 137)
+Nucleation attempt took 0.040000
+Trying to nucleate a bubble (safe distance = 21)
+Nucleating at (71, 771, 478)
+Nucleation attempt took 0.030000
+Trying to nucleate a bubble (safe distance = 21)
+Nucleating at (182, 128, 549)
+Nucleation attempt took 0.040000
+Trying to nucleate a bubble (safe distance = 21)
+Nucleating at (819, 735, 865)
+Nucleation attempt took 0.030000
+Trying to nucleate a bubble (safe distance = 21)
+Nucleating at (369, 258, 133)
+Nucleation attempt took 0.040000
+Trying to nucleate a bubble (safe distance = 21)
+Nucleating at (528, 441, 847)
+Nucleation attempt took 0.040000
+Trying to nucleate a bubble (safe distance = 21)
+Nucleating at (468, 793, 559)
+Nucleation attempt took 0.030000
+Initial conditions done
+Initial avg energy per site: 0.696639
+/wrk/dcutting/silage/alph-0.11-vw-0.92-Nb-8-L-960-dx-1.0-seed-2/: File exists
+created directory /wrk/dcutting/silage/alph-0.11-vw-0.92-Nb-8-L-960-dx-1.0-seed-2/, where the silo will go
+Starting main loop.
+Writing SLICE to /wrk/dcutting/silage/alph-0.11-vw-0.92-Nb-8-L-960-dx-1.0-seed-2//slice-000000.silo
+Slice coord x=0
+Doing histogram, 100 bins in [-0.020000,2.020000]
+Histogram stuff took 0.010000
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+Starting velocity power spectrum FFT calculation.
+broadcasting our results
+now to layout
+Vel FFT: Done slicing for cpt 0
+Vel FFT: Done slicing for cpt 1
+Vel FFT: Done slicing for cpt 2
+Velocity power spectrum FFT calculation took 2.470000
+Starting GW FFT calculation.
+broadcasting our results
+now to layout
+GW: Done slicing for cpt 0
+Executing GW FFT, cpt 0
+GW: Done slicing for cpt 1
+Executing GW FFT, cpt 1
+GW: Done slicing for cpt 2
+Executing GW FFT, cpt 2
+GW: Done slicing for cpt 3
+Executing GW FFT, cpt 3
+GW: Done slicing for cpt 4
+Executing GW FFT, cpt 4
+GW: Done slicing for cpt 5
+Executing GW FFT, cpt 5
+GW projection...
+Calculating total energy
+Unnormalised GW energy [density] claimed 0.0000000000
+GW FFT calculation took 6.090000
+Doing histogram, 100 bins in [-0.021156,2.074301]
+Histogram stuff took 0.020000
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+Starting velocity power spectrum FFT calculation.
+broadcasting our results
+now to layout
+Vel FFT: Done slicing for cpt 0
+Vel FFT: Done slicing for cpt 1
+Vel FFT: Done slicing for cpt 2
+Velocity power spectrum FFT calculation took 2.160000
+Starting GW FFT calculation.
+broadcasting our results
+now to layout
+GW: Done slicing for cpt 0
+Executing GW FFT, cpt 0
+GW: Done slicing for cpt 1
+Executing GW FFT, cpt 1
+GW: Done slicing for cpt 2
+Executing GW FFT, cpt 2
+GW: Done slicing for cpt 3
+Executing GW FFT, cpt 3
+GW: Done slicing for cpt 4
+Executing GW FFT, cpt 4
+GW: Done slicing for cpt 5
+Executing GW FFT, cpt 5
+GW projection...
+Calculating total energy
+Unnormalised GW energy [density] claimed 0.0000000000
+GW FFT calculation took 6.110000
+Writing SLICE to /wrk/dcutting/silage/alph-0.11-vw-0.92-Nb-8-L-960-dx-1.0-seed-2//slice-000200.silo
+Slice coord x=0
+Doing histogram, 100 bins in [-0.020180,2.033723]
+Histogram stuff took 0.010000
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+Starting velocity power spectrum FFT calculation.
+broadcasting our results
+now to layout
+Vel FFT: Done slicing for cpt 0
+Vel FFT: Done slicing for cpt 1
+Vel FFT: Done slicing for cpt 2
+Velocity power spectrum FFT calculation took 2.750000
+Starting GW FFT calculation.
+broadcasting our results
+now to layout
+GW: Done slicing for cpt 0
+Executing GW FFT, cpt 0
+GW: Done slicing for cpt 1
+Executing GW FFT, cpt 1
+GW: Done slicing for cpt 2
+Executing GW FFT, cpt 2
+GW: Done slicing for cpt 3
+Executing GW FFT, cpt 3
+GW: Done slicing for cpt 4
+Executing GW FFT, cpt 4
+GW: Done slicing for cpt 5
+Executing GW FFT, cpt 5
+GW projection...
+Calculating total energy
+Unnormalised GW energy [density] claimed 0.0000000001
+GW FFT calculation took 5.910000
+Doing histogram, 100 bins in [-0.020058,2.025770]
+Histogram stuff took 0.010000
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+Starting velocity power spectrum FFT calculation.
+broadcasting our results
+now to layout
+Vel FFT: Done slicing for cpt 0
+Vel FFT: Done slicing for cpt 1
+Vel FFT: Done slicing for cpt 2
+Velocity power spectrum FFT calculation took 2.180000
+Starting GW FFT calculation.
+broadcasting our results
+now to layout
+GW: Done slicing for cpt 0
+Executing GW FFT, cpt 0
+GW: Done slicing for cpt 1
+Executing GW FFT, cpt 1
+GW: Done slicing for cpt 2
+Executing GW FFT, cpt 2
+GW: Done slicing for cpt 3
+Executing GW FFT, cpt 3
+GW: Done slicing for cpt 4
+Executing GW FFT, cpt 4
+GW: Done slicing for cpt 5
+Executing GW FFT, cpt 5
+GW projection...
+Calculating total energy
+Unnormalised GW energy [density] claimed 0.0000000026
+GW FFT calculation took 5.810000
+Writing SLICE to /wrk/dcutting/silage/alph-0.11-vw-0.92-Nb-8-L-960-dx-1.0-seed-2//slice-000400.silo
+Slice coord x=0
+Doing histogram, 100 bins in [-0.020044,2.024424]
+Histogram stuff took 0.020000
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+Starting velocity power spectrum FFT calculation.
+broadcasting our results
+now to layout
+Vel FFT: Done slicing for cpt 0
+Vel FFT: Done slicing for cpt 1
+Vel FFT: Done slicing for cpt 2
+Velocity power spectrum FFT calculation took 2.130016
+Starting GW FFT calculation.
+broadcasting our results
+now to layout
+GW: Done slicing for cpt 0
+Executing GW FFT, cpt 0
+GW: Done slicing for cpt 1
+Executing GW FFT, cpt 1
+GW: Done slicing for cpt 2
+Executing GW FFT, cpt 2
+GW: Done slicing for cpt 3
+Executing GW FFT, cpt 3
+GW: Done slicing for cpt 4
+Executing GW FFT, cpt 4
+GW: Done slicing for cpt 5
+Executing GW FFT, cpt 5
+GW projection...
+Calculating total energy
+Unnormalised GW energy [density] claimed 0.0000000199
+GW FFT calculation took 5.960000
+Doing histogram, 100 bins in [-0.020074,2.027436]
+Histogram stuff took 0.010016
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+Starting velocity power spectrum FFT calculation.
+broadcasting our results
+now to layout
+Vel FFT: Done slicing for cpt 0
+Vel FFT: Done slicing for cpt 1
+Vel FFT: Done slicing for cpt 2
+Velocity power spectrum FFT calculation took 2.109984
+Starting GW FFT calculation.
+broadcasting our results
+now to layout
+GW: Done slicing for cpt 0
+Executing GW FFT, cpt 0
+GW: Done slicing for cpt 1
+Executing GW FFT, cpt 1
+GW: Done slicing for cpt 2
+Executing GW FFT, cpt 2
+GW: Done slicing for cpt 3
+Executing GW FFT, cpt 3
+GW: Done slicing for cpt 4
+Executing GW FFT, cpt 4
+GW: Done slicing for cpt 5
+Executing GW FFT, cpt 5
+GW projection...
+Calculating total energy
+Unnormalised GW energy [density] claimed 0.0000000921
+GW FFT calculation took 5.810016
+Writing SLICE to /wrk/dcutting/silage/alph-0.11-vw-0.92-Nb-8-L-960-dx-1.0-seed-2//slice-000600.silo
+Slice coord x=0
+Doing histogram, 100 bins in [-0.020099,2.029986]
+Histogram stuff took 0.019968
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+Starting velocity power spectrum FFT calculation.
+broadcasting our results
+now to layout
+Vel FFT: Done slicing for cpt 0
+Vel FFT: Done slicing for cpt 1
+Vel FFT: Done slicing for cpt 2
+Velocity power spectrum FFT calculation took 2.160000
+Starting GW FFT calculation.
+broadcasting our results
+now to layout
+GW: Done slicing for cpt 0
+Executing GW FFT, cpt 0
+GW: Done slicing for cpt 1
+Executing GW FFT, cpt 1
+GW: Done slicing for cpt 2
+Executing GW FFT, cpt 2
+GW: Done slicing for cpt 3
+Executing GW FFT, cpt 3
+GW: Done slicing for cpt 4
+Executing GW FFT, cpt 4
+GW: Done slicing for cpt 5
+Executing GW FFT, cpt 5
+GW projection...
+Calculating total energy
+Unnormalised GW energy [density] claimed 0.0000003050
+GW FFT calculation took 5.809984
+Doing histogram, 100 bins in [-0.021566,2.178206]
+Histogram stuff took 0.009984
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+Starting velocity power spectrum FFT calculation.
+broadcasting our results
+now to layout
+Vel FFT: Done slicing for cpt 0
+Vel FFT: Done slicing for cpt 1
+Vel FFT: Done slicing for cpt 2
+Velocity power spectrum FFT calculation took 2.260000
+Starting GW FFT calculation.
+broadcasting our results
+now to layout
+GW: Done slicing for cpt 0
+Executing GW FFT, cpt 0
+GW: Done slicing for cpt 1
+Executing GW FFT, cpt 1
+GW: Done slicing for cpt 2
+Executing GW FFT, cpt 2
+GW: Done slicing for cpt 3
+Executing GW FFT, cpt 3
+GW: Done slicing for cpt 4
+Executing GW FFT, cpt 4
+GW: Done slicing for cpt 5
+Executing GW FFT, cpt 5
+GW projection...
+Calculating total energy
+Unnormalised GW energy [density] claimed 0.0000008157
+GW FFT calculation took 6.130016
+Writing SLICE to /wrk/dcutting/silage/alph-0.11-vw-0.92-Nb-8-L-960-dx-1.0-seed-2//slice-000800.silo
+Slice coord x=0
+Doing histogram, 100 bins in [-0.028837,2.912519]
+Histogram stuff took 0.019968
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+Starting velocity power spectrum FFT calculation.
+broadcasting our results
+now to layout
+Vel FFT: Done slicing for cpt 0
+Vel FFT: Done slicing for cpt 1
+Vel FFT: Done slicing for cpt 2
+Velocity power spectrum FFT calculation took 2.340032
+Starting GW FFT calculation.
+broadcasting our results
+now to layout
+GW: Done slicing for cpt 0
+Executing GW FFT, cpt 0
+GW: Done slicing for cpt 1
+Executing GW FFT, cpt 1
+GW: Done slicing for cpt 2
+Executing GW FFT, cpt 2
+GW: Done slicing for cpt 3
+Executing GW FFT, cpt 3
+GW: Done slicing for cpt 4
+Executing GW FFT, cpt 4
+GW: Done slicing for cpt 5
+Executing GW FFT, cpt 5
+GW projection...
+Calculating total energy
+Unnormalised GW energy [density] claimed 0.0000564924
+GW FFT calculation took 6.059968
+Doing histogram, 100 bins in [-0.029615,2.991135]
+Histogram stuff took 0.019968
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+Starting velocity power spectrum FFT calculation.
+broadcasting our results
+now to layout
+Vel FFT: Done slicing for cpt 0
+Vel FFT: Done slicing for cpt 1
+Vel FFT: Done slicing for cpt 2
+Velocity power spectrum FFT calculation took 2.259968
+Starting GW FFT calculation.
+broadcasting our results
+now to layout
+GW: Done slicing for cpt 0
+Executing GW FFT, cpt 0
+GW: Done slicing for cpt 1
+Executing GW FFT, cpt 1
+GW: Done slicing for cpt 2
+Executing GW FFT, cpt 2
+GW: Done slicing for cpt 3
+Executing GW FFT, cpt 3
+GW: Done slicing for cpt 4
+Executing GW FFT, cpt 4
+GW: Done slicing for cpt 5
+Executing GW FFT, cpt 5
+GW projection...
+Calculating total energy
+Unnormalised GW energy [density] claimed 0.0005362314
+GW FFT calculation took 6.200000
+Writing SLICE to /wrk/dcutting/silage/alph-0.11-vw-0.92-Nb-8-L-960-dx-1.0-seed-2//slice-001000.silo
+Slice coord x=0
+Doing histogram, 100 bins in [-0.028991,2.928128]
+Histogram stuff took 0.009984
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+Starting velocity power spectrum FFT calculation.
+broadcasting our results
+now to layout
+Vel FFT: Done slicing for cpt 0
+Vel FFT: Done slicing for cpt 1
+Vel FFT: Done slicing for cpt 2
+Velocity power spectrum FFT calculation took 2.129984
+Starting GW FFT calculation.
+broadcasting our results
+now to layout
+GW: Done slicing for cpt 0
+Executing GW FFT, cpt 0
+GW: Done slicing for cpt 1
+Executing GW FFT, cpt 1
+GW: Done slicing for cpt 2
+Executing GW FFT, cpt 2
+GW: Done slicing for cpt 3
+Executing GW FFT, cpt 3
+GW: Done slicing for cpt 4
+Executing GW FFT, cpt 4
+GW: Done slicing for cpt 5
+Executing GW FFT, cpt 5
+GW projection...
+Calculating total energy
+Unnormalised GW energy [density] claimed 0.0020362898
+GW FFT calculation took 5.870016
+Doing histogram, 100 bins in [-0.029707,3.000399]
+Histogram stuff took 0.019968
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+Starting velocity power spectrum FFT calculation.
+broadcasting our results
+now to layout
+Vel FFT: Done slicing for cpt 0
+Vel FFT: Done slicing for cpt 1
+Vel FFT: Done slicing for cpt 2
+Velocity power spectrum FFT calculation took 2.150016
+Starting GW FFT calculation.
+broadcasting our results
+now to layout
+GW: Done slicing for cpt 0
+Executing GW FFT, cpt 0
+GW: Done slicing for cpt 1
+Executing GW FFT, cpt 1
+GW: Done slicing for cpt 2
+Executing GW FFT, cpt 2
+GW: Done slicing for cpt 3
+Executing GW FFT, cpt 3
+GW: Done slicing for cpt 4
+Executing GW FFT, cpt 4
+GW: Done slicing for cpt 5
+Executing GW FFT, cpt 5
+GW projection...
+Calculating total energy
+Unnormalised GW energy [density] claimed 0.0062210327
+GW FFT calculation took 5.899968
+Writing SLICE to /wrk/dcutting/silage/alph-0.11-vw-0.92-Nb-8-L-960-dx-1.0-seed-2//slice-001200.silo
+Slice coord x=0
+Doing histogram, 100 bins in [-0.034563,3.490867]
+Histogram stuff took 0.009984
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+Starting velocity power spectrum FFT calculation.
+broadcasting our results
+now to layout
+Vel FFT: Done slicing for cpt 0
+Vel FFT: Done slicing for cpt 1
+Vel FFT: Done slicing for cpt 2
+Velocity power spectrum FFT calculation took 2.189952
+Starting GW FFT calculation.
+broadcasting our results
+now to layout
+GW: Done slicing for cpt 0
+Executing GW FFT, cpt 0
+GW: Done slicing for cpt 1
+Executing GW FFT, cpt 1
+GW: Done slicing for cpt 2
+Executing GW FFT, cpt 2
+GW: Done slicing for cpt 3
+Executing GW FFT, cpt 3
+GW: Done slicing for cpt 4
+Executing GW FFT, cpt 4
+GW: Done slicing for cpt 5
+Executing GW FFT, cpt 5
+GW projection...
+Calculating total energy
+Unnormalised GW energy [density] claimed 0.0159586910
+GW FFT calculation took 6.080000
+Doing histogram, 100 bins in [-0.034502,3.484698]
+Histogram stuff took 0.009984
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+Starting velocity power spectrum FFT calculation.
+broadcasting our results
+now to layout
+Vel FFT: Done slicing for cpt 0
+Vel FFT: Done slicing for cpt 1
+Vel FFT: Done slicing for cpt 2
+Velocity power spectrum FFT calculation took 2.659968
+Starting GW FFT calculation.
+broadcasting our results
+now to layout
+GW: Done slicing for cpt 0
+Executing GW FFT, cpt 0
+GW: Done slicing for cpt 1
+Executing GW FFT, cpt 1
+GW: Done slicing for cpt 2
+Executing GW FFT, cpt 2
+GW: Done slicing for cpt 3
+Executing GW FFT, cpt 3
+GW: Done slicing for cpt 4
+Executing GW FFT, cpt 4
+GW: Done slicing for cpt 5
+Executing GW FFT, cpt 5
+GW projection...
+Calculating total energy
+Unnormalised GW energy [density] claimed 0.0348570496
+GW FFT calculation took 5.990016
+Writing SLICE to /wrk/dcutting/silage/alph-0.11-vw-0.92-Nb-8-L-960-dx-1.0-seed-2//slice-001400.silo
+Slice coord x=0
+Doing histogram, 100 bins in [-0.034839,3.518753]
+Histogram stuff took 0.009984
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+Starting velocity power spectrum FFT calculation.
+broadcasting our results
+now to layout
+Vel FFT: Done slicing for cpt 0
+Vel FFT: Done slicing for cpt 1
+Vel FFT: Done slicing for cpt 2
+Velocity power spectrum FFT calculation took 2.310016
+Starting GW FFT calculation.
+broadcasting our results
+now to layout
+GW: Done slicing for cpt 0
+Executing GW FFT, cpt 0
+GW: Done slicing for cpt 1
+Executing GW FFT, cpt 1
+GW: Done slicing for cpt 2
+Executing GW FFT, cpt 2
+GW: Done slicing for cpt 3
+Executing GW FFT, cpt 3
+GW: Done slicing for cpt 4
+Executing GW FFT, cpt 4
+GW: Done slicing for cpt 5
+Executing GW FFT, cpt 5
+GW projection...
+Calculating total energy
+Unnormalised GW energy [density] claimed 0.0719823316
+GW FFT calculation took 6.109952
+Doing histogram, 100 bins in [-0.033804,3.414201]
+Histogram stuff took 0.000000
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+Starting velocity power spectrum FFT calculation.
+broadcasting our results
+now to layout
+Vel FFT: Done slicing for cpt 0
+Vel FFT: Done slicing for cpt 1
+Vel FFT: Done slicing for cpt 2
+Velocity power spectrum FFT calculation took 2.130048
+Starting GW FFT calculation.
+broadcasting our results
+now to layout
+GW: Done slicing for cpt 0
+Executing GW FFT, cpt 0
+GW: Done slicing for cpt 1
+Executing GW FFT, cpt 1
+GW: Done slicing for cpt 2
+Executing GW FFT, cpt 2
+GW: Done slicing for cpt 3
+Executing GW FFT, cpt 3
+GW: Done slicing for cpt 4
+Executing GW FFT, cpt 4
+GW: Done slicing for cpt 5
+Executing GW FFT, cpt 5
+GW projection...
+Calculating total energy
+Unnormalised GW energy [density] claimed 0.1306856871
+GW FFT calculation took 5.849984
+Writing SLICE to /wrk/dcutting/silage/alph-0.11-vw-0.92-Nb-8-L-960-dx-1.0-seed-2//slice-001600.silo
+Slice coord x=0
+Doing histogram, 100 bins in [-0.035036,3.538660]
+Histogram stuff took 0.009984
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+Starting velocity power spectrum FFT calculation.
+broadcasting our results
+now to layout
+Vel FFT: Done slicing for cpt 0
+Vel FFT: Done slicing for cpt 1
+Vel FFT: Done slicing for cpt 2
+Velocity power spectrum FFT calculation took 2.210048
+Starting GW FFT calculation.
+broadcasting our results
+now to layout
+GW: Done slicing for cpt 0
+Executing GW FFT, cpt 0
+GW: Done slicing for cpt 1
+Executing GW FFT, cpt 1
+GW: Done slicing for cpt 2
+Executing GW FFT, cpt 2
+GW: Done slicing for cpt 3
+Executing GW FFT, cpt 3
+GW: Done slicing for cpt 4
+Executing GW FFT, cpt 4
+GW: Done slicing for cpt 5
+Executing GW FFT, cpt 5
+GW projection...
+Calculating total energy
+Unnormalised GW energy [density] claimed 0.2161791474
+GW FFT calculation took 5.869952
+Doing histogram, 100 bins in [-0.345910,3.702688]
+Histogram stuff took 0.000000
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+Starting velocity power spectrum FFT calculation.
+broadcasting our results
+now to layout
+Vel FFT: Done slicing for cpt 0
+Vel FFT: Done slicing for cpt 1
+Vel FFT: Done slicing for cpt 2
+Velocity power spectrum FFT calculation took 2.150016
+Starting GW FFT calculation.
+broadcasting our results
+now to layout
+GW: Done slicing for cpt 0
+Executing GW FFT, cpt 0
+GW: Done slicing for cpt 1
+Executing GW FFT, cpt 1
+GW: Done slicing for cpt 2
+Executing GW FFT, cpt 2
+GW: Done slicing for cpt 3
+Executing GW FFT, cpt 3
+GW: Done slicing for cpt 4
+Executing GW FFT, cpt 4
+GW: Done slicing for cpt 5
+Executing GW FFT, cpt 5
+GW projection...
+Calculating total energy
+Unnormalised GW energy [density] claimed 0.3198324740
+GW FFT calculation took 6.049920
+Writing SLICE to /wrk/dcutting/silage/alph-0.11-vw-0.92-Nb-8-L-960-dx-1.0-seed-2//slice-001800.silo
+Slice coord x=0
+Doing histogram, 100 bins in [-0.615554,3.518101]
+Histogram stuff took 0.009984
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+Starting velocity power spectrum FFT calculation.
+broadcasting our results
+now to layout
+Vel FFT: Done slicing for cpt 0
+Vel FFT: Done slicing for cpt 1
+Vel FFT: Done slicing for cpt 2
+Velocity power spectrum FFT calculation took 2.339968
+Starting GW FFT calculation.
+broadcasting our results
+now to layout
+GW: Done slicing for cpt 0
+Executing GW FFT, cpt 0
+GW: Done slicing for cpt 1
+Executing GW FFT, cpt 1
+GW: Done slicing for cpt 2
+Executing GW FFT, cpt 2
+GW: Done slicing for cpt 3
+Executing GW FFT, cpt 3
+GW: Done slicing for cpt 4
+Executing GW FFT, cpt 4
+GW: Done slicing for cpt 5
+Executing GW FFT, cpt 5
+GW projection...
+Calculating total energy
+Unnormalised GW energy [density] claimed 0.4344615340
+GW FFT calculation took 6.029952
+Doing histogram, 100 bins in [-0.396729,3.539128]
+Histogram stuff took 0.009984
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+Starting velocity power spectrum FFT calculation.
+broadcasting our results
+now to layout
+Vel FFT: Done slicing for cpt 0
+Vel FFT: Done slicing for cpt 1
+Vel FFT: Done slicing for cpt 2
+Velocity power spectrum FFT calculation took 2.310016
+Starting GW FFT calculation.
+broadcasting our results
+now to layout
+GW: Done slicing for cpt 0
+Executing GW FFT, cpt 0
+GW: Done slicing for cpt 1
+Executing GW FFT, cpt 1
+GW: Done slicing for cpt 2
+Executing GW FFT, cpt 2
+GW: Done slicing for cpt 3
+Executing GW FFT, cpt 3
+GW: Done slicing for cpt 4
+Executing GW FFT, cpt 4
+GW: Done slicing for cpt 5
+Executing GW FFT, cpt 5
+GW projection...
+Calculating total energy
+Unnormalised GW energy [density] claimed 0.5627534389
+GW FFT calculation took 6.140032
+Writing SLICE to /wrk/dcutting/silage/alph-0.11-vw-0.92-Nb-8-L-960-dx-1.0-seed-2//slice-002000.silo
+Slice coord x=0
+Doing histogram, 100 bins in [-0.222935,3.807352]
+Histogram stuff took 0.000000
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+Starting velocity power spectrum FFT calculation.
+broadcasting our results
+now to layout
+Vel FFT: Done slicing for cpt 0
+Vel FFT: Done slicing for cpt 1
+Vel FFT: Done slicing for cpt 2
+Velocity power spectrum FFT calculation took 2.190080
+Starting GW FFT calculation.
+broadcasting our results
+now to layout
+GW: Done slicing for cpt 0
+Executing GW FFT, cpt 0
+GW: Done slicing for cpt 1
+Executing GW FFT, cpt 1
+GW: Done slicing for cpt 2
+Executing GW FFT, cpt 2
+GW: Done slicing for cpt 3
+Executing GW FFT, cpt 3
+GW: Done slicing for cpt 4
+Executing GW FFT, cpt 4
+GW: Done slicing for cpt 5
+Executing GW FFT, cpt 5
+GW projection...
+Calculating total energy
+Unnormalised GW energy [density] claimed 0.6882967353
+GW FFT calculation took 5.899904
+Doing histogram, 100 bins in [-0.247527,3.609968]
+Histogram stuff took 0.009984
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+Starting velocity power spectrum FFT calculation.
+broadcasting our results
+now to layout
+Vel FFT: Done slicing for cpt 0
+Vel FFT: Done slicing for cpt 1
+Vel FFT: Done slicing for cpt 2
+Velocity power spectrum FFT calculation took 2.210048
+Starting GW FFT calculation.
+broadcasting our results
+now to layout
+GW: Done slicing for cpt 0
+Executing GW FFT, cpt 0
+GW: Done slicing for cpt 1
+Executing GW FFT, cpt 1
+GW: Done slicing for cpt 2
+Executing GW FFT, cpt 2
+GW: Done slicing for cpt 3
+Executing GW FFT, cpt 3
+GW: Done slicing for cpt 4
+Executing GW FFT, cpt 4
+GW: Done slicing for cpt 5
+Executing GW FFT, cpt 5
+GW projection...
+Calculating total energy
+Unnormalised GW energy [density] claimed 0.7677123547
+GW FFT calculation took 6.160000
+Writing SLICE to /wrk/dcutting/silage/alph-0.11-vw-0.92-Nb-8-L-960-dx-1.0-seed-2//slice-002200.silo
+Slice coord x=0
+Doing histogram, 100 bins in [-0.204101,3.567559]
+Histogram stuff took 0.009984
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+Starting velocity power spectrum FFT calculation.
+broadcasting our results
+now to layout
+Vel FFT: Done slicing for cpt 0
+Vel FFT: Done slicing for cpt 1
+Vel FFT: Done slicing for cpt 2
+Velocity power spectrum FFT calculation took 2.329984
+Starting GW FFT calculation.
+broadcasting our results
+now to layout
+GW: Done slicing for cpt 0
+Executing GW FFT, cpt 0
+GW: Done slicing for cpt 1
+Executing GW FFT, cpt 1
+GW: Done slicing for cpt 2
+Executing GW FFT, cpt 2
+GW: Done slicing for cpt 3
+Executing GW FFT, cpt 3
+GW: Done slicing for cpt 4
+Executing GW FFT, cpt 4
+GW: Done slicing for cpt 5
+Executing GW FFT, cpt 5
+GW projection...
+Calculating total energy
+Unnormalised GW energy [density] claimed 0.7913747430
+GW FFT calculation took 7.160064
+Doing histogram, 100 bins in [-0.268071,3.638187]
+Histogram stuff took 0.009984
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+Starting velocity power spectrum FFT calculation.
+broadcasting our results
+now to layout
+Vel FFT: Done slicing for cpt 0
+Vel FFT: Done slicing for cpt 1
+Vel FFT: Done slicing for cpt 2
+Velocity power spectrum FFT calculation took 3.099904
+Starting GW FFT calculation.
+broadcasting our results
+now to layout
+GW: Done slicing for cpt 0
+Executing GW FFT, cpt 0
+GW: Done slicing for cpt 1
+Executing GW FFT, cpt 1
+GW: Done slicing for cpt 2
+Executing GW FFT, cpt 2
+GW: Done slicing for cpt 3
+Executing GW FFT, cpt 3
+GW: Done slicing for cpt 4
+Executing GW FFT, cpt 4
+GW: Done slicing for cpt 5
+Executing GW FFT, cpt 5
+GW projection...
+Calculating total energy
+Unnormalised GW energy [density] claimed 0.8119729757
+GW FFT calculation took 6.870016
+Writing SLICE to /wrk/dcutting/silage/alph-0.11-vw-0.92-Nb-8-L-960-dx-1.0-seed-2//slice-002400.silo
+Slice coord x=0
+Doing histogram, 100 bins in [-0.543268,3.514601]
+Histogram stuff took 0.019968
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+Starting velocity power spectrum FFT calculation.
+broadcasting our results
+now to layout
+Vel FFT: Done slicing for cpt 0
+Vel FFT: Done slicing for cpt 1
+Vel FFT: Done slicing for cpt 2
+Velocity power spectrum FFT calculation took 2.610048
+Starting GW FFT calculation.
+broadcasting our results
+now to layout
+GW: Done slicing for cpt 0
+Executing GW FFT, cpt 0
+GW: Done slicing for cpt 1
+Executing GW FFT, cpt 1
+GW: Done slicing for cpt 2
+Executing GW FFT, cpt 2
+GW: Done slicing for cpt 3
+Executing GW FFT, cpt 3
+GW: Done slicing for cpt 4
+Executing GW FFT, cpt 4
+GW: Done slicing for cpt 5
+Executing GW FFT, cpt 5
+GW projection...
+Calculating total energy
+Unnormalised GW energy [density] claimed 0.8553923368
+GW FFT calculation took 6.109952
+Doing histogram, 100 bins in [-0.727707,3.572656]
+Histogram stuff took 0.019968
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+Starting velocity power spectrum FFT calculation.
+broadcasting our results
+now to layout
+Vel FFT: Done slicing for cpt 0
+Vel FFT: Done slicing for cpt 1
+Vel FFT: Done slicing for cpt 2
+Velocity power spectrum FFT calculation took 2.169984
+Starting GW FFT calculation.
+broadcasting our results
+now to layout
+GW: Done slicing for cpt 0
+Executing GW FFT, cpt 0
+GW: Done slicing for cpt 1
+Executing GW FFT, cpt 1
+GW: Done slicing for cpt 2
+Executing GW FFT, cpt 2
+GW: Done slicing for cpt 3
+Executing GW FFT, cpt 3
+GW: Done slicing for cpt 4
+Executing GW FFT, cpt 4
+GW: Done slicing for cpt 5
+Executing GW FFT, cpt 5
+GW projection...
+Calculating total energy
+Unnormalised GW energy [density] claimed 0.9231773615
+GW FFT calculation took 6.249984
+Writing SLICE to /wrk/dcutting/silage/alph-0.11-vw-0.92-Nb-8-L-960-dx-1.0-seed-2//slice-002600.silo
+Slice coord x=0
+Doing histogram, 100 bins in [-0.638392,2.984249]
+Histogram stuff took 0.009984
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+Starting velocity power spectrum FFT calculation.
+broadcasting our results
+now to layout
+Vel FFT: Done slicing for cpt 0
+Vel FFT: Done slicing for cpt 1
+Vel FFT: Done slicing for cpt 2
+Velocity power spectrum FFT calculation took 2.940032
+Starting GW FFT calculation.
+broadcasting our results
+now to layout
+GW: Done slicing for cpt 0
+Executing GW FFT, cpt 0
+GW: Done slicing for cpt 1
+Executing GW FFT, cpt 1
+GW: Done slicing for cpt 2
+Executing GW FFT, cpt 2
+GW: Done slicing for cpt 3
+Executing GW FFT, cpt 3
+GW: Done slicing for cpt 4
+Executing GW FFT, cpt 4
+GW: Done slicing for cpt 5
+Executing GW FFT, cpt 5
+GW projection...
+Calculating total energy
+Unnormalised GW energy [density] claimed 1.0222485065
+GW FFT calculation took 6.329984
+Doing histogram, 100 bins in [1.432363,2.382876]
+Histogram stuff took 0.009984
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+Starting velocity power spectrum FFT calculation.
+broadcasting our results
+now to layout
+Vel FFT: Done slicing for cpt 0
+Vel FFT: Done slicing for cpt 1
+Vel FFT: Done slicing for cpt 2
+Velocity power spectrum FFT calculation took 3.379968
+Starting GW FFT calculation.
+broadcasting our results
+now to layout
+GW: Done slicing for cpt 0
+Executing GW FFT, cpt 0
+GW: Done slicing for cpt 1
+Executing GW FFT, cpt 1
+GW: Done slicing for cpt 2
+Executing GW FFT, cpt 2
+GW: Done slicing for cpt 3
+Executing GW FFT, cpt 3
+GW: Done slicing for cpt 4
+Executing GW FFT, cpt 4
+GW: Done slicing for cpt 5
+Executing GW FFT, cpt 5
+GW projection...
+Calculating total energy
+Unnormalised GW energy [density] claimed 1.1283786297
+GW FFT calculation took 6.240000
+Writing SLICE to /wrk/dcutting/silage/alph-0.11-vw-0.92-Nb-8-L-960-dx-1.0-seed-2//slice-002800.silo
+Slice coord x=0
+Doing histogram, 100 bins in [1.879037,2.120218]
+Histogram stuff took 0.000000
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+Starting velocity power spectrum FFT calculation.
+broadcasting our results
+now to layout
+Vel FFT: Done slicing for cpt 0
+Vel FFT: Done slicing for cpt 1
+Vel FFT: Done slicing for cpt 2
+Velocity power spectrum FFT calculation took 2.509952
+Starting GW FFT calculation.
+broadcasting our results
+now to layout
+GW: Done slicing for cpt 0
+Executing GW FFT, cpt 0
+GW: Done slicing for cpt 1
+Executing GW FFT, cpt 1
+GW: Done slicing for cpt 2
+Executing GW FFT, cpt 2
+GW: Done slicing for cpt 3
+Executing GW FFT, cpt 3
+GW: Done slicing for cpt 4
+Executing GW FFT, cpt 4
+GW: Done slicing for cpt 5
+Executing GW FFT, cpt 5
+GW projection...
+Calculating total energy
+Unnormalised GW energy [density] claimed 1.2146145105
+GW FFT calculation took 6.240000
+Max: 2.027591, Min: 1.974466, df: 0.000531
+Not doing histogram: bin width too small (overflow would occur)
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+Starting velocity power spectrum FFT calculation.
+broadcasting our results
+now to layout
+Vel FFT: Done slicing for cpt 0
+Vel FFT: Done slicing for cpt 1
+Vel FFT: Done slicing for cpt 2
+Velocity power spectrum FFT calculation took 2.209920
+Starting GW FFT calculation.
+broadcasting our results
+now to layout
+GW: Done slicing for cpt 0
+Executing GW FFT, cpt 0
+GW: Done slicing for cpt 1
+Executing GW FFT, cpt 1
+GW: Done slicing for cpt 2
+Executing GW FFT, cpt 2
+GW: Done slicing for cpt 3
+Executing GW FFT, cpt 3
+GW: Done slicing for cpt 4
+Executing GW FFT, cpt 4
+GW: Done slicing for cpt 5
+Executing GW FFT, cpt 5
+GW projection...
+Calculating total energy
+Unnormalised GW energy [density] claimed 1.2837939262
+GW FFT calculation took 6.350080
+Writing SLICE to /wrk/dcutting/silage/alph-0.11-vw-0.92-Nb-8-L-960-dx-1.0-seed-2//slice-003000.silo
+Slice coord x=0
+Max: 2.007822, Min: 1.992509, df: 0.000153
+Not doing histogram: bin width too small (overflow would occur)
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+Starting velocity power spectrum FFT calculation.
+broadcasting our results
+now to layout
+Vel FFT: Done slicing for cpt 0
+Vel FFT: Done slicing for cpt 1
+Vel FFT: Done slicing for cpt 2
+Velocity power spectrum FFT calculation took 3.500032
+Starting GW FFT calculation.
+broadcasting our results
+now to layout
+GW: Done slicing for cpt 0
+Executing GW FFT, cpt 0
+GW: Done slicing for cpt 1
+Executing GW FFT, cpt 1
+GW: Done slicing for cpt 2
+Executing GW FFT, cpt 2
+GW: Done slicing for cpt 3
+Executing GW FFT, cpt 3
+GW: Done slicing for cpt 4
+Executing GW FFT, cpt 4
+GW: Done slicing for cpt 5
+Executing GW FFT, cpt 5
+GW projection...
+Calculating total energy
+Unnormalised GW energy [density] claimed 1.3640962839
+GW FFT calculation took 6.609920
+Max: 2.002267, Min: 1.997705, df: 0.000046
+Not doing histogram: bin width too small (overflow would occur)
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+Starting velocity power spectrum FFT calculation.
+broadcasting our results
+now to layout
+Vel FFT: Done slicing for cpt 0
+Vel FFT: Done slicing for cpt 1
+Vel FFT: Done slicing for cpt 2
+Velocity power spectrum FFT calculation took 3.069952
+Starting GW FFT calculation.
+broadcasting our results
+now to layout
+GW: Done slicing for cpt 0
+Executing GW FFT, cpt 0
+GW: Done slicing for cpt 1
+Executing GW FFT, cpt 1
+GW: Done slicing for cpt 2
+Executing GW FFT, cpt 2
+GW: Done slicing for cpt 3
+Executing GW FFT, cpt 3
+GW: Done slicing for cpt 4
+Executing GW FFT, cpt 4
+GW: Done slicing for cpt 5
+Executing GW FFT, cpt 5
+GW projection...
+Calculating total energy
+Unnormalised GW energy [density] claimed 1.4530456066
+GW FFT calculation took 6.400000
+Writing SLICE to /wrk/dcutting/silage/alph-0.11-vw-0.92-Nb-8-L-960-dx-1.0-seed-2//slice-003200.silo
+Slice coord x=0
+Max: 2.000664, Min: 1.999249, df: 0.000014
+Not doing histogram: bin width too small (overflow would occur)
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+Starting velocity power spectrum FFT calculation.
+broadcasting our results
+now to layout
+Vel FFT: Done slicing for cpt 0
+Vel FFT: Done slicing for cpt 1
+Vel FFT: Done slicing for cpt 2
+Velocity power spectrum FFT calculation took 2.150144
+Starting GW FFT calculation.
+broadcasting our results
+now to layout
+GW: Done slicing for cpt 0
+Executing GW FFT, cpt 0
+GW: Done slicing for cpt 1
+Executing GW FFT, cpt 1
+GW: Done slicing for cpt 2
+Executing GW FFT, cpt 2
+GW: Done slicing for cpt 3
+Executing GW FFT, cpt 3
+GW: Done slicing for cpt 4
+Executing GW FFT, cpt 4
+GW: Done slicing for cpt 5
+Executing GW FFT, cpt 5
+GW projection...
+Calculating total energy
+Unnormalised GW energy [density] claimed 1.5411732197
+GW FFT calculation took 5.890048
+Max: 2.000233, Min: 1.999777, df: 0.000005
+Not doing histogram: bin width too small (overflow would occur)
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+Starting velocity power spectrum FFT calculation.
+broadcasting our results
+now to layout
+Vel FFT: Done slicing for cpt 0
+Vel FFT: Done slicing for cpt 1
+Vel FFT: Done slicing for cpt 2
+Velocity power spectrum FFT calculation took 2.129920
+Starting GW FFT calculation.
+broadcasting our results
+now to layout
+GW: Done slicing for cpt 0
+Executing GW FFT, cpt 0
+GW: Done slicing for cpt 1
+Executing GW FFT, cpt 1
+GW: Done slicing for cpt 2
+Executing GW FFT, cpt 2
+GW: Done slicing for cpt 3
+Executing GW FFT, cpt 3
+GW: Done slicing for cpt 4
+Executing GW FFT, cpt 4
+GW: Done slicing for cpt 5
+Executing GW FFT, cpt 5
+GW projection...
+Calculating total energy
+Unnormalised GW energy [density] claimed 1.6405007839
+GW FFT calculation took 6.060032
+Writing SLICE to /wrk/dcutting/silage/alph-0.11-vw-0.92-Nb-8-L-960-dx-1.0-seed-2//slice-003400.silo
+Slice coord x=0
+Max: 2.000073, Min: 1.999926, df: 0.000001
+Not doing histogram: bin width too small (overflow would occur)
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+Starting velocity power spectrum FFT calculation.
+broadcasting our results
+now to layout
+Vel FFT: Done slicing for cpt 0
+Vel FFT: Done slicing for cpt 1
+Vel FFT: Done slicing for cpt 2
+Velocity power spectrum FFT calculation took 2.870016
+Starting GW FFT calculation.
+broadcasting our results
+now to layout
+GW: Done slicing for cpt 0
+Executing GW FFT, cpt 0
+GW: Done slicing for cpt 1
+Executing GW FFT, cpt 1
+GW: Done slicing for cpt 2
+Executing GW FFT, cpt 2
+GW: Done slicing for cpt 3
+Executing GW FFT, cpt 3
+GW: Done slicing for cpt 4
+Executing GW FFT, cpt 4
+GW: Done slicing for cpt 5
+Executing GW FFT, cpt 5
+GW projection...
+Calculating total energy
+Unnormalised GW energy [density] claimed 1.7822515965
+GW FFT calculation took 6.739968
+Max: 2.000028, Min: 1.999973, df: 0.000001
+Not doing histogram: bin width too small (overflow would occur)
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+Starting velocity power spectrum FFT calculation.
+broadcasting our results
+now to layout
+Vel FFT: Done slicing for cpt 0
+Vel FFT: Done slicing for cpt 1
+Vel FFT: Done slicing for cpt 2
+Velocity power spectrum FFT calculation took 3.020032
+Starting GW FFT calculation.
+broadcasting our results
+now to layout
+GW: Done slicing for cpt 0
+Executing GW FFT, cpt 0
+GW: Done slicing for cpt 1
+Executing GW FFT, cpt 1
+GW: Done slicing for cpt 2
+Executing GW FFT, cpt 2
+GW: Done slicing for cpt 3
+Executing GW FFT, cpt 3
+GW: Done slicing for cpt 4
+Executing GW FFT, cpt 4
+GW: Done slicing for cpt 5
+Executing GW FFT, cpt 5
+GW projection...
+Calculating total energy
+Unnormalised GW energy [density] claimed 1.9432872534
+GW FFT calculation took 6.640128
+Writing SLICE to /wrk/dcutting/silage/alph-0.11-vw-0.92-Nb-8-L-960-dx-1.0-seed-2//slice-003600.silo
+Slice coord x=0
+Max: 2.000009, Min: 1.999991, df: 0.000000
+Not doing histogram: bin width too small (overflow would occur)
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+Starting velocity power spectrum FFT calculation.
+broadcasting our results
+now to layout
+Vel FFT: Done slicing for cpt 0
+Vel FFT: Done slicing for cpt 1
+Vel FFT: Done slicing for cpt 2
+Velocity power spectrum FFT calculation took 2.210048
+Starting GW FFT calculation.
+broadcasting our results
+now to layout
+GW: Done slicing for cpt 0
+Executing GW FFT, cpt 0
+GW: Done slicing for cpt 1
+Executing GW FFT, cpt 1
+GW: Done slicing for cpt 2
+Executing GW FFT, cpt 2
+GW: Done slicing for cpt 3
+Executing GW FFT, cpt 3
+GW: Done slicing for cpt 4
+Executing GW FFT, cpt 4
+GW: Done slicing for cpt 5
+Executing GW FFT, cpt 5
+GW projection...
+Calculating total energy
+Unnormalised GW energy [density] claimed 2.0752525330
+GW FFT calculation took 5.910016
+Max: 2.000003, Min: 1.999997, df: 0.000000
+Not doing histogram: bin width too small (overflow would occur)
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+Starting velocity power spectrum FFT calculation.
+broadcasting our results
+now to layout
+Vel FFT: Done slicing for cpt 0
+Vel FFT: Done slicing for cpt 1
+Vel FFT: Done slicing for cpt 2
+Velocity power spectrum FFT calculation took 2.129920
+Starting GW FFT calculation.
+broadcasting our results
+now to layout
+GW: Done slicing for cpt 0
+Executing GW FFT, cpt 0
+GW: Done slicing for cpt 1
+Executing GW FFT, cpt 1
+GW: Done slicing for cpt 2
+Executing GW FFT, cpt 2
+GW: Done slicing for cpt 3
+Executing GW FFT, cpt 3
+GW: Done slicing for cpt 4
+Executing GW FFT, cpt 4
+GW: Done slicing for cpt 5
+Executing GW FFT, cpt 5
+GW projection...
+Calculating total energy
+Unnormalised GW energy [density] claimed 2.2138915062
+GW FFT calculation took 5.949952
+Writing SLICE to /wrk/dcutting/silage/alph-0.11-vw-0.92-Nb-8-L-960-dx-1.0-seed-2//slice-003800.silo
+Slice coord x=0
+Max: 2.000002, Min: 1.999998, df: 0.000000
+Not doing histogram: bin width too small (overflow would occur)
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+Starting velocity power spectrum FFT calculation.
+broadcasting our results
+now to layout
+Vel FFT: Done slicing for cpt 0
+Vel FFT: Done slicing for cpt 1
+Vel FFT: Done slicing for cpt 2
+Velocity power spectrum FFT calculation took 2.319872
+Starting GW FFT calculation.
+broadcasting our results
+now to layout
+GW: Done slicing for cpt 0
+Executing GW FFT, cpt 0
+GW: Done slicing for cpt 1
+Executing GW FFT, cpt 1
+GW: Done slicing for cpt 2
+Executing GW FFT, cpt 2
+GW: Done slicing for cpt 3
+Executing GW FFT, cpt 3
+GW: Done slicing for cpt 4
+Executing GW FFT, cpt 4
+GW: Done slicing for cpt 5
+Executing GW FFT, cpt 5
+GW projection...
+Calculating total energy
+Unnormalised GW energy [density] claimed 2.3527946472
+GW FFT calculation took 7.040000
+Max: 2.000002, Min: 1.999998, df: 0.000000
+Not doing histogram: bin width too small (overflow would occur)
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+Starting velocity power spectrum FFT calculation.
+broadcasting our results
+now to layout
+Vel FFT: Done slicing for cpt 0
+Vel FFT: Done slicing for cpt 1
+Vel FFT: Done slicing for cpt 2
+Velocity power spectrum FFT calculation took 2.359808
+Starting GW FFT calculation.
+broadcasting our results
+now to layout
+GW: Done slicing for cpt 0
+Executing GW FFT, cpt 0
+GW: Done slicing for cpt 1
+Executing GW FFT, cpt 1
+GW: Done slicing for cpt 2
+Executing GW FFT, cpt 2
+GW: Done slicing for cpt 3
+Executing GW FFT, cpt 3
+GW: Done slicing for cpt 4
+Executing GW FFT, cpt 4
+GW: Done slicing for cpt 5
+Executing GW FFT, cpt 5
+GW projection...
+Calculating total energy
+Unnormalised GW energy [density] claimed 2.4236216545
+GW FFT calculation took 6.770176
+Writing SLICE to /wrk/dcutting/silage/alph-0.11-vw-0.92-Nb-8-L-960-dx-1.0-seed-2//slice-004000.silo
+Slice coord x=0
+Max: 2.000002, Min: 1.999998, df: 0.000000
+Not doing histogram: bin width too small (overflow would occur)
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+Starting velocity power spectrum FFT calculation.
+broadcasting our results
+now to layout
+Vel FFT: Done slicing for cpt 0
+Vel FFT: Done slicing for cpt 1
+Vel FFT: Done slicing for cpt 2
+Velocity power spectrum FFT calculation took 2.259968
+Starting GW FFT calculation.
+broadcasting our results
+now to layout
+GW: Done slicing for cpt 0
+Executing GW FFT, cpt 0
+GW: Done slicing for cpt 1
+Executing GW FFT, cpt 1
+GW: Done slicing for cpt 2
+Executing GW FFT, cpt 2
+GW: Done slicing for cpt 3
+Executing GW FFT, cpt 3
+GW: Done slicing for cpt 4
+Executing GW FFT, cpt 4
+GW: Done slicing for cpt 5
+Executing GW FFT, cpt 5
+GW projection...
+Calculating total energy
+Unnormalised GW energy [density] claimed 2.4025371075
+GW FFT calculation took 6.099968
+Max: 2.000002, Min: 1.999998, df: 0.000000
+Not doing histogram: bin width too small (overflow would occur)
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+Starting velocity power spectrum FFT calculation.
+broadcasting our results
+now to layout
+Vel FFT: Done slicing for cpt 0
+Vel FFT: Done slicing for cpt 1
+Vel FFT: Done slicing for cpt 2
+Velocity power spectrum FFT calculation took 2.690048
+Starting GW FFT calculation.
+broadcasting our results
+now to layout
+GW: Done slicing for cpt 0
+Executing GW FFT, cpt 0
+GW: Done slicing for cpt 1
+Executing GW FFT, cpt 1
+GW: Done slicing for cpt 2
+Executing GW FFT, cpt 2
+GW: Done slicing for cpt 3
+Executing GW FFT, cpt 3
+GW: Done slicing for cpt 4
+Executing GW FFT, cpt 4
+GW: Done slicing for cpt 5
+Executing GW FFT, cpt 5
+GW projection...
+Calculating total energy
+Unnormalised GW energy [density] claimed 2.3744280338
+GW FFT calculation took 6.149888
+Writing SLICE to /wrk/dcutting/silage/alph-0.11-vw-0.92-Nb-8-L-960-dx-1.0-seed-2//slice-004200.silo
+Slice coord x=0
+Max: 2.000002, Min: 1.999998, df: 0.000000
+Not doing histogram: bin width too small (overflow would occur)
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+Starting velocity power spectrum FFT calculation.
+broadcasting our results
+now to layout
+Vel FFT: Done slicing for cpt 0
+Vel FFT: Done slicing for cpt 1
+Vel FFT: Done slicing for cpt 2
+Velocity power spectrum FFT calculation took 2.240000
+Starting GW FFT calculation.
+broadcasting our results
+now to layout
+GW: Done slicing for cpt 0
+Executing GW FFT, cpt 0
+GW: Done slicing for cpt 1
+Executing GW FFT, cpt 1
+GW: Done slicing for cpt 2
+Executing GW FFT, cpt 2
+GW: Done slicing for cpt 3
+Executing GW FFT, cpt 3
+GW: Done slicing for cpt 4
+Executing GW FFT, cpt 4
+GW: Done slicing for cpt 5
+Executing GW FFT, cpt 5
+GW projection...
+Calculating total energy
+Unnormalised GW energy [density] claimed 2.4463024139
+GW FFT calculation took 6.489856
+Max: 2.000002, Min: 1.999998, df: 0.000000
+Not doing histogram: bin width too small (overflow would occur)
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+Starting velocity power spectrum FFT calculation.
+broadcasting our results
+now to layout
+Vel FFT: Done slicing for cpt 0
+Vel FFT: Done slicing for cpt 1
+Vel FFT: Done slicing for cpt 2
+Velocity power spectrum FFT calculation took 2.190080
+Starting GW FFT calculation.
+broadcasting our results
+now to layout
+GW: Done slicing for cpt 0
+Executing GW FFT, cpt 0
+GW: Done slicing for cpt 1
+Executing GW FFT, cpt 1
+GW: Done slicing for cpt 2
+Executing GW FFT, cpt 2
+GW: Done slicing for cpt 3
+Executing GW FFT, cpt 3
+GW: Done slicing for cpt 4
+Executing GW FFT, cpt 4
+GW: Done slicing for cpt 5
+Executing GW FFT, cpt 5
+GW projection...
+Calculating total energy
+Unnormalised GW energy [density] claimed 2.6156053543
+GW FFT calculation took 6.350080
+Writing SLICE to /wrk/dcutting/silage/alph-0.11-vw-0.92-Nb-8-L-960-dx-1.0-seed-2//slice-004400.silo
+Slice coord x=0
+Max: 2.000002, Min: 1.999998, df: 0.000000
+Not doing histogram: bin width too small (overflow would occur)
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+Starting velocity power spectrum FFT calculation.
+broadcasting our results
+now to layout
+Vel FFT: Done slicing for cpt 0
+Vel FFT: Done slicing for cpt 1
+Vel FFT: Done slicing for cpt 2
+Velocity power spectrum FFT calculation took 2.170112
+Starting GW FFT calculation.
+broadcasting our results
+now to layout
+GW: Done slicing for cpt 0
+Executing GW FFT, cpt 0
+GW: Done slicing for cpt 1
+Executing GW FFT, cpt 1
+GW: Done slicing for cpt 2
+Executing GW FFT, cpt 2
+GW: Done slicing for cpt 3
+Executing GW FFT, cpt 3
+GW: Done slicing for cpt 4
+Executing GW FFT, cpt 4
+GW: Done slicing for cpt 5
+Executing GW FFT, cpt 5
+GW projection...
+Calculating total energy
+Unnormalised GW energy [density] claimed 2.8099100590
+GW FFT calculation took 5.870080
+Max: 2.000002, Min: 1.999998, df: 0.000000
+Not doing histogram: bin width too small (overflow would occur)
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+Starting velocity power spectrum FFT calculation.
+broadcasting our results
+now to layout
+Vel FFT: Done slicing for cpt 0
+Vel FFT: Done slicing for cpt 1
+Vel FFT: Done slicing for cpt 2
+Velocity power spectrum FFT calculation took 2.220032
+Starting GW FFT calculation.
+broadcasting our results
+now to layout
+GW: Done slicing for cpt 0
+Executing GW FFT, cpt 0
+GW: Done slicing for cpt 1
+Executing GW FFT, cpt 1
+GW: Done slicing for cpt 2
+Executing GW FFT, cpt 2
+GW: Done slicing for cpt 3
+Executing GW FFT, cpt 3
+GW: Done slicing for cpt 4
+Executing GW FFT, cpt 4
+GW: Done slicing for cpt 5
+Executing GW FFT, cpt 5
+GW projection...
+Calculating total energy
+Unnormalised GW energy [density] claimed 3.0236911774
+GW FFT calculation took 6.259968
+Writing SLICE to /wrk/dcutting/silage/alph-0.11-vw-0.92-Nb-8-L-960-dx-1.0-seed-2//slice-004600.silo
+Slice coord x=0
+Max: 2.000002, Min: 1.999998, df: 0.000000
+Not doing histogram: bin width too small (overflow would occur)
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+Starting velocity power spectrum FFT calculation.
+broadcasting our results
+now to layout
+Vel FFT: Done slicing for cpt 0
+Vel FFT: Done slicing for cpt 1
+Vel FFT: Done slicing for cpt 2
+Velocity power spectrum FFT calculation took 2.970112
+Starting GW FFT calculation.
+broadcasting our results
+now to layout
+GW: Done slicing for cpt 0
+Executing GW FFT, cpt 0
+GW: Done slicing for cpt 1
+Executing GW FFT, cpt 1
+GW: Done slicing for cpt 2
+Executing GW FFT, cpt 2
+GW: Done slicing for cpt 3
+Executing GW FFT, cpt 3
+GW: Done slicing for cpt 4
+Executing GW FFT, cpt 4
+GW: Done slicing for cpt 5
+Executing GW FFT, cpt 5
+GW projection...
+Calculating total energy
+Unnormalised GW energy [density] claimed 3.2492899895
+GW FFT calculation took 6.949888
+Max: 2.000002, Min: 1.999998, df: 0.000000
+Not doing histogram: bin width too small (overflow would occur)
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+Starting velocity power spectrum FFT calculation.
+broadcasting our results
+now to layout
+Vel FFT: Done slicing for cpt 0
+Vel FFT: Done slicing for cpt 1
+Vel FFT: Done slicing for cpt 2
+Velocity power spectrum FFT calculation took 2.249984
+Starting GW FFT calculation.
+broadcasting our results
+now to layout
+GW: Done slicing for cpt 0
+Executing GW FFT, cpt 0
+GW: Done slicing for cpt 1
+Executing GW FFT, cpt 1
+GW: Done slicing for cpt 2
+Executing GW FFT, cpt 2
+GW: Done slicing for cpt 3
+Executing GW FFT, cpt 3
+GW: Done slicing for cpt 4
+Executing GW FFT, cpt 4
+GW: Done slicing for cpt 5
+Executing GW FFT, cpt 5
+GW projection...
+Calculating total energy
+Unnormalised GW energy [density] claimed 3.4205403328
+GW FFT calculation took 6.919936
+Writing SLICE to /wrk/dcutting/silage/alph-0.11-vw-0.92-Nb-8-L-960-dx-1.0-seed-2//slice-004800.silo
+Slice coord x=0
+Max: 2.000002, Min: 1.999998, df: 0.000000
+Not doing histogram: bin width too small (overflow would occur)
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+Starting velocity power spectrum FFT calculation.
+broadcasting our results
+now to layout
+Vel FFT: Done slicing for cpt 0
+Vel FFT: Done slicing for cpt 1
+Vel FFT: Done slicing for cpt 2
+Velocity power spectrum FFT calculation took 2.210048
+Starting GW FFT calculation.
+broadcasting our results
+now to layout
+GW: Done slicing for cpt 0
+Executing GW FFT, cpt 0
+GW: Done slicing for cpt 1
+Executing GW FFT, cpt 1
+GW: Done slicing for cpt 2
+Executing GW FFT, cpt 2
+GW: Done slicing for cpt 3
+Executing GW FFT, cpt 3
+GW: Done slicing for cpt 4
+Executing GW FFT, cpt 4
+GW: Done slicing for cpt 5
+Executing GW FFT, cpt 5
+GW projection...
+Calculating total energy
+Unnormalised GW energy [density] claimed 3.5254025459
+GW FFT calculation took 5.879808
+Max: 2.000002, Min: 1.999998, df: 0.000000
+Not doing histogram: bin width too small (overflow would occur)
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+Starting velocity power spectrum FFT calculation.
+broadcasting our results
+now to layout
+Vel FFT: Done slicing for cpt 0
+Vel FFT: Done slicing for cpt 1
+Vel FFT: Done slicing for cpt 2
+Velocity power spectrum FFT calculation took 2.119936
+Starting GW FFT calculation.
+broadcasting our results
+now to layout
+GW: Done slicing for cpt 0
+Executing GW FFT, cpt 0
+GW: Done slicing for cpt 1
+Executing GW FFT, cpt 1
+GW: Done slicing for cpt 2
+Executing GW FFT, cpt 2
+GW: Done slicing for cpt 3
+Executing GW FFT, cpt 3
+GW: Done slicing for cpt 4
+Executing GW FFT, cpt 4
+GW: Done slicing for cpt 5
+Executing GW FFT, cpt 5
+GW projection...
+Calculating total energy
+Unnormalised GW energy [density] claimed 3.6086258888
+GW FFT calculation took 6.030080
+Writing SLICE to /wrk/dcutting/silage/alph-0.11-vw-0.92-Nb-8-L-960-dx-1.0-seed-2//slice-005000.silo
+Slice coord x=0
+Max: 2.000002, Min: 1.999998, df: 0.000000
+Not doing histogram: bin width too small (overflow would occur)
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+Starting velocity power spectrum FFT calculation.
+broadcasting our results
+now to layout
+Vel FFT: Done slicing for cpt 0
+Vel FFT: Done slicing for cpt 1
+Vel FFT: Done slicing for cpt 2
+Velocity power spectrum FFT calculation took 3.200000
+Starting GW FFT calculation.
+broadcasting our results
+now to layout
+GW: Done slicing for cpt 0
+Executing GW FFT, cpt 0
+GW: Done slicing for cpt 1
+Executing GW FFT, cpt 1
+GW: Done slicing for cpt 2
+Executing GW FFT, cpt 2
+GW: Done slicing for cpt 3
+Executing GW FFT, cpt 3
+GW: Done slicing for cpt 4
+Executing GW FFT, cpt 4
+GW: Done slicing for cpt 5
+Executing GW FFT, cpt 5
+GW projection...
+Calculating total energy
+Unnormalised GW energy [density] claimed 3.6647362709
+GW FFT calculation took 6.180096
+Max: 2.000002, Min: 1.999998, df: 0.000000
+Not doing histogram: bin width too small (overflow would occur)
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+Starting velocity power spectrum FFT calculation.
+broadcasting our results
+now to layout
+Vel FFT: Done slicing for cpt 0
+Vel FFT: Done slicing for cpt 1
+Vel FFT: Done slicing for cpt 2
+Velocity power spectrum FFT calculation took 3.470080
+Starting GW FFT calculation.
+broadcasting our results
+now to layout
+GW: Done slicing for cpt 0
+Executing GW FFT, cpt 0
+GW: Done slicing for cpt 1
+Executing GW FFT, cpt 1
+GW: Done slicing for cpt 2
+Executing GW FFT, cpt 2
+GW: Done slicing for cpt 3
+Executing GW FFT, cpt 3
+GW: Done slicing for cpt 4
+Executing GW FFT, cpt 4
+GW: Done slicing for cpt 5
+Executing GW FFT, cpt 5
+GW projection...
+Calculating total energy
+Unnormalised GW energy [density] claimed 3.6469614506
+GW FFT calculation took 6.309888
+Writing SLICE to /wrk/dcutting/silage/alph-0.11-vw-0.92-Nb-8-L-960-dx-1.0-seed-2//slice-005200.silo
+Slice coord x=0
+Max: 2.000002, Min: 1.999998, df: 0.000000
+Not doing histogram: bin width too small (overflow would occur)
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+Starting velocity power spectrum FFT calculation.
+broadcasting our results
+now to layout
+Vel FFT: Done slicing for cpt 0
+Vel FFT: Done slicing for cpt 1
+Vel FFT: Done slicing for cpt 2
+Velocity power spectrum FFT calculation took 2.179840
+Starting GW FFT calculation.
+broadcasting our results
+now to layout
+GW: Done slicing for cpt 0
+Executing GW FFT, cpt 0
+GW: Done slicing for cpt 1
+Executing GW FFT, cpt 1
+GW: Done slicing for cpt 2
+Executing GW FFT, cpt 2
+GW: Done slicing for cpt 3
+Executing GW FFT, cpt 3
+GW: Done slicing for cpt 4
+Executing GW FFT, cpt 4
+GW: Done slicing for cpt 5
+Executing GW FFT, cpt 5
+GW projection...
+Calculating total energy
+Unnormalised GW energy [density] claimed 3.6009249687
+GW FFT calculation took 6.060032
+Max: 2.000002, Min: 1.999998, df: 0.000000
+Not doing histogram: bin width too small (overflow would occur)
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+Starting velocity power spectrum FFT calculation.
+broadcasting our results
+now to layout
+Vel FFT: Done slicing for cpt 0
+Vel FFT: Done slicing for cpt 1
+Vel FFT: Done slicing for cpt 2
+Velocity power spectrum FFT calculation took 2.599936
+Starting GW FFT calculation.
+broadcasting our results
+now to layout
+GW: Done slicing for cpt 0
+Executing GW FFT, cpt 0
+GW: Done slicing for cpt 1
+Executing GW FFT, cpt 1
+GW: Done slicing for cpt 2
+Executing GW FFT, cpt 2
+GW: Done slicing for cpt 3
+Executing GW FFT, cpt 3
+GW: Done slicing for cpt 4
+Executing GW FFT, cpt 4
+GW: Done slicing for cpt 5
+Executing GW FFT, cpt 5
+GW projection...
+Calculating total energy
+Unnormalised GW energy [density] claimed 3.6123793125
+GW FFT calculation took 6.129920
+Writing SLICE to /wrk/dcutting/silage/alph-0.11-vw-0.92-Nb-8-L-960-dx-1.0-seed-2//slice-005400.silo
+Slice coord x=0
+Max: 2.000002, Min: 1.999998, df: 0.000000
+Not doing histogram: bin width too small (overflow would occur)
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+Starting velocity power spectrum FFT calculation.
+broadcasting our results
+now to layout
+Vel FFT: Done slicing for cpt 0
+Vel FFT: Done slicing for cpt 1
+Vel FFT: Done slicing for cpt 2
+Velocity power spectrum FFT calculation took 3.049984
+Starting GW FFT calculation.
+broadcasting our results
+now to layout
+GW: Done slicing for cpt 0
+Executing GW FFT, cpt 0
+GW: Done slicing for cpt 1
+Executing GW FFT, cpt 1
+GW: Done slicing for cpt 2
+Executing GW FFT, cpt 2
+GW: Done slicing for cpt 3
+Executing GW FFT, cpt 3
+GW: Done slicing for cpt 4
+Executing GW FFT, cpt 4
+GW: Done slicing for cpt 5
+Executing GW FFT, cpt 5
+GW projection...
+Calculating total energy
+Unnormalised GW energy [density] claimed 3.7752714157
+GW FFT calculation took 6.140160
+Max: 2.000002, Min: 1.999998, df: 0.000000
+Not doing histogram: bin width too small (overflow would occur)
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+Starting velocity power spectrum FFT calculation.
+broadcasting our results
+now to layout
+Vel FFT: Done slicing for cpt 0
+Vel FFT: Done slicing for cpt 1
+Vel FFT: Done slicing for cpt 2
+Velocity power spectrum FFT calculation took 3.089920
+Starting GW FFT calculation.
+broadcasting our results
+now to layout
+GW: Done slicing for cpt 0
+Executing GW FFT, cpt 0
+GW: Done slicing for cpt 1
+Executing GW FFT, cpt 1
+GW: Done slicing for cpt 2
+Executing GW FFT, cpt 2
+GW: Done slicing for cpt 3
+Executing GW FFT, cpt 3
+GW: Done slicing for cpt 4
+Executing GW FFT, cpt 4
+GW: Done slicing for cpt 5
+Executing GW FFT, cpt 5
+GW projection...
+Calculating total energy
+Unnormalised GW energy [density] claimed 4.0698318481
+GW FFT calculation took 5.920000
+Writing SLICE to /wrk/dcutting/silage/alph-0.11-vw-0.92-Nb-8-L-960-dx-1.0-seed-2//slice-005600.silo
+Slice coord x=0
+Max: 2.000002, Min: 1.999998, df: 0.000000
+Not doing histogram: bin width too small (overflow would occur)
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+Starting velocity power spectrum FFT calculation.
+broadcasting our results
+now to layout
+Vel FFT: Done slicing for cpt 0
+Vel FFT: Done slicing for cpt 1
+Vel FFT: Done slicing for cpt 2
+Velocity power spectrum FFT calculation took 2.070016
+Starting GW FFT calculation.
+broadcasting our results
+now to layout
+GW: Done slicing for cpt 0
+Executing GW FFT, cpt 0
+GW: Done slicing for cpt 1
+Executing GW FFT, cpt 1
+GW: Done slicing for cpt 2
+Executing GW FFT, cpt 2
+GW: Done slicing for cpt 3
+Executing GW FFT, cpt 3
+GW: Done slicing for cpt 4
+Executing GW FFT, cpt 4
+GW: Done slicing for cpt 5
+Executing GW FFT, cpt 5
+GW projection...
+Calculating total energy
+Unnormalised GW energy [density] claimed 4.3821668625
+GW FFT calculation took 5.779968
+Max: 2.000002, Min: 1.999998, df: 0.000000
+Not doing histogram: bin width too small (overflow would occur)
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+Starting velocity power spectrum FFT calculation.
+broadcasting our results
+now to layout
+Vel FFT: Done slicing for cpt 0
+Vel FFT: Done slicing for cpt 1
+Vel FFT: Done slicing for cpt 2
+Velocity power spectrum FFT calculation took 2.119936
+Starting GW FFT calculation.
+broadcasting our results
+now to layout
+GW: Done slicing for cpt 0
+Executing GW FFT, cpt 0
+GW: Done slicing for cpt 1
+Executing GW FFT, cpt 1
+GW: Done slicing for cpt 2
+Executing GW FFT, cpt 2
+GW: Done slicing for cpt 3
+Executing GW FFT, cpt 3
+GW: Done slicing for cpt 4
+Executing GW FFT, cpt 4
+GW: Done slicing for cpt 5
+Executing GW FFT, cpt 5
+GW projection...
+Calculating total energy
+Unnormalised GW energy [density] claimed 4.6328344345
+GW FFT calculation took 6.200064
+Writing SLICE to /wrk/dcutting/silage/alph-0.11-vw-0.92-Nb-8-L-960-dx-1.0-seed-2//slice-005800.silo
+Slice coord x=0
+Max: 2.000002, Min: 1.999998, df: 0.000000
+Not doing histogram: bin width too small (overflow would occur)
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+Starting velocity power spectrum FFT calculation.
+broadcasting our results
+now to layout
+Vel FFT: Done slicing for cpt 0
+Vel FFT: Done slicing for cpt 1
+Vel FFT: Done slicing for cpt 2
+Velocity power spectrum FFT calculation took 2.230272
+Starting GW FFT calculation.
+broadcasting our results
+now to layout
+GW: Done slicing for cpt 0
+Executing GW FFT, cpt 0
+GW: Done slicing for cpt 1
+Executing GW FFT, cpt 1
+GW: Done slicing for cpt 2
+Executing GW FFT, cpt 2
+GW: Done slicing for cpt 3
+Executing GW FFT, cpt 3
+GW: Done slicing for cpt 4
+Executing GW FFT, cpt 4
+GW: Done slicing for cpt 5
+Executing GW FFT, cpt 5
+GW projection...
+Calculating total energy
+Unnormalised GW energy [density] claimed 4.7512726784
+GW FFT calculation took 6.170112
+Max: 2.000002, Min: 1.999998, df: 0.000000
+Not doing histogram: bin width too small (overflow would occur)
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+Starting velocity power spectrum FFT calculation.
+broadcasting our results
+now to layout
+Vel FFT: Done slicing for cpt 0
+Vel FFT: Done slicing for cpt 1
+Vel FFT: Done slicing for cpt 2
+Velocity power spectrum FFT calculation took 2.439680
+Starting GW FFT calculation.
+broadcasting our results
+now to layout
+GW: Done slicing for cpt 0
+Executing GW FFT, cpt 0
+GW: Done slicing for cpt 1
+Executing GW FFT, cpt 1
+GW: Done slicing for cpt 2
+Executing GW FFT, cpt 2
+GW: Done slicing for cpt 3
+Executing GW FFT, cpt 3
+GW: Done slicing for cpt 4
+Executing GW FFT, cpt 4
+GW: Done slicing for cpt 5
+Executing GW FFT, cpt 5
+GW projection...
+Calculating total energy
+Unnormalised GW energy [density] claimed 4.7343049049
+GW FFT calculation took 5.949952
+Writing SLICE to /wrk/dcutting/silage/alph-0.11-vw-0.92-Nb-8-L-960-dx-1.0-seed-2//slice-006000.silo
+Slice coord x=0
+Max: 2.000002, Min: 1.999998, df: 0.000000
+Not doing histogram: bin width too small (overflow would occur)
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+Starting velocity power spectrum FFT calculation.
+broadcasting our results
+now to layout
+Vel FFT: Done slicing for cpt 0
+Vel FFT: Done slicing for cpt 1
+Vel FFT: Done slicing for cpt 2
+Velocity power spectrum FFT calculation took 2.189824
+Starting GW FFT calculation.
+broadcasting our results
+now to layout
+GW: Done slicing for cpt 0
+Executing GW FFT, cpt 0
+GW: Done slicing for cpt 1
+Executing GW FFT, cpt 1
+GW: Done slicing for cpt 2
+Executing GW FFT, cpt 2
+GW: Done slicing for cpt 3
+Executing GW FFT, cpt 3
+GW: Done slicing for cpt 4
+Executing GW FFT, cpt 4
+GW: Done slicing for cpt 5
+Executing GW FFT, cpt 5
+GW projection...
+Calculating total energy
+Unnormalised GW energy [density] claimed 4.6033229828
+GW FFT calculation took 6.120448
+Max: 2.000002, Min: 1.999998, df: 0.000000
+Not doing histogram: bin width too small (overflow would occur)
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+Starting velocity power spectrum FFT calculation.
+broadcasting our results
+now to layout
+Vel FFT: Done slicing for cpt 0
+Vel FFT: Done slicing for cpt 1
+Vel FFT: Done slicing for cpt 2
+Velocity power spectrum FFT calculation took 2.690048
+Starting GW FFT calculation.
+broadcasting our results
+now to layout
+GW: Done slicing for cpt 0
+Executing GW FFT, cpt 0
+GW: Done slicing for cpt 1
+Executing GW FFT, cpt 1
+GW: Done slicing for cpt 2
+Executing GW FFT, cpt 2
+GW: Done slicing for cpt 3
+Executing GW FFT, cpt 3
+GW: Done slicing for cpt 4
+Executing GW FFT, cpt 4
+GW: Done slicing for cpt 5
+Executing GW FFT, cpt 5
+GW projection...
+Calculating total energy
+Unnormalised GW energy [density] claimed 4.4553127289
+GW FFT calculation took 6.109696
+Writing SLICE to /wrk/dcutting/silage/alph-0.11-vw-0.92-Nb-8-L-960-dx-1.0-seed-2//slice-006200.silo
+Slice coord x=0
+Max: 2.000002, Min: 1.999998, df: 0.000000
+Not doing histogram: bin width too small (overflow would occur)
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+Starting velocity power spectrum FFT calculation.
+broadcasting our results
+now to layout
+Vel FFT: Done slicing for cpt 0
+Vel FFT: Done slicing for cpt 1
+Vel FFT: Done slicing for cpt 2
+Velocity power spectrum FFT calculation took 2.099712
+Starting GW FFT calculation.
+broadcasting our results
+now to layout
+GW: Done slicing for cpt 0
+Executing GW FFT, cpt 0
+GW: Done slicing for cpt 1
+Executing GW FFT, cpt 1
+GW: Done slicing for cpt 2
+Executing GW FFT, cpt 2
+GW: Done slicing for cpt 3
+Executing GW FFT, cpt 3
+GW: Done slicing for cpt 4
+Executing GW FFT, cpt 4
+GW: Done slicing for cpt 5
+Executing GW FFT, cpt 5
+GW projection...
+Calculating total energy
+Unnormalised GW energy [density] claimed 4.4225330353
+GW FFT calculation took 5.830144
+Max: 2.000002, Min: 1.999998, df: 0.000000
+Not doing histogram: bin width too small (overflow would occur)
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+Starting velocity power spectrum FFT calculation.
+broadcasting our results
+now to layout
+Vel FFT: Done slicing for cpt 0
+Vel FFT: Done slicing for cpt 1
+Vel FFT: Done slicing for cpt 2
+Velocity power spectrum FFT calculation took 2.209792
+Starting GW FFT calculation.
+broadcasting our results
+now to layout
+GW: Done slicing for cpt 0
+Executing GW FFT, cpt 0
+GW: Done slicing for cpt 1
+Executing GW FFT, cpt 1
+GW: Done slicing for cpt 2
+Executing GW FFT, cpt 2
+GW: Done slicing for cpt 3
+Executing GW FFT, cpt 3
+GW: Done slicing for cpt 4
+Executing GW FFT, cpt 4
+GW: Done slicing for cpt 5
+Executing GW FFT, cpt 5
+GW projection...
+Calculating total energy
+Unnormalised GW energy [density] claimed 4.5051822662
+GW FFT calculation took 5.949952
+Writing SLICE to /wrk/dcutting/silage/alph-0.11-vw-0.92-Nb-8-L-960-dx-1.0-seed-2//slice-006400.silo
+Slice coord x=0
+Max: 2.000002, Min: 1.999998, df: 0.000000
+Not doing histogram: bin width too small (overflow would occur)
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+Starting velocity power spectrum FFT calculation.
+broadcasting our results
+now to layout
+Vel FFT: Done slicing for cpt 0
+Vel FFT: Done slicing for cpt 1
+Vel FFT: Done slicing for cpt 2
+Velocity power spectrum FFT calculation took 2.219520
+Starting GW FFT calculation.
+broadcasting our results
+now to layout
+GW: Done slicing for cpt 0
+Executing GW FFT, cpt 0
+GW: Done slicing for cpt 1
+Executing GW FFT, cpt 1
+GW: Done slicing for cpt 2
+Executing GW FFT, cpt 2
+GW: Done slicing for cpt 3
+Executing GW FFT, cpt 3
+GW: Done slicing for cpt 4
+Executing GW FFT, cpt 4
+GW: Done slicing for cpt 5
+Executing GW FFT, cpt 5
+GW projection...
+Calculating total energy
+Unnormalised GW energy [density] claimed 4.6191544533
+GW FFT calculation took 5.970432
+Max: 2.000002, Min: 1.999998, df: 0.000000
+Not doing histogram: bin width too small (overflow would occur)
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+Starting velocity power spectrum FFT calculation.
+broadcasting our results
+now to layout
+Vel FFT: Done slicing for cpt 0
+Vel FFT: Done slicing for cpt 1
+Vel FFT: Done slicing for cpt 2
+Velocity power spectrum FFT calculation took 2.129920
+Starting GW FFT calculation.
+broadcasting our results
+now to layout
+GW: Done slicing for cpt 0
+Executing GW FFT, cpt 0
+GW: Done slicing for cpt 1
+Executing GW FFT, cpt 1
+GW: Done slicing for cpt 2
+Executing GW FFT, cpt 2
+GW: Done slicing for cpt 3
+Executing GW FFT, cpt 3
+GW: Done slicing for cpt 4
+Executing GW FFT, cpt 4
+GW: Done slicing for cpt 5
+Executing GW FFT, cpt 5
+GW projection...
+Calculating total energy
+Unnormalised GW energy [density] claimed 4.7191133499
+GW FFT calculation took 6.049792
+Writing SLICE to /wrk/dcutting/silage/alph-0.11-vw-0.92-Nb-8-L-960-dx-1.0-seed-2//slice-006600.silo
+Slice coord x=0
+Max: 2.000002, Min: 1.999998, df: 0.000000
+Not doing histogram: bin width too small (overflow would occur)
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+Starting velocity power spectrum FFT calculation.
+broadcasting our results
+now to layout
+Vel FFT: Done slicing for cpt 0
+Vel FFT: Done slicing for cpt 1
+Vel FFT: Done slicing for cpt 2
+Velocity power spectrum FFT calculation took 2.189824
+Starting GW FFT calculation.
+broadcasting our results
+now to layout
+GW: Done slicing for cpt 0
+Executing GW FFT, cpt 0
+GW: Done slicing for cpt 1
+Executing GW FFT, cpt 1
+GW: Done slicing for cpt 2
+Executing GW FFT, cpt 2
+GW: Done slicing for cpt 3
+Executing GW FFT, cpt 3
+GW: Done slicing for cpt 4
+Executing GW FFT, cpt 4
+GW: Done slicing for cpt 5
+Executing GW FFT, cpt 5
+GW projection...
+Calculating total energy
+Unnormalised GW energy [density] claimed 4.8030571938
+GW FFT calculation took 6.070272
+Max: 2.000002, Min: 1.999998, df: 0.000000
+Not doing histogram: bin width too small (overflow would occur)
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+Starting velocity power spectrum FFT calculation.
+broadcasting our results
+now to layout
+Vel FFT: Done slicing for cpt 0
+Vel FFT: Done slicing for cpt 1
+Vel FFT: Done slicing for cpt 2
+Velocity power spectrum FFT calculation took 2.669568
+Starting GW FFT calculation.
+broadcasting our results
+now to layout
+GW: Done slicing for cpt 0
+Executing GW FFT, cpt 0
+GW: Done slicing for cpt 1
+Executing GW FFT, cpt 1
+GW: Done slicing for cpt 2
+Executing GW FFT, cpt 2
+GW: Done slicing for cpt 3
+Executing GW FFT, cpt 3
+GW: Done slicing for cpt 4
+Executing GW FFT, cpt 4
+GW: Done slicing for cpt 5
+Executing GW FFT, cpt 5
+GW projection...
+Calculating total energy
+Unnormalised GW energy [density] claimed 4.8902311325
+GW FFT calculation took 6.060032
+Writing SLICE to /wrk/dcutting/silage/alph-0.11-vw-0.92-Nb-8-L-960-dx-1.0-seed-2//slice-006800.silo
+Slice coord x=0
+Max: 2.000002, Min: 1.999998, df: 0.000000
+Not doing histogram: bin width too small (overflow would occur)
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+Starting velocity power spectrum FFT calculation.
+broadcasting our results
+now to layout
+Vel FFT: Done slicing for cpt 0
+Vel FFT: Done slicing for cpt 1
+Vel FFT: Done slicing for cpt 2
+Velocity power spectrum FFT calculation took 2.180096
+Starting GW FFT calculation.
+broadcasting our results
+now to layout
+GW: Done slicing for cpt 0
+Executing GW FFT, cpt 0
+GW: Done slicing for cpt 1
+Executing GW FFT, cpt 1
+GW: Done slicing for cpt 2
+Executing GW FFT, cpt 2
+GW: Done slicing for cpt 3
+Executing GW FFT, cpt 3
+GW: Done slicing for cpt 4
+Executing GW FFT, cpt 4
+GW: Done slicing for cpt 5
+Executing GW FFT, cpt 5
+GW projection...
+Calculating total energy
+Unnormalised GW energy [density] claimed 5.0072350502
+GW FFT calculation took 6.020096
+Max: 2.000002, Min: 1.999998, df: 0.000000
+Not doing histogram: bin width too small (overflow would occur)
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+Starting velocity power spectrum FFT calculation.
+broadcasting our results
+now to layout
+Vel FFT: Done slicing for cpt 0
+Vel FFT: Done slicing for cpt 1
+Vel FFT: Done slicing for cpt 2
+Velocity power spectrum FFT calculation took 2.759680
+Starting GW FFT calculation.
+broadcasting our results
+now to layout
+GW: Done slicing for cpt 0
+Executing GW FFT, cpt 0
+GW: Done slicing for cpt 1
+Executing GW FFT, cpt 1
+GW: Done slicing for cpt 2
+Executing GW FFT, cpt 2
+GW: Done slicing for cpt 3
+Executing GW FFT, cpt 3
+GW: Done slicing for cpt 4
+Executing GW FFT, cpt 4
+GW: Done slicing for cpt 5
+Executing GW FFT, cpt 5
+GW projection...
+Calculating total energy
+Unnormalised GW energy [density] claimed 5.2212486267
+GW FFT calculation took 6.020096
+Writing SLICE to /wrk/dcutting/silage/alph-0.11-vw-0.92-Nb-8-L-960-dx-1.0-seed-2//slice-007000.silo
+Slice coord x=0
+Max: 2.000002, Min: 1.999998, df: 0.000000
+Not doing histogram: bin width too small (overflow would occur)
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+Starting velocity power spectrum FFT calculation.
+broadcasting our results
+now to layout
+Vel FFT: Done slicing for cpt 0
+Vel FFT: Done slicing for cpt 1
+Vel FFT: Done slicing for cpt 2
+Velocity power spectrum FFT calculation took 2.109952
+Starting GW FFT calculation.
+broadcasting our results
+now to layout
+GW: Done slicing for cpt 0
+Executing GW FFT, cpt 0
+GW: Done slicing for cpt 1
+Executing GW FFT, cpt 1
+GW: Done slicing for cpt 2
+Executing GW FFT, cpt 2
+GW: Done slicing for cpt 3
+Executing GW FFT, cpt 3
+GW: Done slicing for cpt 4
+Executing GW FFT, cpt 4
+GW: Done slicing for cpt 5
+Executing GW FFT, cpt 5
+GW projection...
+Calculating total energy
+Unnormalised GW energy [density] claimed 5.5010471344
+GW FFT calculation took 5.859840
+Max: 2.000002, Min: 1.999998, df: 0.000000
+Not doing histogram: bin width too small (overflow would occur)
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+Starting velocity power spectrum FFT calculation.
+broadcasting our results
+now to layout
+Vel FFT: Done slicing for cpt 0
+Vel FFT: Done slicing for cpt 1
+Vel FFT: Done slicing for cpt 2
+Velocity power spectrum FFT calculation took 2.120192
+Starting GW FFT calculation.
+broadcasting our results
+now to layout
+GW: Done slicing for cpt 0
+Executing GW FFT, cpt 0
+GW: Done slicing for cpt 1
+Executing GW FFT, cpt 1
+GW: Done slicing for cpt 2
+Executing GW FFT, cpt 2
+GW: Done slicing for cpt 3
+Executing GW FFT, cpt 3
+GW: Done slicing for cpt 4
+Executing GW FFT, cpt 4
+GW: Done slicing for cpt 5
+Executing GW FFT, cpt 5
+GW projection...
+Calculating total energy
+Unnormalised GW energy [density] claimed 5.7425289154
+GW FFT calculation took 5.869568
+Writing SLICE to /wrk/dcutting/silage/alph-0.11-vw-0.92-Nb-8-L-960-dx-1.0-seed-2//slice-007200.silo
+Slice coord x=0
+Max: 2.000002, Min: 1.999998, df: 0.000000
+Not doing histogram: bin width too small (overflow would occur)
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+Starting velocity power spectrum FFT calculation.
+broadcasting our results
+now to layout
+Vel FFT: Done slicing for cpt 0
+Vel FFT: Done slicing for cpt 1
+Vel FFT: Done slicing for cpt 2
+Velocity power spectrum FFT calculation took 2.160128
+Starting GW FFT calculation.
+broadcasting our results
+now to layout
+GW: Done slicing for cpt 0
+Executing GW FFT, cpt 0
+GW: Done slicing for cpt 1
+Executing GW FFT, cpt 1
+GW: Done slicing for cpt 2
+Executing GW FFT, cpt 2
+GW: Done slicing for cpt 3
+Executing GW FFT, cpt 3
+GW: Done slicing for cpt 4
+Executing GW FFT, cpt 4
+GW: Done slicing for cpt 5
+Executing GW FFT, cpt 5
+GW projection...
+Calculating total energy
+Unnormalised GW energy [density] claimed 5.8808488846
+GW FFT calculation took 5.890048
+Max: 2.000002, Min: 1.999998, df: 0.000000
+Not doing histogram: bin width too small (overflow would occur)
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+Starting velocity power spectrum FFT calculation.
+broadcasting our results
+now to layout
+Vel FFT: Done slicing for cpt 0
+Vel FFT: Done slicing for cpt 1
+Vel FFT: Done slicing for cpt 2
+Velocity power spectrum FFT calculation took 2.080256
+Starting GW FFT calculation.
+broadcasting our results
+now to layout
+GW: Done slicing for cpt 0
+Executing GW FFT, cpt 0
+GW: Done slicing for cpt 1
+Executing GW FFT, cpt 1
+GW: Done slicing for cpt 2
+Executing GW FFT, cpt 2
+GW: Done slicing for cpt 3
+Executing GW FFT, cpt 3
+GW: Done slicing for cpt 4
+Executing GW FFT, cpt 4
+GW: Done slicing for cpt 5
+Executing GW FFT, cpt 5
+GW projection...
+Calculating total energy
+Unnormalised GW energy [density] claimed 5.8825206757
+GW FFT calculation took 6.019584
+Writing SLICE to /wrk/dcutting/silage/alph-0.11-vw-0.92-Nb-8-L-960-dx-1.0-seed-2//slice-007400.silo
+Slice coord x=0
+Max: 2.000002, Min: 1.999998, df: 0.000000
+Not doing histogram: bin width too small (overflow would occur)
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+Starting velocity power spectrum FFT calculation.
+broadcasting our results
+now to layout
+Vel FFT: Done slicing for cpt 0
+Vel FFT: Done slicing for cpt 1
+Vel FFT: Done slicing for cpt 2
+Velocity power spectrum FFT calculation took 2.220032
+Starting GW FFT calculation.
+broadcasting our results
+now to layout
+GW: Done slicing for cpt 0
+Executing GW FFT, cpt 0
+GW: Done slicing for cpt 1
+Executing GW FFT, cpt 1
+GW: Done slicing for cpt 2
+Executing GW FFT, cpt 2
+GW: Done slicing for cpt 3
+Executing GW FFT, cpt 3
+GW: Done slicing for cpt 4
+Executing GW FFT, cpt 4
+GW: Done slicing for cpt 5
+Executing GW FFT, cpt 5
+GW projection...
+Calculating total energy
+Unnormalised GW energy [density] claimed 5.8298316002
+GW FFT calculation took 6.210048
+Max: 2.000002, Min: 1.999998, df: 0.000000
+Not doing histogram: bin width too small (overflow would occur)
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+Starting velocity power spectrum FFT calculation.
+broadcasting our results
+now to layout
+Vel FFT: Done slicing for cpt 0
+Vel FFT: Done slicing for cpt 1
+Vel FFT: Done slicing for cpt 2
+Velocity power spectrum FFT calculation took 3.600384
+Starting GW FFT calculation.
+broadcasting our results
+now to layout
+GW: Done slicing for cpt 0
+Executing GW FFT, cpt 0
+GW: Done slicing for cpt 1
+Executing GW FFT, cpt 1
+GW: Done slicing for cpt 2
+Executing GW FFT, cpt 2
+GW: Done slicing for cpt 3
+Executing GW FFT, cpt 3
+GW: Done slicing for cpt 4
+Executing GW FFT, cpt 4
+GW: Done slicing for cpt 5
+Executing GW FFT, cpt 5
+GW projection...
+Calculating total energy
+Unnormalised GW energy [density] claimed 5.7995753288
+GW FFT calculation took 6.489600
+Writing SLICE to /wrk/dcutting/silage/alph-0.11-vw-0.92-Nb-8-L-960-dx-1.0-seed-2//slice-007600.silo
+Slice coord x=0
+Max: 2.000002, Min: 1.999998, df: 0.000000
+Not doing histogram: bin width too small (overflow would occur)
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+Starting velocity power spectrum FFT calculation.
+broadcasting our results
+now to layout
+Vel FFT: Done slicing for cpt 0
+Vel FFT: Done slicing for cpt 1
+Vel FFT: Done slicing for cpt 2
+Velocity power spectrum FFT calculation took 3.219968
+Starting GW FFT calculation.
+broadcasting our results
+now to layout
+GW: Done slicing for cpt 0
+Executing GW FFT, cpt 0
+GW: Done slicing for cpt 1
+Executing GW FFT, cpt 1
+GW: Done slicing for cpt 2
+Executing GW FFT, cpt 2
+GW: Done slicing for cpt 3
+Executing GW FFT, cpt 3
+GW: Done slicing for cpt 4
+Executing GW FFT, cpt 4
+GW: Done slicing for cpt 5
+Executing GW FFT, cpt 5
+GW projection...
+Calculating total energy
+Unnormalised GW energy [density] claimed 5.7867903709
+GW FFT calculation took 6.580224
+Max: 2.000002, Min: 1.999998, df: 0.000000
+Not doing histogram: bin width too small (overflow would occur)
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+Starting velocity power spectrum FFT calculation.
+broadcasting our results
+now to layout
+Vel FFT: Done slicing for cpt 0
+Vel FFT: Done slicing for cpt 1
+Vel FFT: Done slicing for cpt 2
+Velocity power spectrum FFT calculation took 2.270208
+Starting GW FFT calculation.
+broadcasting our results
+now to layout
+GW: Done slicing for cpt 0
+Executing GW FFT, cpt 0
+GW: Done slicing for cpt 1
+Executing GW FFT, cpt 1
+GW: Done slicing for cpt 2
+Executing GW FFT, cpt 2
+GW: Done slicing for cpt 3
+Executing GW FFT, cpt 3
+GW: Done slicing for cpt 4
+Executing GW FFT, cpt 4
+GW: Done slicing for cpt 5
+Executing GW FFT, cpt 5
+GW projection...
+Calculating total energy
+Unnormalised GW energy [density] claimed 5.7523469925
+GW FFT calculation took 5.890048
+Writing SLICE to /wrk/dcutting/silage/alph-0.11-vw-0.92-Nb-8-L-960-dx-1.0-seed-2//slice-007800.silo
+Slice coord x=0
+Max: 2.000002, Min: 1.999998, df: 0.000000
+Not doing histogram: bin width too small (overflow would occur)
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+Starting velocity power spectrum FFT calculation.
+broadcasting our results
+now to layout
+Vel FFT: Done slicing for cpt 0
+Vel FFT: Done slicing for cpt 1
+Vel FFT: Done slicing for cpt 2
+Velocity power spectrum FFT calculation took 2.279936
+Starting GW FFT calculation.
+broadcasting our results
+now to layout
+GW: Done slicing for cpt 0
+Executing GW FFT, cpt 0
+GW: Done slicing for cpt 1
+Executing GW FFT, cpt 1
+GW: Done slicing for cpt 2
+Executing GW FFT, cpt 2
+GW: Done slicing for cpt 3
+Executing GW FFT, cpt 3
+GW: Done slicing for cpt 4
+Executing GW FFT, cpt 4
+GW: Done slicing for cpt 5
+Executing GW FFT, cpt 5
+GW projection...
+Calculating total energy
+Unnormalised GW energy [density] claimed 5.7772936821
+GW FFT calculation took 6.080000
+Max: 2.000002, Min: 1.999998, df: 0.000000
+Not doing histogram: bin width too small (overflow would occur)
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+Starting velocity power spectrum FFT calculation.
+broadcasting our results
+now to layout
+Vel FFT: Done slicing for cpt 0
+Vel FFT: Done slicing for cpt 1
+Vel FFT: Done slicing for cpt 2
+Velocity power spectrum FFT calculation took 2.629632
+Starting GW FFT calculation.
+broadcasting our results
+now to layout
+GW: Done slicing for cpt 0
+Executing GW FFT, cpt 0
+GW: Done slicing for cpt 1
+Executing GW FFT, cpt 1
+GW: Done slicing for cpt 2
+Executing GW FFT, cpt 2
+GW: Done slicing for cpt 3
+Executing GW FFT, cpt 3
+GW: Done slicing for cpt 4
+Executing GW FFT, cpt 4
+GW: Done slicing for cpt 5
+Executing GW FFT, cpt 5
+GW projection...
+Calculating total energy
+Unnormalised GW energy [density] claimed 5.9551792145
+GW FFT calculation took 6.800384
+Writing SLICE to /wrk/dcutting/silage/alph-0.11-vw-0.92-Nb-8-L-960-dx-1.0-seed-2//slice-008000.silo
+Slice coord x=0
+Max: 2.000002, Min: 1.999998, df: 0.000000
+Not doing histogram: bin width too small (overflow would occur)
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+Starting velocity power spectrum FFT calculation.
+broadcasting our results
+now to layout
+Vel FFT: Done slicing for cpt 0
+Vel FFT: Done slicing for cpt 1
+Vel FFT: Done slicing for cpt 2
+Velocity power spectrum FFT calculation took 2.910208
+Starting GW FFT calculation.
+broadcasting our results
+now to layout
+GW: Done slicing for cpt 0
+Executing GW FFT, cpt 0
+GW: Done slicing for cpt 1
+Executing GW FFT, cpt 1
+GW: Done slicing for cpt 2
+Executing GW FFT, cpt 2
+GW: Done slicing for cpt 3
+Executing GW FFT, cpt 3
+GW: Done slicing for cpt 4
+Executing GW FFT, cpt 4
+GW: Done slicing for cpt 5
+Executing GW FFT, cpt 5
+GW projection...
+Calculating total energy
+Unnormalised GW energy [density] claimed 6.2008671761
+GW FFT calculation took 6.510080
+Max: 2.000002, Min: 1.999998, df: 0.000000
+Not doing histogram: bin width too small (overflow would occur)
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+Starting velocity power spectrum FFT calculation.
+broadcasting our results
+now to layout
+Vel FFT: Done slicing for cpt 0
+Vel FFT: Done slicing for cpt 1
+Vel FFT: Done slicing for cpt 2
+Velocity power spectrum FFT calculation took 3.089920
+Starting GW FFT calculation.
+broadcasting our results
+now to layout
+GW: Done slicing for cpt 0
+Executing GW FFT, cpt 0
+GW: Done slicing for cpt 1
+Executing GW FFT, cpt 1
+GW: Done slicing for cpt 2
+Executing GW FFT, cpt 2
+GW: Done slicing for cpt 3
+Executing GW FFT, cpt 3
+GW: Done slicing for cpt 4
+Executing GW FFT, cpt 4
+GW: Done slicing for cpt 5
+Executing GW FFT, cpt 5
+GW projection...
+Calculating total energy
+Unnormalised GW energy [density] claimed 6.3525767326
+GW FFT calculation took 6.450176
+Writing SLICE to /wrk/dcutting/silage/alph-0.11-vw-0.92-Nb-8-L-960-dx-1.0-seed-2//slice-008200.silo
+Slice coord x=0
+Max: 2.000002, Min: 1.999998, df: 0.000000
+Not doing histogram: bin width too small (overflow would occur)
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+Starting velocity power spectrum FFT calculation.
+broadcasting our results
+now to layout
+Vel FFT: Done slicing for cpt 0
+Vel FFT: Done slicing for cpt 1
+Vel FFT: Done slicing for cpt 2
+Velocity power spectrum FFT calculation took 2.480128
+Starting GW FFT calculation.
+broadcasting our results
+now to layout
+GW: Done slicing for cpt 0
+Executing GW FFT, cpt 0
+GW: Done slicing for cpt 1
+Executing GW FFT, cpt 1
+GW: Done slicing for cpt 2
+Executing GW FFT, cpt 2
+GW: Done slicing for cpt 3
+Executing GW FFT, cpt 3
+GW: Done slicing for cpt 4
+Executing GW FFT, cpt 4
+GW: Done slicing for cpt 5
+Executing GW FFT, cpt 5
+GW projection...
+Calculating total energy
+Unnormalised GW energy [density] claimed 6.3210754395
+GW FFT calculation took 6.040064
+Max: 2.000002, Min: 1.999998, df: 0.000000
+Not doing histogram: bin width too small (overflow would occur)
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+Starting velocity power spectrum FFT calculation.
+broadcasting our results
+now to layout
+Vel FFT: Done slicing for cpt 0
+Vel FFT: Done slicing for cpt 1
+Vel FFT: Done slicing for cpt 2
+Velocity power spectrum FFT calculation took 2.249728
+Starting GW FFT calculation.
+broadcasting our results
+now to layout
+GW: Done slicing for cpt 0
+Executing GW FFT, cpt 0
+GW: Done slicing for cpt 1
+Executing GW FFT, cpt 1
+GW: Done slicing for cpt 2
+Executing GW FFT, cpt 2
+GW: Done slicing for cpt 3
+Executing GW FFT, cpt 3
+GW: Done slicing for cpt 4
+Executing GW FFT, cpt 4
+GW: Done slicing for cpt 5
+Executing GW FFT, cpt 5
+GW projection...
+Calculating total energy
+Unnormalised GW energy [density] claimed 6.1910853386
+GW FFT calculation took 5.929984
+Writing SLICE to /wrk/dcutting/silage/alph-0.11-vw-0.92-Nb-8-L-960-dx-1.0-seed-2//slice-008400.silo
+Slice coord x=0
+Max: 2.000002, Min: 1.999998, df: 0.000000
+Not doing histogram: bin width too small (overflow would occur)
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+Starting velocity power spectrum FFT calculation.
+broadcasting our results
+now to layout
+Vel FFT: Done slicing for cpt 0
+Vel FFT: Done slicing for cpt 1
+Vel FFT: Done slicing for cpt 2
+Velocity power spectrum FFT calculation took 2.319872
+Starting GW FFT calculation.
+broadcasting our results
+now to layout
+GW: Done slicing for cpt 0
+Executing GW FFT, cpt 0
+GW: Done slicing for cpt 1
+Executing GW FFT, cpt 1
+GW: Done slicing for cpt 2
+Executing GW FFT, cpt 2
+GW: Done slicing for cpt 3
+Executing GW FFT, cpt 3
+GW: Done slicing for cpt 4
+Executing GW FFT, cpt 4
+GW: Done slicing for cpt 5
+Executing GW FFT, cpt 5
+GW projection...
+Calculating total energy
+Unnormalised GW energy [density] claimed 6.0900850296
+GW FFT calculation took 6.289920
+Max: 2.000002, Min: 1.999998, df: 0.000000
+Not doing histogram: bin width too small (overflow would occur)
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+Starting velocity power spectrum FFT calculation.
+broadcasting our results
+now to layout
+Vel FFT: Done slicing for cpt 0
+Vel FFT: Done slicing for cpt 1
+Vel FFT: Done slicing for cpt 2
+Velocity power spectrum FFT calculation took 2.860032
+Starting GW FFT calculation.
+broadcasting our results
+now to layout
+GW: Done slicing for cpt 0
+Executing GW FFT, cpt 0
+GW: Done slicing for cpt 1
+Executing GW FFT, cpt 1
+GW: Done slicing for cpt 2
+Executing GW FFT, cpt 2
+GW: Done slicing for cpt 3
+Executing GW FFT, cpt 3
+GW: Done slicing for cpt 4
+Executing GW FFT, cpt 4
+GW: Done slicing for cpt 5
+Executing GW FFT, cpt 5
+GW projection...
+Calculating total energy
+Unnormalised GW energy [density] claimed 6.1218395233
+GW FFT calculation took 6.329856
+Writing SLICE to /wrk/dcutting/silage/alph-0.11-vw-0.92-Nb-8-L-960-dx-1.0-seed-2//slice-008600.silo
+Slice coord x=0
+Max: 2.000002, Min: 1.999998, df: 0.000000
+Not doing histogram: bin width too small (overflow would occur)
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+Starting velocity power spectrum FFT calculation.
+broadcasting our results
+now to layout
+Vel FFT: Done slicing for cpt 0
+Vel FFT: Done slicing for cpt 1
+Vel FFT: Done slicing for cpt 2
+Velocity power spectrum FFT calculation took 3.180032
+Starting GW FFT calculation.
+broadcasting our results
+now to layout
+GW: Done slicing for cpt 0
+Executing GW FFT, cpt 0
+GW: Done slicing for cpt 1
+Executing GW FFT, cpt 1
+GW: Done slicing for cpt 2
+Executing GW FFT, cpt 2
+GW: Done slicing for cpt 3
+Executing GW FFT, cpt 3
+GW: Done slicing for cpt 4
+Executing GW FFT, cpt 4
+GW: Done slicing for cpt 5
+Executing GW FFT, cpt 5
+GW projection...
+Calculating total energy
+Unnormalised GW energy [density] claimed 6.3367943764
+GW FFT calculation took 6.640128
+Max: 2.000002, Min: 1.999998, df: 0.000000
+Not doing histogram: bin width too small (overflow would occur)
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+Starting velocity power spectrum FFT calculation.
+broadcasting our results
+now to layout
+Vel FFT: Done slicing for cpt 0
+Vel FFT: Done slicing for cpt 1
+Vel FFT: Done slicing for cpt 2
+Velocity power spectrum FFT calculation took 2.249728
+Starting GW FFT calculation.
+broadcasting our results
+now to layout
+GW: Done slicing for cpt 0
+Executing GW FFT, cpt 0
+GW: Done slicing for cpt 1
+Executing GW FFT, cpt 1
+GW: Done slicing for cpt 2
+Executing GW FFT, cpt 2
+GW: Done slicing for cpt 3
+Executing GW FFT, cpt 3
+GW: Done slicing for cpt 4
+Executing GW FFT, cpt 4
+GW: Done slicing for cpt 5
+Executing GW FFT, cpt 5
+GW projection...
+Calculating total energy
+Unnormalised GW energy [density] claimed 6.6788735390
+GW FFT calculation took 6.190080
+Writing SLICE to /wrk/dcutting/silage/alph-0.11-vw-0.92-Nb-8-L-960-dx-1.0-seed-2//slice-008800.silo
+Slice coord x=0
+Max: 2.000002, Min: 1.999998, df: 0.000000
+Not doing histogram: bin width too small (overflow would occur)
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+Starting velocity power spectrum FFT calculation.
+broadcasting our results
+now to layout
+Vel FFT: Done slicing for cpt 0
+Vel FFT: Done slicing for cpt 1
+Vel FFT: Done slicing for cpt 2
+Velocity power spectrum FFT calculation took 2.469888
+Starting GW FFT calculation.
+broadcasting our results
+now to layout
+GW: Done slicing for cpt 0
+Executing GW FFT, cpt 0
+GW: Done slicing for cpt 1
+Executing GW FFT, cpt 1
+GW: Done slicing for cpt 2
+Executing GW FFT, cpt 2
+GW: Done slicing for cpt 3
+Executing GW FFT, cpt 3
+GW: Done slicing for cpt 4
+Executing GW FFT, cpt 4
+GW: Done slicing for cpt 5
+Executing GW FFT, cpt 5
+GW projection...
+Calculating total energy
+Unnormalised GW energy [density] claimed 6.9907054901
+GW FFT calculation took 6.219776
+Max: 2.000002, Min: 1.999998, df: 0.000000
+Not doing histogram: bin width too small (overflow would occur)
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+Starting velocity power spectrum FFT calculation.
+broadcasting our results
+now to layout
+Vel FFT: Done slicing for cpt 0
+Vel FFT: Done slicing for cpt 1
+Vel FFT: Done slicing for cpt 2
+Velocity power spectrum FFT calculation took 2.359808
+Starting GW FFT calculation.
+broadcasting our results
+now to layout
+GW: Done slicing for cpt 0
+Executing GW FFT, cpt 0
+GW: Done slicing for cpt 1
+Executing GW FFT, cpt 1
+GW: Done slicing for cpt 2
+Executing GW FFT, cpt 2
+GW: Done slicing for cpt 3
+Executing GW FFT, cpt 3
+GW: Done slicing for cpt 4
+Executing GW FFT, cpt 4
+GW: Done slicing for cpt 5
+Executing GW FFT, cpt 5
+GW projection...
+Calculating total energy
+Unnormalised GW energy [density] claimed 7.1382398605
+GW FFT calculation took 6.629888
+Writing SLICE to /wrk/dcutting/silage/alph-0.11-vw-0.92-Nb-8-L-960-dx-1.0-seed-2//slice-009000.silo
+Slice coord x=0
+Max: 2.000002, Min: 1.999998, df: 0.000000
+Not doing histogram: bin width too small (overflow would occur)
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+Starting velocity power spectrum FFT calculation.
+broadcasting our results
+now to layout
+Vel FFT: Done slicing for cpt 0
+Vel FFT: Done slicing for cpt 1
+Vel FFT: Done slicing for cpt 2
+Velocity power spectrum FFT calculation took 2.220032
+Starting GW FFT calculation.
+broadcasting our results
+now to layout
+GW: Done slicing for cpt 0
+Executing GW FFT, cpt 0
+GW: Done slicing for cpt 1
+Executing GW FFT, cpt 1
+GW: Done slicing for cpt 2
+Executing GW FFT, cpt 2
+GW: Done slicing for cpt 3
+Executing GW FFT, cpt 3
+GW: Done slicing for cpt 4
+Executing GW FFT, cpt 4
+GW: Done slicing for cpt 5
+Executing GW FFT, cpt 5
+GW projection...
+Calculating total energy
+Unnormalised GW energy [density] claimed 7.1501617432
+GW FFT calculation took 6.349824
+Max: 2.000002, Min: 1.999998, df: 0.000000
+Not doing histogram: bin width too small (overflow would occur)
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+Starting velocity power spectrum FFT calculation.
+broadcasting our results
+now to layout
+Vel FFT: Done slicing for cpt 0
+Vel FFT: Done slicing for cpt 1
+Vel FFT: Done slicing for cpt 2
+Velocity power spectrum FFT calculation took 2.880000
+Starting GW FFT calculation.
+broadcasting our results
+now to layout
+GW: Done slicing for cpt 0
+Executing GW FFT, cpt 0
+GW: Done slicing for cpt 1
+Executing GW FFT, cpt 1
+GW: Done slicing for cpt 2
+Executing GW FFT, cpt 2
+GW: Done slicing for cpt 3
+Executing GW FFT, cpt 3
+GW: Done slicing for cpt 4
+Executing GW FFT, cpt 4
+GW: Done slicing for cpt 5
+Executing GW FFT, cpt 5
+GW projection...
+Calculating total energy
+Unnormalised GW energy [density] claimed 7.1520099640
+GW FFT calculation took 5.840384
+Writing SLICE to /wrk/dcutting/silage/alph-0.11-vw-0.92-Nb-8-L-960-dx-1.0-seed-2//slice-009200.silo
+Slice coord x=0
+Max: 2.000002, Min: 1.999998, df: 0.000000
+Not doing histogram: bin width too small (overflow would occur)
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+Starting velocity power spectrum FFT calculation.
+broadcasting our results
+now to layout
+Vel FFT: Done slicing for cpt 0
+Vel FFT: Done slicing for cpt 1
+Vel FFT: Done slicing for cpt 2
+Velocity power spectrum FFT calculation took 2.500096
+Starting GW FFT calculation.
+broadcasting our results
+now to layout
+GW: Done slicing for cpt 0
+Executing GW FFT, cpt 0
+GW: Done slicing for cpt 1
+Executing GW FFT, cpt 1
+GW: Done slicing for cpt 2
+Executing GW FFT, cpt 2
+GW: Done slicing for cpt 3
+Executing GW FFT, cpt 3
+GW: Done slicing for cpt 4
+Executing GW FFT, cpt 4
+GW: Done slicing for cpt 5
+Executing GW FFT, cpt 5
+GW projection...
+Calculating total energy
+Unnormalised GW energy [density] claimed 7.2243328094
+GW FFT calculation took 6.329856
+Max: 2.000002, Min: 1.999998, df: 0.000000
+Not doing histogram: bin width too small (overflow would occur)
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+Starting velocity power spectrum FFT calculation.
+broadcasting our results
+now to layout
+Vel FFT: Done slicing for cpt 0
+Vel FFT: Done slicing for cpt 1
+Vel FFT: Done slicing for cpt 2
+Velocity power spectrum FFT calculation took 2.489856
+Starting GW FFT calculation.
+broadcasting our results
+now to layout
+GW: Done slicing for cpt 0
+Executing GW FFT, cpt 0
+GW: Done slicing for cpt 1
+Executing GW FFT, cpt 1
+GW: Done slicing for cpt 2
+Executing GW FFT, cpt 2
+GW: Done slicing for cpt 3
+Executing GW FFT, cpt 3
+GW: Done slicing for cpt 4
+Executing GW FFT, cpt 4
+GW: Done slicing for cpt 5
+Executing GW FFT, cpt 5
+GW projection...
+Calculating total energy
+Unnormalised GW energy [density] claimed 7.3956823349
+GW FFT calculation took 6.210048
+Writing SLICE to /wrk/dcutting/silage/alph-0.11-vw-0.92-Nb-8-L-960-dx-1.0-seed-2//slice-009400.silo
+Slice coord x=0
+Max: 2.000002, Min: 1.999998, df: 0.000000
+Not doing histogram: bin width too small (overflow would occur)
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+Starting velocity power spectrum FFT calculation.
+broadcasting our results
+now to layout
+Vel FFT: Done slicing for cpt 0
+Vel FFT: Done slicing for cpt 1
+Vel FFT: Done slicing for cpt 2
+Velocity power spectrum FFT calculation took 2.370048
+Starting GW FFT calculation.
+broadcasting our results
+now to layout
+GW: Done slicing for cpt 0
+Executing GW FFT, cpt 0
+GW: Done slicing for cpt 1
+Executing GW FFT, cpt 1
+GW: Done slicing for cpt 2
+Executing GW FFT, cpt 2
+GW: Done slicing for cpt 3
+Executing GW FFT, cpt 3
+GW: Done slicing for cpt 4
+Executing GW FFT, cpt 4
+GW: Done slicing for cpt 5
+Executing GW FFT, cpt 5
+GW projection...
+Calculating total energy
+Unnormalised GW energy [density] claimed 7.5901079178
+GW FFT calculation took 6.629888
+Max: 2.000002, Min: 1.999998, df: 0.000000
+Not doing histogram: bin width too small (overflow would occur)
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+Starting velocity power spectrum FFT calculation.
+broadcasting our results
+now to layout
+Vel FFT: Done slicing for cpt 0
+Vel FFT: Done slicing for cpt 1
+Vel FFT: Done slicing for cpt 2
+Velocity power spectrum FFT calculation took 3.160064
+Starting GW FFT calculation.
+broadcasting our results
+now to layout
+GW: Done slicing for cpt 0
+Executing GW FFT, cpt 0
+GW: Done slicing for cpt 1
+Executing GW FFT, cpt 1
+GW: Done slicing for cpt 2
+Executing GW FFT, cpt 2
+GW: Done slicing for cpt 3
+Executing GW FFT, cpt 3
+GW: Done slicing for cpt 4
+Executing GW FFT, cpt 4
+GW: Done slicing for cpt 5
+Executing GW FFT, cpt 5
+GW projection...
+Calculating total energy
+Unnormalised GW energy [density] claimed 7.6598634720
+GW FFT calculation took 6.479872
+Writing SLICE to /wrk/dcutting/silage/alph-0.11-vw-0.92-Nb-8-L-960-dx-1.0-seed-2//slice-009600.silo
+Slice coord x=0
+Max: 2.000002, Min: 1.999998, df: 0.000000
+Not doing histogram: bin width too small (overflow would occur)
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+Starting velocity power spectrum FFT calculation.
+broadcasting our results
+now to layout
+Vel FFT: Done slicing for cpt 0
+Vel FFT: Done slicing for cpt 1
+Vel FFT: Done slicing for cpt 2
+Velocity power spectrum FFT calculation took 2.420224
+Starting GW FFT calculation.
+broadcasting our results
+now to layout
+GW: Done slicing for cpt 0
+Executing GW FFT, cpt 0
+GW: Done slicing for cpt 1
+Executing GW FFT, cpt 1
+GW: Done slicing for cpt 2
+Executing GW FFT, cpt 2
+GW: Done slicing for cpt 3
+Executing GW FFT, cpt 3
+GW: Done slicing for cpt 4
+Executing GW FFT, cpt 4
+GW: Done slicing for cpt 5
+Executing GW FFT, cpt 5
+GW projection...
+Calculating total energy
+Unnormalised GW energy [density] claimed 7.5109391212
+GW FFT calculation took 6.629888
+Max: 2.000002, Min: 1.999998, df: 0.000000
+Not doing histogram: bin width too small (overflow would occur)
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+Starting velocity power spectrum FFT calculation.
+broadcasting our results
+now to layout
+Vel FFT: Done slicing for cpt 0
+Vel FFT: Done slicing for cpt 1
+Vel FFT: Done slicing for cpt 2
+Velocity power spectrum FFT calculation took 2.109952
+Starting GW FFT calculation.
+broadcasting our results
+now to layout
+GW: Done slicing for cpt 0
+Executing GW FFT, cpt 0
+GW: Done slicing for cpt 1
+Executing GW FFT, cpt 1
+GW: Done slicing for cpt 2
+Executing GW FFT, cpt 2
+GW: Done slicing for cpt 3
+Executing GW FFT, cpt 3
+GW: Done slicing for cpt 4
+Executing GW FFT, cpt 4
+GW: Done slicing for cpt 5
+Executing GW FFT, cpt 5
+GW projection...
+Calculating total energy
+Unnormalised GW energy [density] claimed 7.1908140182
+GW FFT calculation took 5.750272
+Writing SLICE to /wrk/dcutting/silage/alph-0.11-vw-0.92-Nb-8-L-960-dx-1.0-seed-2//slice-009800.silo
+Slice coord x=0
+Max: 2.000002, Min: 1.999998, df: 0.000000
+Not doing histogram: bin width too small (overflow would occur)
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+Starting velocity power spectrum FFT calculation.
+broadcasting our results
+now to layout
+Vel FFT: Done slicing for cpt 0
+Vel FFT: Done slicing for cpt 1
+Vel FFT: Done slicing for cpt 2
+Velocity power spectrum FFT calculation took 2.129920
+Starting GW FFT calculation.
+broadcasting our results
+now to layout
+GW: Done slicing for cpt 0
+Executing GW FFT, cpt 0
+GW: Done slicing for cpt 1
+Executing GW FFT, cpt 1
+GW: Done slicing for cpt 2
+Executing GW FFT, cpt 2
+GW: Done slicing for cpt 3
+Executing GW FFT, cpt 3
+GW: Done slicing for cpt 4
+Executing GW FFT, cpt 4
+GW: Done slicing for cpt 5
+Executing GW FFT, cpt 5
+GW projection...
+Calculating total energy
+Unnormalised GW energy [density] claimed 6.8931818008
+GW FFT calculation took 6.350336
+Max: 2.000002, Min: 1.999998, df: 0.000000
+Not doing histogram: bin width too small (overflow would occur)
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+Starting velocity power spectrum FFT calculation.
+broadcasting our results
+now to layout
+Vel FFT: Done slicing for cpt 0
+Vel FFT: Done slicing for cpt 1
+Vel FFT: Done slicing for cpt 2
+Velocity power spectrum FFT calculation took 3.520000
+Starting GW FFT calculation.
+broadcasting our results
+now to layout
+GW: Done slicing for cpt 0
+Executing GW FFT, cpt 0
+GW: Done slicing for cpt 1
+Executing GW FFT, cpt 1
+GW: Done slicing for cpt 2
+Executing GW FFT, cpt 2
+GW: Done slicing for cpt 3
+Executing GW FFT, cpt 3
+GW: Done slicing for cpt 4
+Executing GW FFT, cpt 4
+GW: Done slicing for cpt 5
+Executing GW FFT, cpt 5
+GW projection...
+Calculating total energy
+Unnormalised GW energy [density] claimed 6.8074812889
+GW FFT calculation took 6.210048
+Writing SLICE to /wrk/dcutting/silage/alph-0.11-vw-0.92-Nb-8-L-960-dx-1.0-seed-2//slice-010000.silo
+Slice coord x=0
+Max: 2.000002, Min: 1.999998, df: 0.000000
+Not doing histogram: bin width too small (overflow would occur)
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+Starting velocity power spectrum FFT calculation.
+broadcasting our results
+now to layout
+Vel FFT: Done slicing for cpt 0
+Vel FFT: Done slicing for cpt 1
+Vel FFT: Done slicing for cpt 2
+Velocity power spectrum FFT calculation took 2.079744
+Starting GW FFT calculation.
+broadcasting our results
+now to layout
+GW: Done slicing for cpt 0
+Executing GW FFT, cpt 0
+GW: Done slicing for cpt 1
+Executing GW FFT, cpt 1
+GW: Done slicing for cpt 2
+Executing GW FFT, cpt 2
+GW: Done slicing for cpt 3
+Executing GW FFT, cpt 3
+GW: Done slicing for cpt 4
+Executing GW FFT, cpt 4
+GW: Done slicing for cpt 5
+Executing GW FFT, cpt 5
+GW projection...
+Calculating total energy
+Unnormalised GW energy [density] claimed 6.9903707504
+GW FFT calculation took 5.920256
+Max: 2.000002, Min: 1.999998, df: 0.000000
+Not doing histogram: bin width too small (overflow would occur)
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+Starting velocity power spectrum FFT calculation.
+broadcasting our results
+now to layout
+Vel FFT: Done slicing for cpt 0
+Vel FFT: Done slicing for cpt 1
+Vel FFT: Done slicing for cpt 2
+Velocity power spectrum FFT calculation took 2.680320
+Starting GW FFT calculation.
+broadcasting our results
+now to layout
+GW: Done slicing for cpt 0
+Executing GW FFT, cpt 0
+GW: Done slicing for cpt 1
+Executing GW FFT, cpt 1
+GW: Done slicing for cpt 2
+Executing GW FFT, cpt 2
+GW: Done slicing for cpt 3
+Executing GW FFT, cpt 3
+GW: Done slicing for cpt 4
+Executing GW FFT, cpt 4
+GW: Done slicing for cpt 5
+Executing GW FFT, cpt 5
+GW projection...
+Calculating total energy
+Unnormalised GW energy [density] claimed 7.4136466980
+GW FFT calculation took 6.149632
+Writing SLICE to /wrk/dcutting/silage/alph-0.11-vw-0.92-Nb-8-L-960-dx-1.0-seed-2//slice-010200.silo
+Slice coord x=0
+Max: 2.000002, Min: 1.999998, df: 0.000000
+Not doing histogram: bin width too small (overflow would occur)
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+Starting velocity power spectrum FFT calculation.
+broadcasting our results
+now to layout
+Vel FFT: Done slicing for cpt 0
+Vel FFT: Done slicing for cpt 1
+Vel FFT: Done slicing for cpt 2
+Velocity power spectrum FFT calculation took 2.240000
+Starting GW FFT calculation.
+broadcasting our results
+now to layout
+GW: Done slicing for cpt 0
+Executing GW FFT, cpt 0
+GW: Done slicing for cpt 1
+Executing GW FFT, cpt 1
+GW: Done slicing for cpt 2
+Executing GW FFT, cpt 2
+GW: Done slicing for cpt 3
+Executing GW FFT, cpt 3
+GW: Done slicing for cpt 4
+Executing GW FFT, cpt 4
+GW: Done slicing for cpt 5
+Executing GW FFT, cpt 5
+GW projection...
+Calculating total energy
+Unnormalised GW energy [density] claimed 7.8743000031
+GW FFT calculation took 5.870080
+Max: 2.000002, Min: 1.999998, df: 0.000000
+Not doing histogram: bin width too small (overflow would occur)
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+Starting velocity power spectrum FFT calculation.
+broadcasting our results
+now to layout
+Vel FFT: Done slicing for cpt 0
+Vel FFT: Done slicing for cpt 1
+Vel FFT: Done slicing for cpt 2
+Velocity power spectrum FFT calculation took 2.120192
+Starting GW FFT calculation.
+broadcasting our results
+now to layout
+GW: Done slicing for cpt 0
+Executing GW FFT, cpt 0
+GW: Done slicing for cpt 1
+Executing GW FFT, cpt 1
+GW: Done slicing for cpt 2
+Executing GW FFT, cpt 2
+GW: Done slicing for cpt 3
+Executing GW FFT, cpt 3
+GW: Done slicing for cpt 4
+Executing GW FFT, cpt 4
+GW: Done slicing for cpt 5
+Executing GW FFT, cpt 5
+GW projection...
+Calculating total energy
+Unnormalised GW energy [density] claimed 8.2011880875
+GW FFT calculation took 5.850112
+Writing SLICE to /wrk/dcutting/silage/alph-0.11-vw-0.92-Nb-8-L-960-dx-1.0-seed-2//slice-010400.silo
+Slice coord x=0
+Max: 2.000002, Min: 1.999998, df: 0.000000
+Not doing histogram: bin width too small (overflow would occur)
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+Starting velocity power spectrum FFT calculation.
+broadcasting our results
+now to layout
+Vel FFT: Done slicing for cpt 0
+Vel FFT: Done slicing for cpt 1
+Vel FFT: Done slicing for cpt 2
+Velocity power spectrum FFT calculation took 2.040320
+Starting GW FFT calculation.
+broadcasting our results
+now to layout
+GW: Done slicing for cpt 0
+Executing GW FFT, cpt 0
+GW: Done slicing for cpt 1
+Executing GW FFT, cpt 1
+GW: Done slicing for cpt 2
+Executing GW FFT, cpt 2
+GW: Done slicing for cpt 3
+Executing GW FFT, cpt 3
+GW: Done slicing for cpt 4
+Executing GW FFT, cpt 4
+GW: Done slicing for cpt 5
+Executing GW FFT, cpt 5
+GW projection...
+Calculating total energy
+Unnormalised GW energy [density] claimed 8.4593448639
+GW FFT calculation took 5.819904
+Max: 2.000002, Min: 1.999998, df: 0.000000
+Not doing histogram: bin width too small (overflow would occur)
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+Starting velocity power spectrum FFT calculation.
+broadcasting our results
+now to layout
+Vel FFT: Done slicing for cpt 0
+Vel FFT: Done slicing for cpt 1
+Vel FFT: Done slicing for cpt 2
+Velocity power spectrum FFT calculation took 2.089984
+Starting GW FFT calculation.
+broadcasting our results
+now to layout
+GW: Done slicing for cpt 0
+Executing GW FFT, cpt 0
+GW: Done slicing for cpt 1
+Executing GW FFT, cpt 1
+GW: Done slicing for cpt 2
+Executing GW FFT, cpt 2
+GW: Done slicing for cpt 3
+Executing GW FFT, cpt 3
+GW: Done slicing for cpt 4
+Executing GW FFT, cpt 4
+GW: Done slicing for cpt 5
+Executing GW FFT, cpt 5
+GW projection...
+Calculating total energy
+Unnormalised GW energy [density] claimed 8.6738700867
+GW FFT calculation took 5.770240
+Writing SLICE to /wrk/dcutting/silage/alph-0.11-vw-0.92-Nb-8-L-960-dx-1.0-seed-2//slice-010600.silo
+Slice coord x=0
+Max: 2.000002, Min: 1.999998, df: 0.000000
+Not doing histogram: bin width too small (overflow would occur)
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+Starting velocity power spectrum FFT calculation.
+broadcasting our results
+now to layout
+Vel FFT: Done slicing for cpt 0
+Vel FFT: Done slicing for cpt 1
+Vel FFT: Done slicing for cpt 2
+Velocity power spectrum FFT calculation took 1.970176
+Starting GW FFT calculation.
+broadcasting our results
+now to layout
+GW: Done slicing for cpt 0
+Executing GW FFT, cpt 0
+GW: Done slicing for cpt 1
+Executing GW FFT, cpt 1
+GW: Done slicing for cpt 2
+Executing GW FFT, cpt 2
+GW: Done slicing for cpt 3
+Executing GW FFT, cpt 3
+GW: Done slicing for cpt 4
+Executing GW FFT, cpt 4
+GW: Done slicing for cpt 5
+Executing GW FFT, cpt 5
+GW projection...
+Calculating total energy
+Unnormalised GW energy [density] claimed 8.7823982239
+GW FFT calculation took 5.910016
+Max: 2.000002, Min: 1.999998, df: 0.000000
+Not doing histogram: bin width too small (overflow would occur)
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+Starting velocity power spectrum FFT calculation.
+broadcasting our results
+now to layout
+Vel FFT: Done slicing for cpt 0
+Vel FFT: Done slicing for cpt 1
+Vel FFT: Done slicing for cpt 2
+Velocity power spectrum FFT calculation took 2.129920
+Starting GW FFT calculation.
+broadcasting our results
+now to layout
+GW: Done slicing for cpt 0
+Executing GW FFT, cpt 0
+GW: Done slicing for cpt 1
+Executing GW FFT, cpt 1
+GW: Done slicing for cpt 2
+Executing GW FFT, cpt 2
+GW: Done slicing for cpt 3
+Executing GW FFT, cpt 3
+GW: Done slicing for cpt 4
+Executing GW FFT, cpt 4
+GW: Done slicing for cpt 5
+Executing GW FFT, cpt 5
+GW projection...
+Calculating total energy
+Unnormalised GW energy [density] claimed 8.6776847839
+GW FFT calculation took 5.929984
+Writing SLICE to /wrk/dcutting/silage/alph-0.11-vw-0.92-Nb-8-L-960-dx-1.0-seed-2//slice-010800.silo
+Slice coord x=0
+Max: 2.000002, Min: 1.999998, df: 0.000000
+Not doing histogram: bin width too small (overflow would occur)
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+Starting velocity power spectrum FFT calculation.
+broadcasting our results
+now to layout
+Vel FFT: Done slicing for cpt 0
+Vel FFT: Done slicing for cpt 1
+Vel FFT: Done slicing for cpt 2
+Velocity power spectrum FFT calculation took 2.089984
+Starting GW FFT calculation.
+broadcasting our results
+now to layout
+GW: Done slicing for cpt 0
+Executing GW FFT, cpt 0
+GW: Done slicing for cpt 1
+Executing GW FFT, cpt 1
+GW: Done slicing for cpt 2
+Executing GW FFT, cpt 2
+GW: Done slicing for cpt 3
+Executing GW FFT, cpt 3
+GW: Done slicing for cpt 4
+Executing GW FFT, cpt 4
+GW: Done slicing for cpt 5
+Executing GW FFT, cpt 5
+GW projection...
+Calculating total energy
+Unnormalised GW energy [density] claimed 8.4167041779
+GW FFT calculation took 6.130176
+Max: 2.000002, Min: 1.999998, df: 0.000000
+Not doing histogram: bin width too small (overflow would occur)
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+Starting velocity power spectrum FFT calculation.
+broadcasting our results
+now to layout
+Vel FFT: Done slicing for cpt 0
+Vel FFT: Done slicing for cpt 1
+Vel FFT: Done slicing for cpt 2
+Velocity power spectrum FFT calculation took 2.189824
+Starting GW FFT calculation.
+broadcasting our results
+now to layout
+GW: Done slicing for cpt 0
+Executing GW FFT, cpt 0
+GW: Done slicing for cpt 1
+Executing GW FFT, cpt 1
+GW: Done slicing for cpt 2
+Executing GW FFT, cpt 2
+GW: Done slicing for cpt 3
+Executing GW FFT, cpt 3
+GW: Done slicing for cpt 4
+Executing GW FFT, cpt 4
+GW: Done slicing for cpt 5
+Executing GW FFT, cpt 5
+GW projection...
+Calculating total energy
+Unnormalised GW energy [density] claimed 8.2040586472
+GW FFT calculation took 5.819904
+Writing SLICE to /wrk/dcutting/silage/alph-0.11-vw-0.92-Nb-8-L-960-dx-1.0-seed-2//slice-011000.silo
+Slice coord x=0
+Max: 2.000002, Min: 1.999998, df: 0.000000
+Not doing histogram: bin width too small (overflow would occur)
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+Starting velocity power spectrum FFT calculation.
+broadcasting our results
+now to layout
+Vel FFT: Done slicing for cpt 0
+Vel FFT: Done slicing for cpt 1
+Vel FFT: Done slicing for cpt 2
+Velocity power spectrum FFT calculation took 2.050048
+Starting GW FFT calculation.
+broadcasting our results
+now to layout
+GW: Done slicing for cpt 0
+Executing GW FFT, cpt 0
+GW: Done slicing for cpt 1
+Executing GW FFT, cpt 1
+GW: Done slicing for cpt 2
+Executing GW FFT, cpt 2
+GW: Done slicing for cpt 3
+Executing GW FFT, cpt 3
+GW: Done slicing for cpt 4
+Executing GW FFT, cpt 4
+GW: Done slicing for cpt 5
+Executing GW FFT, cpt 5
+GW projection...
+Calculating total energy
+Unnormalised GW energy [density] claimed 8.2256622314
+GW FFT calculation took 6.010368
+Max: 2.000002, Min: 1.999998, df: 0.000000
+Not doing histogram: bin width too small (overflow would occur)
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+Starting velocity power spectrum FFT calculation.
+broadcasting our results
+now to layout
+Vel FFT: Done slicing for cpt 0
+Vel FFT: Done slicing for cpt 1
+Vel FFT: Done slicing for cpt 2
+Velocity power spectrum FFT calculation took 2.279936
+Starting GW FFT calculation.
+broadcasting our results
+now to layout
+GW: Done slicing for cpt 0
+Executing GW FFT, cpt 0
+GW: Done slicing for cpt 1
+Executing GW FFT, cpt 1
+GW: Done slicing for cpt 2
+Executing GW FFT, cpt 2
+GW: Done slicing for cpt 3
+Executing GW FFT, cpt 3
+GW: Done slicing for cpt 4
+Executing GW FFT, cpt 4
+GW: Done slicing for cpt 5
+Executing GW FFT, cpt 5
+GW projection...
+Calculating total energy
+Unnormalised GW energy [density] claimed 8.4977550507
+GW FFT calculation took 6.129664
+Writing SLICE to /wrk/dcutting/silage/alph-0.11-vw-0.92-Nb-8-L-960-dx-1.0-seed-2//slice-011200.silo
+Slice coord x=0
+Max: 2.000002, Min: 1.999998, df: 0.000000
+Not doing histogram: bin width too small (overflow would occur)
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+Starting velocity power spectrum FFT calculation.
+broadcasting our results
+now to layout
+Vel FFT: Done slicing for cpt 0
+Vel FFT: Done slicing for cpt 1
+Vel FFT: Done slicing for cpt 2
+Velocity power spectrum FFT calculation took 2.200064
+Starting GW FFT calculation.
+broadcasting our results
+now to layout
+GW: Done slicing for cpt 0
+Executing GW FFT, cpt 0
+GW: Done slicing for cpt 1
+Executing GW FFT, cpt 1
+GW: Done slicing for cpt 2
+Executing GW FFT, cpt 2
+GW: Done slicing for cpt 3
+Executing GW FFT, cpt 3
+GW: Done slicing for cpt 4
+Executing GW FFT, cpt 4
+GW: Done slicing for cpt 5
+Executing GW FFT, cpt 5
+GW projection...
+Calculating total energy
+Unnormalised GW energy [density] claimed 8.8173265457
+GW FFT calculation took 6.059520
+Max: 2.000002, Min: 1.999998, df: 0.000000
+Not doing histogram: bin width too small (overflow would occur)
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+Starting velocity power spectrum FFT calculation.
+broadcasting our results
+now to layout
+Vel FFT: Done slicing for cpt 0
+Vel FFT: Done slicing for cpt 1
+Vel FFT: Done slicing for cpt 2
+Velocity power spectrum FFT calculation took 2.109952
+Starting GW FFT calculation.
+broadcasting our results
+now to layout
+GW: Done slicing for cpt 0
+Executing GW FFT, cpt 0
+GW: Done slicing for cpt 1
+Executing GW FFT, cpt 1
+GW: Done slicing for cpt 2
+Executing GW FFT, cpt 2
+GW: Done slicing for cpt 3
+Executing GW FFT, cpt 3
+GW: Done slicing for cpt 4
+Executing GW FFT, cpt 4
+GW: Done slicing for cpt 5
+Executing GW FFT, cpt 5
+GW projection...
+Calculating total energy
+Unnormalised GW energy [density] claimed 8.9261178970
+GW FFT calculation took 5.810176
+Writing SLICE to /wrk/dcutting/silage/alph-0.11-vw-0.92-Nb-8-L-960-dx-1.0-seed-2//slice-011400.silo
+Slice coord x=0
+Max: 2.000002, Min: 1.999998, df: 0.000000
+Not doing histogram: bin width too small (overflow would occur)
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+Starting velocity power spectrum FFT calculation.
+broadcasting our results
+now to layout
+Vel FFT: Done slicing for cpt 0
+Vel FFT: Done slicing for cpt 1
+Vel FFT: Done slicing for cpt 2
+Velocity power spectrum FFT calculation took 2.100224
+Starting GW FFT calculation.
+broadcasting our results
+now to layout
+GW: Done slicing for cpt 0
+Executing GW FFT, cpt 0
+GW: Done slicing for cpt 1
+Executing GW FFT, cpt 1
+GW: Done slicing for cpt 2
+Executing GW FFT, cpt 2
+GW: Done slicing for cpt 3
+Executing GW FFT, cpt 3
+GW: Done slicing for cpt 4
+Executing GW FFT, cpt 4
+GW: Done slicing for cpt 5
+Executing GW FFT, cpt 5
+GW projection...
+Calculating total energy
+Unnormalised GW energy [density] claimed 8.6975955963
+GW FFT calculation took 5.799936
+Max: 2.000002, Min: 1.999998, df: 0.000000
+Not doing histogram: bin width too small (overflow would occur)
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+Starting velocity power spectrum FFT calculation.
+broadcasting our results
+now to layout
+Vel FFT: Done slicing for cpt 0
+Vel FFT: Done slicing for cpt 1
+Vel FFT: Done slicing for cpt 2
+Velocity power spectrum FFT calculation took 2.120192
+Starting GW FFT calculation.
+broadcasting our results
+now to layout
+GW: Done slicing for cpt 0
+Executing GW FFT, cpt 0
+GW: Done slicing for cpt 1
+Executing GW FFT, cpt 1
+GW: Done slicing for cpt 2
+Executing GW FFT, cpt 2
+GW: Done slicing for cpt 3
+Executing GW FFT, cpt 3
+GW: Done slicing for cpt 4
+Executing GW FFT, cpt 4
+GW: Done slicing for cpt 5
+Executing GW FFT, cpt 5
+GW projection...
+Calculating total energy
+Unnormalised GW energy [density] claimed 8.2518606186
+GW FFT calculation took 5.870080
+Writing SLICE to /wrk/dcutting/silage/alph-0.11-vw-0.92-Nb-8-L-960-dx-1.0-seed-2//slice-011600.silo
+Slice coord x=0
+Max: 2.000002, Min: 1.999998, df: 0.000000
+Not doing histogram: bin width too small (overflow would occur)
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+Starting velocity power spectrum FFT calculation.
+broadcasting our results
+now to layout
+Vel FFT: Done slicing for cpt 0
+Vel FFT: Done slicing for cpt 1
+Vel FFT: Done slicing for cpt 2
+Velocity power spectrum FFT calculation took 2.240512
+Starting GW FFT calculation.
+broadcasting our results
+now to layout
+GW: Done slicing for cpt 0
+Executing GW FFT, cpt 0
+GW: Done slicing for cpt 1
+Executing GW FFT, cpt 1
+GW: Done slicing for cpt 2
+Executing GW FFT, cpt 2
+GW: Done slicing for cpt 3
+Executing GW FFT, cpt 3
+GW: Done slicing for cpt 4
+Executing GW FFT, cpt 4
+GW: Done slicing for cpt 5
+Executing GW FFT, cpt 5
+GW projection...
+Calculating total energy
+Unnormalised GW energy [density] claimed 7.7916808128
+GW FFT calculation took 5.810176
+Max: 2.000002, Min: 1.999998, df: 0.000000
+Not doing histogram: bin width too small (overflow would occur)
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+Starting velocity power spectrum FFT calculation.
+broadcasting our results
+now to layout
+Vel FFT: Done slicing for cpt 0
+Vel FFT: Done slicing for cpt 1
+Vel FFT: Done slicing for cpt 2
+Velocity power spectrum FFT calculation took 2.100224
+Starting GW FFT calculation.
+broadcasting our results
+now to layout
+GW: Done slicing for cpt 0
+Executing GW FFT, cpt 0
+GW: Done slicing for cpt 1
+Executing GW FFT, cpt 1
+GW: Done slicing for cpt 2
+Executing GW FFT, cpt 2
+GW: Done slicing for cpt 3
+Executing GW FFT, cpt 3
+GW: Done slicing for cpt 4
+Executing GW FFT, cpt 4
+GW: Done slicing for cpt 5
+Executing GW FFT, cpt 5
+GW projection...
+Calculating total energy
+Unnormalised GW energy [density] claimed 7.5673985481
+GW FFT calculation took 6.030336
+Writing SLICE to /wrk/dcutting/silage/alph-0.11-vw-0.92-Nb-8-L-960-dx-1.0-seed-2//slice-011800.silo
+Slice coord x=0
+Max: 2.000002, Min: 1.999998, df: 0.000000
+Not doing histogram: bin width too small (overflow would occur)
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+Starting velocity power spectrum FFT calculation.
+broadcasting our results
+now to layout
+Vel FFT: Done slicing for cpt 0
+Vel FFT: Done slicing for cpt 1
+Vel FFT: Done slicing for cpt 2
+Velocity power spectrum FFT calculation took 2.339840
+Starting GW FFT calculation.
+broadcasting our results
+now to layout
+GW: Done slicing for cpt 0
+Executing GW FFT, cpt 0
+GW: Done slicing for cpt 1
+Executing GW FFT, cpt 1
+GW: Done slicing for cpt 2
+Executing GW FFT, cpt 2
+GW: Done slicing for cpt 3
+Executing GW FFT, cpt 3
+GW: Done slicing for cpt 4
+Executing GW FFT, cpt 4
+GW: Done slicing for cpt 5
+Executing GW FFT, cpt 5
+GW projection...
+Calculating total energy
+Unnormalised GW energy [density] claimed 7.8746528625
+GW FFT calculation took 6.129664
+Max: 2.000002, Min: 1.999998, df: 0.000000
+Not doing histogram: bin width too small (overflow would occur)
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+Starting velocity power spectrum FFT calculation.
+broadcasting our results
+now to layout
+Vel FFT: Done slicing for cpt 0
+Vel FFT: Done slicing for cpt 1
+Vel FFT: Done slicing for cpt 2
+Velocity power spectrum FFT calculation took 2.629632
+Starting GW FFT calculation.
+broadcasting our results
+now to layout
+GW: Done slicing for cpt 0
+Executing GW FFT, cpt 0
+GW: Done slicing for cpt 1
+Executing GW FFT, cpt 1
+GW: Done slicing for cpt 2
+Executing GW FFT, cpt 2
+GW: Done slicing for cpt 3
+Executing GW FFT, cpt 3
+GW: Done slicing for cpt 4
+Executing GW FFT, cpt 4
+GW: Done slicing for cpt 5
+Executing GW FFT, cpt 5
+GW projection...
+Calculating total energy
+Unnormalised GW energy [density] claimed 8.7444486618
+GW FFT calculation took 6.020096
+Writing SLICE to /wrk/dcutting/silage/alph-0.11-vw-0.92-Nb-8-L-960-dx-1.0-seed-2//slice-012000.silo
+Slice coord x=0
+Max: 2.000002, Min: 1.999998, df: 0.000000
+Not doing histogram: bin width too small (overflow would occur)
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+Starting velocity power spectrum FFT calculation.
+broadcasting our results
+now to layout
+Vel FFT: Done slicing for cpt 0
+Vel FFT: Done slicing for cpt 1
+Vel FFT: Done slicing for cpt 2
+Velocity power spectrum FFT calculation took 2.109440
+Starting GW FFT calculation.
+broadcasting our results
+now to layout
+GW: Done slicing for cpt 0
+Executing GW FFT, cpt 0
+GW: Done slicing for cpt 1
+Executing GW FFT, cpt 1
+GW: Done slicing for cpt 2
+Executing GW FFT, cpt 2
+GW: Done slicing for cpt 3
+Executing GW FFT, cpt 3
+GW: Done slicing for cpt 4
+Executing GW FFT, cpt 4
+GW: Done slicing for cpt 5
+Executing GW FFT, cpt 5
+GW projection...
+Calculating total energy
+Unnormalised GW energy [density] claimed 9.8166341782
+GW FFT calculation took 6.070272
+Max: 2.000002, Min: 1.999998, df: 0.000000
+Not doing histogram: bin width too small (overflow would occur)
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+Starting velocity power spectrum FFT calculation.
+broadcasting our results
+now to layout
+Vel FFT: Done slicing for cpt 0
+Vel FFT: Done slicing for cpt 1
+Vel FFT: Done slicing for cpt 2
+Velocity power spectrum FFT calculation took 2.440192
+Starting GW FFT calculation.
+broadcasting our results
+now to layout
+GW: Done slicing for cpt 0
+Executing GW FFT, cpt 0
+GW: Done slicing for cpt 1
+Executing GW FFT, cpt 1
+GW: Done slicing for cpt 2
+Executing GW FFT, cpt 2
+GW: Done slicing for cpt 3
+Executing GW FFT, cpt 3
+GW: Done slicing for cpt 4
+Executing GW FFT, cpt 4
+GW: Done slicing for cpt 5
+Executing GW FFT, cpt 5
+GW projection...
+Calculating total energy
+Unnormalised GW energy [density] claimed 10.6215639114
+GW FFT calculation took 6.169600
+Writing SLICE to /wrk/dcutting/silage/alph-0.11-vw-0.92-Nb-8-L-960-dx-1.0-seed-2//slice-012200.silo
+Slice coord x=0
+Max: 2.000002, Min: 1.999998, df: 0.000000
+Not doing histogram: bin width too small (overflow would occur)
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+Starting velocity power spectrum FFT calculation.
+broadcasting our results
+now to layout
+Vel FFT: Done slicing for cpt 0
+Vel FFT: Done slicing for cpt 1
+Vel FFT: Done slicing for cpt 2
+Velocity power spectrum FFT calculation took 2.099200
+Starting GW FFT calculation.
+broadcasting our results
+now to layout
+GW: Done slicing for cpt 0
+Executing GW FFT, cpt 0
+GW: Done slicing for cpt 1
+Executing GW FFT, cpt 1
+GW: Done slicing for cpt 2
+Executing GW FFT, cpt 2
+GW: Done slicing for cpt 3
+Executing GW FFT, cpt 3
+GW: Done slicing for cpt 4
+Executing GW FFT, cpt 4
+GW: Done slicing for cpt 5
+Executing GW FFT, cpt 5
+GW projection...
+Calculating total energy
+Unnormalised GW energy [density] claimed 10.8638553619
+GW FFT calculation took 5.940224
+Max: 2.000002, Min: 1.999998, df: 0.000000
+Not doing histogram: bin width too small (overflow would occur)
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+Starting velocity power spectrum FFT calculation.
+broadcasting our results
+now to layout
+Vel FFT: Done slicing for cpt 0
+Vel FFT: Done slicing for cpt 1
+Vel FFT: Done slicing for cpt 2
+Velocity power spectrum FFT calculation took 2.070528
+Starting GW FFT calculation.
+broadcasting our results
+now to layout
+GW: Done slicing for cpt 0
+Executing GW FFT, cpt 0
+GW: Done slicing for cpt 1
+Executing GW FFT, cpt 1
+GW: Done slicing for cpt 2
+Executing GW FFT, cpt 2
+GW: Done slicing for cpt 3
+Executing GW FFT, cpt 3
+GW: Done slicing for cpt 4
+Executing GW FFT, cpt 4
+GW: Done slicing for cpt 5
+Executing GW FFT, cpt 5
+GW projection...
+Calculating total energy
+Unnormalised GW energy [density] claimed 10.5294685364
+GW FFT calculation took 5.869568
+Writing SLICE to /wrk/dcutting/silage/alph-0.11-vw-0.92-Nb-8-L-960-dx-1.0-seed-2//slice-012400.silo
+Slice coord x=0
+Max: 2.000002, Min: 1.999998, df: 0.000000
+Not doing histogram: bin width too small (overflow would occur)
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+Starting velocity power spectrum FFT calculation.
+broadcasting our results
+now to layout
+Vel FFT: Done slicing for cpt 0
+Vel FFT: Done slicing for cpt 1
+Vel FFT: Done slicing for cpt 2
+Velocity power spectrum FFT calculation took 2.119680
+Starting GW FFT calculation.
+broadcasting our results
+now to layout
+GW: Done slicing for cpt 0
+Executing GW FFT, cpt 0
+GW: Done slicing for cpt 1
+Executing GW FFT, cpt 1
+GW: Done slicing for cpt 2
+Executing GW FFT, cpt 2
+GW: Done slicing for cpt 3
+Executing GW FFT, cpt 3
+GW: Done slicing for cpt 4
+Executing GW FFT, cpt 4
+GW: Done slicing for cpt 5
+Executing GW FFT, cpt 5
+GW projection...
+Calculating total energy
+Unnormalised GW energy [density] claimed 9.8629331589
+GW FFT calculation took 5.940224
+Max: 2.000002, Min: 1.999998, df: 0.000000
+Not doing histogram: bin width too small (overflow would occur)
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+Starting velocity power spectrum FFT calculation.
+broadcasting our results
+now to layout
+Vel FFT: Done slicing for cpt 0
+Vel FFT: Done slicing for cpt 1
+Vel FFT: Done slicing for cpt 2
+Velocity power spectrum FFT calculation took 2.129920
+Starting GW FFT calculation.
+broadcasting our results
+now to layout
+GW: Done slicing for cpt 0
+Executing GW FFT, cpt 0
+GW: Done slicing for cpt 1
+Executing GW FFT, cpt 1
+GW: Done slicing for cpt 2
+Executing GW FFT, cpt 2
+GW: Done slicing for cpt 3
+Executing GW FFT, cpt 3
+GW: Done slicing for cpt 4
+Executing GW FFT, cpt 4
+GW: Done slicing for cpt 5
+Executing GW FFT, cpt 5
+GW projection...
+Calculating total energy
+Unnormalised GW energy [density] claimed 9.2392730713
+GW FFT calculation took 5.860352
+Writing SLICE to /wrk/dcutting/silage/alph-0.11-vw-0.92-Nb-8-L-960-dx-1.0-seed-2//slice-012600.silo
+Slice coord x=0
+Max: 2.000002, Min: 1.999998, df: 0.000000
+Not doing histogram: bin width too small (overflow would occur)
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+Starting velocity power spectrum FFT calculation.
+broadcasting our results
+now to layout
+Vel FFT: Done slicing for cpt 0
+Vel FFT: Done slicing for cpt 1
+Vel FFT: Done slicing for cpt 2
+Velocity power spectrum FFT calculation took 2.150400
+Starting GW FFT calculation.
+broadcasting our results
+now to layout
+GW: Done slicing for cpt 0
+Executing GW FFT, cpt 0
+GW: Done slicing for cpt 1
+Executing GW FFT, cpt 1
+GW: Done slicing for cpt 2
+Executing GW FFT, cpt 2
+GW: Done slicing for cpt 3
+Executing GW FFT, cpt 3
+GW: Done slicing for cpt 4
+Executing GW FFT, cpt 4
+GW: Done slicing for cpt 5
+Executing GW FFT, cpt 5
+GW projection...
+Calculating total energy
+Unnormalised GW energy [density] claimed 8.7985439301
+GW FFT calculation took 6.129664
+Max: 2.000002, Min: 1.999998, df: 0.000000
+Not doing histogram: bin width too small (overflow would occur)
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+Starting velocity power spectrum FFT calculation.
+broadcasting our results
+now to layout
+Vel FFT: Done slicing for cpt 0
+Vel FFT: Done slicing for cpt 1
+Vel FFT: Done slicing for cpt 2
+Velocity power spectrum FFT calculation took 2.230272
+Starting GW FFT calculation.
+broadcasting our results
+now to layout
+GW: Done slicing for cpt 0
+Executing GW FFT, cpt 0
+GW: Done slicing for cpt 1
+Executing GW FFT, cpt 1
+GW: Done slicing for cpt 2
+Executing GW FFT, cpt 2
+GW: Done slicing for cpt 3
+Executing GW FFT, cpt 3
+GW: Done slicing for cpt 4
+Executing GW FFT, cpt 4
+GW: Done slicing for cpt 5
+Executing GW FFT, cpt 5
+GW projection...
+Calculating total energy
+Unnormalised GW energy [density] claimed 8.5248765945
+GW FFT calculation took 6.060032
+Writing SLICE to /wrk/dcutting/silage/alph-0.11-vw-0.92-Nb-8-L-960-dx-1.0-seed-2//slice-012800.silo
+Slice coord x=0
+Max: 2.000002, Min: 1.999998, df: 0.000000
+Not doing histogram: bin width too small (overflow would occur)
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+Starting velocity power spectrum FFT calculation.
+broadcasting our results
+now to layout
+Vel FFT: Done slicing for cpt 0
+Vel FFT: Done slicing for cpt 1
+Vel FFT: Done slicing for cpt 2
+Velocity power spectrum FFT calculation took 2.109440
+Starting GW FFT calculation.
+broadcasting our results
+now to layout
+GW: Done slicing for cpt 0
+Executing GW FFT, cpt 0
+GW: Done slicing for cpt 1
+Executing GW FFT, cpt 1
+GW: Done slicing for cpt 2
+Executing GW FFT, cpt 2
+GW: Done slicing for cpt 3
+Executing GW FFT, cpt 3
+GW: Done slicing for cpt 4
+Executing GW FFT, cpt 4
+GW: Done slicing for cpt 5
+Executing GW FFT, cpt 5
+GW projection...
+Calculating total energy
+Unnormalised GW energy [density] claimed 8.4998798370
+GW FFT calculation took 6.049792
+Max: 2.000002, Min: 1.999998, df: 0.000000
+Not doing histogram: bin width too small (overflow would occur)
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+Starting velocity power spectrum FFT calculation.
+broadcasting our results
+now to layout
+Vel FFT: Done slicing for cpt 0
+Vel FFT: Done slicing for cpt 1
+Vel FFT: Done slicing for cpt 2
+Velocity power spectrum FFT calculation took 2.209792
+Starting GW FFT calculation.
+broadcasting our results
+now to layout
+GW: Done slicing for cpt 0
+Executing GW FFT, cpt 0
+GW: Done slicing for cpt 1
+Executing GW FFT, cpt 1
+GW: Done slicing for cpt 2
+Executing GW FFT, cpt 2
+GW: Done slicing for cpt 3
+Executing GW FFT, cpt 3
+GW: Done slicing for cpt 4
+Executing GW FFT, cpt 4
+GW: Done slicing for cpt 5
+Executing GW FFT, cpt 5
+GW projection...
+Calculating total energy
+Unnormalised GW energy [density] claimed 8.8940544128
+GW FFT calculation took 6.190080
+Writing SLICE to /wrk/dcutting/silage/alph-0.11-vw-0.92-Nb-8-L-960-dx-1.0-seed-2//slice-013000.silo
+Slice coord x=0
+Max: 2.000002, Min: 1.999998, df: 0.000000
+Not doing histogram: bin width too small (overflow would occur)
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+Starting velocity power spectrum FFT calculation.
+broadcasting our results
+now to layout
+Vel FFT: Done slicing for cpt 0
+Vel FFT: Done slicing for cpt 1
+Vel FFT: Done slicing for cpt 2
+Velocity power spectrum FFT calculation took 2.209792
+Starting GW FFT calculation.
+broadcasting our results
+now to layout
+GW: Done slicing for cpt 0
+Executing GW FFT, cpt 0
+GW: Done slicing for cpt 1
+Executing GW FFT, cpt 1
+GW: Done slicing for cpt 2
+Executing GW FFT, cpt 2
+GW: Done slicing for cpt 3
+Executing GW FFT, cpt 3
+GW: Done slicing for cpt 4
+Executing GW FFT, cpt 4
+GW: Done slicing for cpt 5
+Executing GW FFT, cpt 5
+GW projection...
+Calculating total energy
+Unnormalised GW energy [density] claimed 9.7453756332
+GW FFT calculation took 5.919744
+Max: 2.000002, Min: 1.999998, df: 0.000000
+Not doing histogram: bin width too small (overflow would occur)
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+Starting velocity power spectrum FFT calculation.
+broadcasting our results
+now to layout
+Vel FFT: Done slicing for cpt 0
+Vel FFT: Done slicing for cpt 1
+Vel FFT: Done slicing for cpt 2
+Velocity power spectrum FFT calculation took 2.099200
+Starting GW FFT calculation.
+broadcasting our results
+now to layout
+GW: Done slicing for cpt 0
+Executing GW FFT, cpt 0
+GW: Done slicing for cpt 1
+Executing GW FFT, cpt 1
+GW: Done slicing for cpt 2
+Executing GW FFT, cpt 2
+GW: Done slicing for cpt 3
+Executing GW FFT, cpt 3
+GW: Done slicing for cpt 4
+Executing GW FFT, cpt 4
+GW: Done slicing for cpt 5
+Executing GW FFT, cpt 5
+GW projection...
+Calculating total energy
+Unnormalised GW energy [density] claimed 10.7821111679
+GW FFT calculation took 5.790720
+Writing SLICE to /wrk/dcutting/silage/alph-0.11-vw-0.92-Nb-8-L-960-dx-1.0-seed-2//slice-013200.silo
+Slice coord x=0
+Max: 2.000002, Min: 1.999998, df: 0.000000
+Not doing histogram: bin width too small (overflow would occur)
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+Starting velocity power spectrum FFT calculation.
+broadcasting our results
+now to layout
+Vel FFT: Done slicing for cpt 0
+Vel FFT: Done slicing for cpt 1
+Vel FFT: Done slicing for cpt 2
+Velocity power spectrum FFT calculation took 2.060288
+Starting GW FFT calculation.
+broadcasting our results
+now to layout
+GW: Done slicing for cpt 0
+Executing GW FFT, cpt 0
+GW: Done slicing for cpt 1
+Executing GW FFT, cpt 1
+GW: Done slicing for cpt 2
+Executing GW FFT, cpt 2
+GW: Done slicing for cpt 3
+Executing GW FFT, cpt 3
+GW: Done slicing for cpt 4
+Executing GW FFT, cpt 4
+GW: Done slicing for cpt 5
+Executing GW FFT, cpt 5
+GW projection...
+Calculating total energy
+Unnormalised GW energy [density] claimed 11.5448703766
+GW FFT calculation took 5.869568
+Max: 2.000002, Min: 1.999998, df: 0.000000
+Not doing histogram: bin width too small (overflow would occur)
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+Starting velocity power spectrum FFT calculation.
+broadcasting our results
+now to layout
+Vel FFT: Done slicing for cpt 0
+Vel FFT: Done slicing for cpt 1
+Vel FFT: Done slicing for cpt 2
+Velocity power spectrum FFT calculation took 2.180096
+Starting GW FFT calculation.
+broadcasting our results
+now to layout
+GW: Done slicing for cpt 0
+Executing GW FFT, cpt 0
+GW: Done slicing for cpt 1
+Executing GW FFT, cpt 1
+GW: Done slicing for cpt 2
+Executing GW FFT, cpt 2
+GW: Done slicing for cpt 3
+Executing GW FFT, cpt 3
+GW: Done slicing for cpt 4
+Executing GW FFT, cpt 4
+GW: Done slicing for cpt 5
+Executing GW FFT, cpt 5
+GW projection...
+Calculating total energy
+Unnormalised GW energy [density] claimed 11.6593666077
+GW FFT calculation took 5.899264
+Writing SLICE to /wrk/dcutting/silage/alph-0.11-vw-0.92-Nb-8-L-960-dx-1.0-seed-2//slice-013400.silo
+Slice coord x=0
+Max: 2.000002, Min: 1.999998, df: 0.000000
+Not doing histogram: bin width too small (overflow would occur)
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+Starting velocity power spectrum FFT calculation.
+broadcasting our results
+now to layout
+Vel FFT: Done slicing for cpt 0
+Vel FFT: Done slicing for cpt 1
+Vel FFT: Done slicing for cpt 2
+Velocity power spectrum FFT calculation took 2.530304
+Starting GW FFT calculation.
+broadcasting our results
+now to layout
+GW: Done slicing for cpt 0
+Executing GW FFT, cpt 0
+GW: Done slicing for cpt 1
+Executing GW FFT, cpt 1
+GW: Done slicing for cpt 2
+Executing GW FFT, cpt 2
+GW: Done slicing for cpt 3
+Executing GW FFT, cpt 3
+GW: Done slicing for cpt 4
+Executing GW FFT, cpt 4
+GW: Done slicing for cpt 5
+Executing GW FFT, cpt 5
+GW projection...
+Calculating total energy
+Unnormalised GW energy [density] claimed 11.1037101746
+GW FFT calculation took 6.269952
+Max: 2.000002, Min: 1.999998, df: 0.000000
+Not doing histogram: bin width too small (overflow would occur)
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+Starting velocity power spectrum FFT calculation.
+broadcasting our results
+now to layout
+Vel FFT: Done slicing for cpt 0
+Vel FFT: Done slicing for cpt 1
+Vel FFT: Done slicing for cpt 2
+Velocity power spectrum FFT calculation took 2.180096
+Starting GW FFT calculation.
+broadcasting our results
+now to layout
+GW: Done slicing for cpt 0
+Executing GW FFT, cpt 0
+GW: Done slicing for cpt 1
+Executing GW FFT, cpt 1
+GW: Done slicing for cpt 2
+Executing GW FFT, cpt 2
+GW: Done slicing for cpt 3
+Executing GW FFT, cpt 3
+GW: Done slicing for cpt 4
+Executing GW FFT, cpt 4
+GW: Done slicing for cpt 5
+Executing GW FFT, cpt 5
+GW projection...
+Calculating total energy
+Unnormalised GW energy [density] claimed 10.1575450897
+GW FFT calculation took 5.919744
+Writing SLICE to /wrk/dcutting/silage/alph-0.11-vw-0.92-Nb-8-L-960-dx-1.0-seed-2//slice-013600.silo
+Slice coord x=0
+Max: 2.000002, Min: 1.999998, df: 0.000000
+Not doing histogram: bin width too small (overflow would occur)
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+Starting velocity power spectrum FFT calculation.
+broadcasting our results
+now to layout
+Vel FFT: Done slicing for cpt 0
+Vel FFT: Done slicing for cpt 1
+Vel FFT: Done slicing for cpt 2
+Velocity power spectrum FFT calculation took 2.549760
+Starting GW FFT calculation.
+broadcasting our results
+now to layout
+GW: Done slicing for cpt 0
+Executing GW FFT, cpt 0
+GW: Done slicing for cpt 1
+Executing GW FFT, cpt 1
+GW: Done slicing for cpt 2
+Executing GW FFT, cpt 2
+GW: Done slicing for cpt 3
+Executing GW FFT, cpt 3
+GW: Done slicing for cpt 4
+Executing GW FFT, cpt 4
+GW: Done slicing for cpt 5
+Executing GW FFT, cpt 5
+GW projection...
+Calculating total energy
+Unnormalised GW energy [density] claimed 9.2542858124
+GW FFT calculation took 6.099968
+Max: 2.000002, Min: 1.999998, df: 0.000000
+Not doing histogram: bin width too small (overflow would occur)
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+Starting velocity power spectrum FFT calculation.
+broadcasting our results
+now to layout
+Vel FFT: Done slicing for cpt 0
+Vel FFT: Done slicing for cpt 1
+Vel FFT: Done slicing for cpt 2
+Velocity power spectrum FFT calculation took 2.050048
+Starting GW FFT calculation.
+broadcasting our results
+now to layout
+GW: Done slicing for cpt 0
+Executing GW FFT, cpt 0
+GW: Done slicing for cpt 1
+Executing GW FFT, cpt 1
+GW: Done slicing for cpt 2
+Executing GW FFT, cpt 2
+GW: Done slicing for cpt 3
+Executing GW FFT, cpt 3
+GW: Done slicing for cpt 4
+Executing GW FFT, cpt 4
+GW: Done slicing for cpt 5
+Executing GW FFT, cpt 5
+GW projection...
+Calculating total energy
+Unnormalised GW energy [density] claimed 8.7302913666
+GW FFT calculation took 5.839872
+Writing SLICE to /wrk/dcutting/silage/alph-0.11-vw-0.92-Nb-8-L-960-dx-1.0-seed-2//slice-013800.silo
+Slice coord x=0
+Max: 2.000002, Min: 1.999998, df: 0.000000
+Not doing histogram: bin width too small (overflow would occur)
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+Starting velocity power spectrum FFT calculation.
+broadcasting our results
+now to layout
+Vel FFT: Done slicing for cpt 0
+Vel FFT: Done slicing for cpt 1
+Vel FFT: Done slicing for cpt 2
+Velocity power spectrum FFT calculation took 2.050048
+Starting GW FFT calculation.
+broadcasting our results
+now to layout
+GW: Done slicing for cpt 0
+Executing GW FFT, cpt 0
+GW: Done slicing for cpt 1
+Executing GW FFT, cpt 1
+GW: Done slicing for cpt 2
+Executing GW FFT, cpt 2
+GW: Done slicing for cpt 3
+Executing GW FFT, cpt 3
+GW: Done slicing for cpt 4
+Executing GW FFT, cpt 4
+GW: Done slicing for cpt 5
+Executing GW FFT, cpt 5
+GW projection...
+Calculating total energy
+Unnormalised GW energy [density] claimed 8.8153724670
+GW FFT calculation took 5.810176
+Max: 2.000002, Min: 1.999998, df: 0.000000
+Not doing histogram: bin width too small (overflow would occur)
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+Starting velocity power spectrum FFT calculation.
+broadcasting our results
+now to layout
+Vel FFT: Done slicing for cpt 0
+Vel FFT: Done slicing for cpt 1
+Vel FFT: Done slicing for cpt 2
+Velocity power spectrum FFT calculation took 2.019328
+Starting GW FFT calculation.
+broadcasting our results
+now to layout
+GW: Done slicing for cpt 0
+Executing GW FFT, cpt 0
+GW: Done slicing for cpt 1
+Executing GW FFT, cpt 1
+GW: Done slicing for cpt 2
+Executing GW FFT, cpt 2
+GW: Done slicing for cpt 3
+Executing GW FFT, cpt 3
+GW: Done slicing for cpt 4
+Executing GW FFT, cpt 4
+GW: Done slicing for cpt 5
+Executing GW FFT, cpt 5
+GW projection...
+Calculating total energy
+Unnormalised GW energy [density] claimed 9.5300445557
+GW FFT calculation took 5.879808
+Writing SLICE to /wrk/dcutting/silage/alph-0.11-vw-0.92-Nb-8-L-960-dx-1.0-seed-2//slice-014000.silo
+Slice coord x=0
+Max: 2.000002, Min: 1.999998, df: 0.000000
+Not doing histogram: bin width too small (overflow would occur)
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+Starting velocity power spectrum FFT calculation.
+broadcasting our results
+now to layout
+Vel FFT: Done slicing for cpt 0
+Vel FFT: Done slicing for cpt 1
+Vel FFT: Done slicing for cpt 2
+Velocity power spectrum FFT calculation took 2.070528
+Starting GW FFT calculation.
+broadcasting our results
+now to layout
+GW: Done slicing for cpt 0
+Executing GW FFT, cpt 0
+GW: Done slicing for cpt 1
+Executing GW FFT, cpt 1
+GW: Done slicing for cpt 2
+Executing GW FFT, cpt 2
+GW: Done slicing for cpt 3
+Executing GW FFT, cpt 3
+GW: Done slicing for cpt 4
+Executing GW FFT, cpt 4
+GW: Done slicing for cpt 5
+Executing GW FFT, cpt 5
+GW projection...
+Calculating total energy
+Unnormalised GW energy [density] claimed 10.6321487427
+GW FFT calculation took 5.860352
+Starting velocity power spectrum FFT calculation.
+broadcasting our results
+now to layout
+Vel FFT: Done slicing for cpt 0
+Vel FFT: Done slicing for cpt 1
+Vel FFT: Done slicing for cpt 2
+Velocity power spectrum FFT calculation took 2.140160
+Starting GW FFT calculation.
+broadcasting our results
+now to layout
+GW: Done slicing for cpt 0
+Executing GW FFT, cpt 0
+GW: Done slicing for cpt 1
+Executing GW FFT, cpt 1
+GW: Done slicing for cpt 2
+Executing GW FFT, cpt 2
+GW: Done slicing for cpt 3
+Executing GW FFT, cpt 3
+GW: Done slicing for cpt 4
+Executing GW FFT, cpt 4
+GW: Done slicing for cpt 5
+Executing GW FFT, cpt 5
+GW projection...
+Calculating total energy
+Unnormalised GW energy [density] claimed 10.6437492371
+GW FFT calculation took 5.860352
+Starting velocity power spectrum FFT calculation.
+broadcasting our results
+now to layout
+Vel FFT: Done slicing for cpt 0
+Vel FFT: Done slicing for cpt 1
+Vel FFT: Done slicing for cpt 2
+Velocity power spectrum FFT calculation took 2.120704
+Starting GW FFT calculation.
+broadcasting our results
+now to layout
+GW: Done slicing for cpt 0
+Executing GW FFT, cpt 0
+GW: Done slicing for cpt 1
+Executing GW FFT, cpt 1
+GW: Done slicing for cpt 2
+Executing GW FFT, cpt 2
+GW: Done slicing for cpt 3
+Executing GW FFT, cpt 3
+GW: Done slicing for cpt 4
+Executing GW FFT, cpt 4
+GW: Done slicing for cpt 5
+Executing GW FFT, cpt 5
+GW projection...
+Calculating total energy
+Unnormalised GW energy [density] claimed 10.6437492371
+GW FFT calculation took 5.879808
+On master node, CPU time in main loop was 10351.809570s,
+of which 2701.980957s was comms

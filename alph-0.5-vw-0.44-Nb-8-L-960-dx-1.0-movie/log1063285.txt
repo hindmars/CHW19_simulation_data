@@ -1,0 +1,142 @@
+ncores = 120
+3D hydro port with MPI
+Built: Apr 29 2019 17:27:53
+Disabled sbrk
+-- Read parameters from /homeappl/home/dcutting/Projects/single-precision-3d-hydro-new-eta/run/data/alph-0.5-vw-0.44-Nb-8-L-960-dx-1.0-movie/input-test-BAG:
+-- dx 1, dt 0.2, steps 200
+-- Lx 960, Ly 960, Lz 960
+-- Cav 0, C 3.4541,
+-- alpha 0.167705, gamma 0.0427051, lambda 0.0731763
+-- gstar 106.75
+-- T0 0.707107, Tconst 0.25046
+-- interval 0, fftinterval 0
+-- silointerval 0, silosliceinterval 20,checkpointinterval -1
+-- uetcstart -1
+-- bubbles 8, scale 2
+-- initnorm -1
+-- initcutoff -1
+-- initlength -1
+-- silodir "/wrk/dcutting/silage/alph-0.5-vw-0.44-Nb-8-L-960-dx-1.0-movie/"
+-- checkpointdir "./"
+-- seed 1234
+-- bubble
+-- gws sourced by FLUID only
+<No nucleation>
+phimin not set, defaulting to broken phase value. 
+R_critical not set, defaulting to gaussian ansatz. 
+-- Calculated bubble profile parameters: 
+-- surface_tension 0.25504, phimin 2 
+-- R_critical 7.41112, R_scaled 14.8222 
+Constant potential term found 
+-- V0 -0.0690983 
+Putting 884736000 sites on 120 nodes
+slicing: size of x=80 y=96
+(meaning 12 nodes in x, 10 nodes in y)
+Each node will need 7714560 = 7372800 + 341760 entries to store halo
+- Allocated fields.
+Checking for valid checkpoint
+Unable to access ".//checkpoint-integrity"
+- Zeroed fields.
+Nucleating first bubble
+Nucleating at (0, 0, 0)
+Nucleation attempt took 0.240000
+Trying to nucleate a bubble (safe distance = 21)
+Nucleating at (654, 899, 75)
+Nucleation attempt took 0.230000
+Trying to nucleate a bubble (safe distance = 21)
+Nucleating at (627, 940, 501)
+Nucleation attempt took 0.230000
+Trying to nucleate a bubble (safe distance = 21)
+Nucleating at (715, 458, 692)
+Nucleation attempt took 0.230000
+Trying to nucleate a bubble (safe distance = 21)
+Nucleating at (373, 615, 561)
+Nucleation attempt took 0.240000
+Trying to nucleate a bubble (safe distance = 21)
+Nucleating at (646, 833, 648)
+Nucleation attempt took 0.230000
+Trying to nucleate a bubble (safe distance = 21)
+Nucleating at (491, 938, 415)
+Nucleation attempt took 0.220000
+Trying to nucleate a bubble (safe distance = 21)
+Nucleating at (844, 381, 230)
+Nucleation attempt took 0.230000
+Initial conditions done
+Initial avg energy per site: 0.208302
+/wrk/dcutting/silage/alph-0.5-vw-0.44-Nb-8-L-960-dx-1.0-movie/: File exists
+created directory /wrk/dcutting/silage/alph-0.5-vw-0.44-Nb-8-L-960-dx-1.0-movie/, where the silo will go
+Starting main loop.
+Writing SLICE to /wrk/dcutting/silage/alph-0.5-vw-0.44-Nb-8-L-960-dx-1.0-movie//slice-000000.silo
+Slice coord x=0
+Writing SLICE to /wrk/dcutting/silage/alph-0.5-vw-0.44-Nb-8-L-960-dx-1.0-movie//slice-000020.silo
+Slice coord x=0
+Writing SLICE to /wrk/dcutting/silage/alph-0.5-vw-0.44-Nb-8-L-960-dx-1.0-movie//slice-000040.silo
+Slice coord x=0
+Writing SLICE to /wrk/dcutting/silage/alph-0.5-vw-0.44-Nb-8-L-960-dx-1.0-movie//slice-000060.silo
+Slice coord x=0
+Writing SLICE to /wrk/dcutting/silage/alph-0.5-vw-0.44-Nb-8-L-960-dx-1.0-movie//slice-000080.silo
+Slice coord x=0
+Writing SLICE to /wrk/dcutting/silage/alph-0.5-vw-0.44-Nb-8-L-960-dx-1.0-movie//slice-000100.silo
+Slice coord x=0
+Writing SLICE to /wrk/dcutting/silage/alph-0.5-vw-0.44-Nb-8-L-960-dx-1.0-movie//slice-000120.silo
+Slice coord x=0
+Writing SLICE to /wrk/dcutting/silage/alph-0.5-vw-0.44-Nb-8-L-960-dx-1.0-movie//slice-000140.silo
+Slice coord x=0
+Writing SLICE to /wrk/dcutting/silage/alph-0.5-vw-0.44-Nb-8-L-960-dx-1.0-movie//slice-000160.silo
+Slice coord x=0
+Writing SLICE to /wrk/dcutting/silage/alph-0.5-vw-0.44-Nb-8-L-960-dx-1.0-movie//slice-000180.silo
+Slice coord x=0
+Starting velocity power spectrum FFT calculation.
+broadcasting our results
+now to layout
+Vel FFT: Done slicing for cpt 0
+Vel FFT: Done slicing for cpt 1
+Vel FFT: Done slicing for cpt 2
+Velocity power spectrum FFT calculation took 6.849984
+Starting GW FFT calculation.
+broadcasting our results
+now to layout
+GW: Done slicing for cpt 0
+Executing GW FFT, cpt 0
+GW: Done slicing for cpt 1
+Executing GW FFT, cpt 1
+GW: Done slicing for cpt 2
+Executing GW FFT, cpt 2
+GW: Done slicing for cpt 3
+Executing GW FFT, cpt 3
+GW: Done slicing for cpt 4
+Executing GW FFT, cpt 4
+GW: Done slicing for cpt 5
+Executing GW FFT, cpt 5
+GW projection...
+Calculating total energy
+Unnormalised GW energy [density] claimed 0.0000000003
+GW FFT calculation took 30.219969
+Starting velocity power spectrum FFT calculation.
+broadcasting our results
+now to layout
+Vel FFT: Done slicing for cpt 0
+Vel FFT: Done slicing for cpt 1
+Vel FFT: Done slicing for cpt 2
+Velocity power spectrum FFT calculation took 5.889984
+Starting GW FFT calculation.
+broadcasting our results
+now to layout
+GW: Done slicing for cpt 0
+Executing GW FFT, cpt 0
+GW: Done slicing for cpt 1
+Executing GW FFT, cpt 1
+GW: Done slicing for cpt 2
+Executing GW FFT, cpt 2
+GW: Done slicing for cpt 3
+Executing GW FFT, cpt 3
+GW: Done slicing for cpt 4
+Executing GW FFT, cpt 4
+GW: Done slicing for cpt 5
+Executing GW FFT, cpt 5
+GW projection...
+Calculating total energy
+Unnormalised GW energy [density] claimed 0.0000000003
+GW FFT calculation took 30.020031
+On master node, CPU time in main loop was 741.359985s,
+of which 47.288765s was comms

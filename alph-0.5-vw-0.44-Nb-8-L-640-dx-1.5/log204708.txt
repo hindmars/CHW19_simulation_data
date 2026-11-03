@@ -1,0 +1,1408 @@
+ncores = 160
+
+Currently Loaded Modules:
+  1) StdEnv         3) hpcx-mpi/2.4.0       5) fftw/3.3.8-mpi
+  2) intel/19.0.4   4) intel-mkl/2019.0.4
+
+ 
+
+3D hydro port with MPI
+Built: Sep 16 2019 11:13:00
+Disabled sbrk
+Looks like there are 8 bubbles in locfile.txt
+-- Read parameters from /users/dcutting/Projects/single-precision-3d-hydro-new-eta/run/data/prl-runs/alph-0.5-vw-0.44-Nb-8-L-640-dx-1.5/input-test-BAG:
+-- dx 1.5, dt 0.3, steps 9340
+-- Lx 640, Ly 640, Lz 640
+-- Cav 0, C 3.4541,
+-- alpha 0.167705, gamma 0.0427051, lambda 0.0731763
+-- gstar 106.75
+-- T0 0.707107, Tconst 0.25046
+-- interval 67, fftinterval 67
+-- silointerval 0, silosliceinterval 133,checkpointinterval -1
+-- uetcstart -1
+-- bubbles 8, scale 2
+-- initnorm -1
+-- initcutoff -1
+-- initlength -1
+-- silodir "/scratch/project_2001563/dcutting/GRASP/silage/alph-0.5-vw-0.44-Nb-8-L-640-dx-1.5/"
+-- checkpointdir "./"
+-- seed 1234
+-- bubble
+-- gws sourced by FLUID only
+<List nucleation
+At steps: [0,...0]bubbles will be nucleated>
+phimin not set, defaulting to broken phase value. 
+R_critical not set, defaulting to gaussian ansatz. 
+-- Calculated bubble profile parameters: 
+-- surface_tension 0.25504, phimin 2 
+-- R_critical 7.41112, R_scaled 14.8222 
+Constant potential term found 
+-- V0 -0.0690983 
+Putting 262144000 sites on 160 nodes
+slicing: size of x=40 y=64
+(meaning 16 nodes in x, 10 nodes in y)
+Each node will need 1774080 = 1638400 + 135680 entries to store halo
+- Allocated fields.
+Checking for valid checkpoint
+Unable to access ".//checkpoint-integrity"
+- Zeroed fields.
+Using nucleation location file: 
+Ignoring initial bubbles parameter (bubbles 8). 
+Initial conditions done
+Initial avg energy per site: 0.698716
+/scratch/project_2001563/dcutting/GRASP/silage/alph-0.5-vw-0.44-Nb-8-L-640-dx-1.5/: File exists
+created directory /scratch/project_2001563/dcutting/GRASP/silage/alph-0.5-vw-0.44-Nb-8-L-640-dx-1.5/, where the silo will go
+Starting main loop.
+Parameter file requires nucleation at t=0.000000 step=0
+Parameter file requires nucleation at t=0.000000 step=0
+Parameter file requires nucleation at t=0.000000 step=0
+Parameter file requires nucleation at t=0.000000 step=0
+Parameter file requires nucleation at t=0.000000 step=0
+Parameter file requires nucleation at t=0.000000 step=0
+Parameter file requires nucleation at t=0.000000 step=0
+Parameter file requires nucleation at t=0.000000 step=0
+Nucleating a bubble on step 0 at (0, 0, 0) without any checks.
+Nucleating at (0, 0, 0)
+Nucleating a bubble on step 0 at (436, 599, 50) without any checks.
+Nucleating at (436, 599, 50)
+Nucleating a bubble on step 0 at (418, 626, 334) without any checks.
+Nucleating at (418, 626, 334)
+Nucleating a bubble on step 0 at (476, 305, 461) without any checks.
+Nucleating at (476, 305, 461)
+Nucleating a bubble on step 0 at (248, 410, 374) without any checks.
+Nucleating at (248, 410, 374)
+Nucleating a bubble on step 0 at (430, 555, 432) without any checks.
+Nucleating at (430, 555, 432)
+Nucleating a bubble on step 0 at (327, 625, 276) without any checks.
+Nucleating at (327, 625, 276)
+Nucleating a bubble on step 0 at (562, 254, 153) without any checks.
+Nucleating at (562, 254, 153)
+Writing SLICE to /scratch/project_2001563/dcutting/GRASP/silage/alph-0.5-vw-0.44-Nb-8-L-640-dx-1.5//slice-000000.silo
+Slice coord x=0
+Doing histogram, 100 bins in [-0.020000,2.020000]
+Histogram stuff took 0.020000
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+Starting vel power spectrum FFT calculation.
+broadcasting our results
+now to layout
+vel FFT: Done slicing for cpt 0
+vel FFT: Done slicing for cpt 1
+vel FFT: Done slicing for cpt 2
+vel power spectrum FFT calculation took 1.310000
+Starting J power spectrum FFT calculation.
+broadcasting our results
+now to layout
+J FFT: Done slicing for cpt 0
+J FFT: Done slicing for cpt 1
+J FFT: Done slicing for cpt 2
+J power spectrum FFT calculation took 1.220000
+Starting X power spectrum FFT calculation.
+broadcasting our results
+now to layout
+X FFT: Done slicing for cpt 0
+X FFT: Done slicing for cpt 1
+X FFT: Done slicing for cpt 2
+X power spectrum FFT calculation took 1.210000
+Starting GW FFT calculation.
+broadcasting our results
+now to layout
+GW: Done slicing for cpt 0
+Executing GW FFT, cpt 0
+GW: Done slicing for cpt 1
+Executing GW FFT, cpt 1
+GW: Done slicing for cpt 2
+Executing GW FFT, cpt 2
+GW: Done slicing for cpt 3
+Executing GW FFT, cpt 3
+GW: Done slicing for cpt 4
+Executing GW FFT, cpt 4
+GW: Done slicing for cpt 5
+Executing GW FFT, cpt 5
+GW projection...
+Calculating total energy
+Unnormalised GW energy [density] claimed 0.0000000000
+GW FFT calculation took 6.130000
+Doing histogram, 100 bins in [-0.019645,1.984108]
+Histogram stuff took 0.010000
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+Starting vel power spectrum FFT calculation.
+broadcasting our results
+now to layout
+vel FFT: Done slicing for cpt 0
+vel FFT: Done slicing for cpt 1
+vel FFT: Done slicing for cpt 2
+vel power spectrum FFT calculation took 1.270000
+Starting J power spectrum FFT calculation.
+broadcasting our results
+now to layout
+J FFT: Done slicing for cpt 0
+J FFT: Done slicing for cpt 1
+J FFT: Done slicing for cpt 2
+J power spectrum FFT calculation took 1.240000
+Starting X power spectrum FFT calculation.
+broadcasting our results
+now to layout
+X FFT: Done slicing for cpt 0
+X FFT: Done slicing for cpt 1
+X FFT: Done slicing for cpt 2
+X power spectrum FFT calculation took 1.230000
+Starting GW FFT calculation.
+broadcasting our results
+now to layout
+GW: Done slicing for cpt 0
+Executing GW FFT, cpt 0
+GW: Done slicing for cpt 1
+Executing GW FFT, cpt 1
+GW: Done slicing for cpt 2
+Executing GW FFT, cpt 2
+GW: Done slicing for cpt 3
+Executing GW FFT, cpt 3
+GW: Done slicing for cpt 4
+Executing GW FFT, cpt 4
+GW: Done slicing for cpt 5
+Executing GW FFT, cpt 5
+GW projection...
+Calculating total energy
+Unnormalised GW energy [density] claimed 0.0000000001
+GW FFT calculation took 6.370000
+Writing SLICE to /scratch/project_2001563/dcutting/GRASP/silage/alph-0.5-vw-0.44-Nb-8-L-640-dx-1.5//slice-000133.silo
+Slice coord x=0
+Doing histogram, 100 bins in [-0.019870,2.006902]
+Histogram stuff took 0.010000
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+Starting vel power spectrum FFT calculation.
+broadcasting our results
+now to layout
+vel FFT: Done slicing for cpt 0
+vel FFT: Done slicing for cpt 1
+vel FFT: Done slicing for cpt 2
+vel power spectrum FFT calculation took 1.290000
+Starting J power spectrum FFT calculation.
+broadcasting our results
+now to layout
+J FFT: Done slicing for cpt 0
+J FFT: Done slicing for cpt 1
+J FFT: Done slicing for cpt 2
+J power spectrum FFT calculation took 1.240000
+Starting X power spectrum FFT calculation.
+broadcasting our results
+now to layout
+X FFT: Done slicing for cpt 0
+X FFT: Done slicing for cpt 1
+X FFT: Done slicing for cpt 2
+X power spectrum FFT calculation took 1.230000
+Starting GW FFT calculation.
+broadcasting our results
+now to layout
+GW: Done slicing for cpt 0
+Executing GW FFT, cpt 0
+GW: Done slicing for cpt 1
+Executing GW FFT, cpt 1
+GW: Done slicing for cpt 2
+Executing GW FFT, cpt 2
+GW: Done slicing for cpt 3
+Executing GW FFT, cpt 3
+GW: Done slicing for cpt 4
+Executing GW FFT, cpt 4
+GW: Done slicing for cpt 5
+Executing GW FFT, cpt 5
+GW projection...
+Calculating total energy
+Unnormalised GW energy [density] claimed 0.0000000012
+GW FFT calculation took 6.270000
+Doing histogram, 100 bins in [-0.019955,2.015435]
+Histogram stuff took 0.000000
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+Starting vel power spectrum FFT calculation.
+broadcasting our results
+now to layout
+vel FFT: Done slicing for cpt 0
+vel FFT: Done slicing for cpt 1
+vel FFT: Done slicing for cpt 2
+vel power spectrum FFT calculation took 1.290000
+Starting J power spectrum FFT calculation.
+broadcasting our results
+now to layout
+J FFT: Done slicing for cpt 0
+J FFT: Done slicing for cpt 1
+J FFT: Done slicing for cpt 2
+J power spectrum FFT calculation took 1.230000
+Starting X power spectrum FFT calculation.
+broadcasting our results
+now to layout
+X FFT: Done slicing for cpt 0
+X FFT: Done slicing for cpt 1
+X FFT: Done slicing for cpt 2
+X power spectrum FFT calculation took 1.240000
+Starting GW FFT calculation.
+broadcasting our results
+now to layout
+GW: Done slicing for cpt 0
+Executing GW FFT, cpt 0
+GW: Done slicing for cpt 1
+Executing GW FFT, cpt 1
+GW: Done slicing for cpt 2
+Executing GW FFT, cpt 2
+GW: Done slicing for cpt 3
+Executing GW FFT, cpt 3
+GW: Done slicing for cpt 4
+Executing GW FFT, cpt 4
+GW: Done slicing for cpt 5
+Executing GW FFT, cpt 5
+GW projection...
+Calculating total energy
+Unnormalised GW energy [density] claimed 0.0000000041
+GW FFT calculation took 6.220000
+Writing SLICE to /scratch/project_2001563/dcutting/GRASP/silage/alph-0.5-vw-0.44-Nb-8-L-640-dx-1.5//slice-000266.silo
+Slice coord x=0
+Doing histogram, 100 bins in [-0.019985,2.018468]
+Histogram stuff took 0.009984
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+Starting vel power spectrum FFT calculation.
+broadcasting our results
+now to layout
+vel FFT: Done slicing for cpt 0
+vel FFT: Done slicing for cpt 1
+vel FFT: Done slicing for cpt 2
+vel power spectrum FFT calculation took 1.299968
+Starting J power spectrum FFT calculation.
+broadcasting our results
+now to layout
+J FFT: Done slicing for cpt 0
+J FFT: Done slicing for cpt 1
+J FFT: Done slicing for cpt 2
+J power spectrum FFT calculation took 1.240000
+Starting X power spectrum FFT calculation.
+broadcasting our results
+now to layout
+X FFT: Done slicing for cpt 0
+X FFT: Done slicing for cpt 1
+X FFT: Done slicing for cpt 2
+X power spectrum FFT calculation took 1.240000
+Starting GW FFT calculation.
+broadcasting our results
+now to layout
+GW: Done slicing for cpt 0
+Executing GW FFT, cpt 0
+GW: Done slicing for cpt 1
+Executing GW FFT, cpt 1
+GW: Done slicing for cpt 2
+Executing GW FFT, cpt 2
+GW: Done slicing for cpt 3
+Executing GW FFT, cpt 3
+GW: Done slicing for cpt 4
+Executing GW FFT, cpt 4
+GW: Done slicing for cpt 5
+Executing GW FFT, cpt 5
+GW projection...
+Calculating total energy
+Unnormalised GW energy [density] claimed 0.0000000069
+GW FFT calculation took 6.249984
+Doing histogram, 100 bins in [-0.019995,2.019532]
+Histogram stuff took 0.010016
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+Starting vel power spectrum FFT calculation.
+broadcasting our results
+now to layout
+vel FFT: Done slicing for cpt 0
+vel FFT: Done slicing for cpt 1
+vel FFT: Done slicing for cpt 2
+vel power spectrum FFT calculation took 1.289984
+Starting J power spectrum FFT calculation.
+broadcasting our results
+now to layout
+J FFT: Done slicing for cpt 0
+J FFT: Done slicing for cpt 1
+J FFT: Done slicing for cpt 2
+J power spectrum FFT calculation took 1.240000
+Starting X power spectrum FFT calculation.
+broadcasting our results
+now to layout
+X FFT: Done slicing for cpt 0
+X FFT: Done slicing for cpt 1
+X FFT: Done slicing for cpt 2
+X power spectrum FFT calculation took 1.240000
+Starting GW FFT calculation.
+broadcasting our results
+now to layout
+GW: Done slicing for cpt 0
+Executing GW FFT, cpt 0
+GW: Done slicing for cpt 1
+Executing GW FFT, cpt 1
+GW: Done slicing for cpt 2
+Executing GW FFT, cpt 2
+GW: Done slicing for cpt 3
+Executing GW FFT, cpt 3
+GW: Done slicing for cpt 4
+Executing GW FFT, cpt 4
+GW: Done slicing for cpt 5
+Executing GW FFT, cpt 5
+GW projection...
+Calculating total energy
+Unnormalised GW energy [density] claimed 0.0000000116
+GW FFT calculation took 6.220000
+Writing SLICE to /scratch/project_2001563/dcutting/GRASP/silage/alph-0.5-vw-0.44-Nb-8-L-640-dx-1.5//slice-000399.silo
+Slice coord x=0
+Doing histogram, 100 bins in [-0.019999,2.019863]
+Histogram stuff took 0.009984
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+Starting vel power spectrum FFT calculation.
+broadcasting our results
+now to layout
+vel FFT: Done slicing for cpt 0
+vel FFT: Done slicing for cpt 1
+vel FFT: Done slicing for cpt 2
+vel power spectrum FFT calculation took 1.300000
+Starting J power spectrum FFT calculation.
+broadcasting our results
+now to layout
+J FFT: Done slicing for cpt 0
+J FFT: Done slicing for cpt 1
+J FFT: Done slicing for cpt 2
+J power spectrum FFT calculation took 1.240000
+Starting X power spectrum FFT calculation.
+broadcasting our results
+now to layout
+X FFT: Done slicing for cpt 0
+X FFT: Done slicing for cpt 1
+X FFT: Done slicing for cpt 2
+X power spectrum FFT calculation took 1.240000
+Starting GW FFT calculation.
+broadcasting our results
+now to layout
+GW: Done slicing for cpt 0
+Executing GW FFT, cpt 0
+GW: Done slicing for cpt 1
+Executing GW FFT, cpt 1
+GW: Done slicing for cpt 2
+Executing GW FFT, cpt 2
+GW: Done slicing for cpt 3
+Executing GW FFT, cpt 3
+GW: Done slicing for cpt 4
+Executing GW FFT, cpt 4
+GW: Done slicing for cpt 5
+Executing GW FFT, cpt 5
+GW projection...
+Calculating total energy
+Unnormalised GW energy [density] claimed 0.0000000397
+GW FFT calculation took 6.280000
+Doing histogram, 100 bins in [-0.020000,2.019960]
+Histogram stuff took 0.009984
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+Starting vel power spectrum FFT calculation.
+broadcasting our results
+now to layout
+vel FFT: Done slicing for cpt 0
+vel FFT: Done slicing for cpt 1
+vel FFT: Done slicing for cpt 2
+vel power spectrum FFT calculation took 1.300000
+Starting J power spectrum FFT calculation.
+broadcasting our results
+now to layout
+J FFT: Done slicing for cpt 0
+J FFT: Done slicing for cpt 1
+J FFT: Done slicing for cpt 2
+J power spectrum FFT calculation took 1.240000
+Starting X power spectrum FFT calculation.
+broadcasting our results
+now to layout
+X FFT: Done slicing for cpt 0
+X FFT: Done slicing for cpt 1
+X FFT: Done slicing for cpt 2
+X power spectrum FFT calculation took 1.240000
+Starting GW FFT calculation.
+broadcasting our results
+now to layout
+GW: Done slicing for cpt 0
+Executing GW FFT, cpt 0
+GW: Done slicing for cpt 1
+Executing GW FFT, cpt 1
+GW: Done slicing for cpt 2
+Executing GW FFT, cpt 2
+GW: Done slicing for cpt 3
+Executing GW FFT, cpt 3
+GW: Done slicing for cpt 4
+Executing GW FFT, cpt 4
+GW: Done slicing for cpt 5
+Executing GW FFT, cpt 5
+GW projection...
+Calculating total energy
+Unnormalised GW energy [density] claimed 0.0000013801
+GW FFT calculation took 6.230016
+Writing SLICE to /scratch/project_2001563/dcutting/GRASP/silage/alph-0.5-vw-0.44-Nb-8-L-640-dx-1.5//slice-000532.silo
+Slice coord x=0
+Doing histogram, 100 bins in [-0.020000,2.019988]
+Histogram stuff took 0.010048
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+Starting vel power spectrum FFT calculation.
+broadcasting our results
+now to layout
+vel FFT: Done slicing for cpt 0
+vel FFT: Done slicing for cpt 1
+vel FFT: Done slicing for cpt 2
+vel power spectrum FFT calculation took 1.290048
+Starting J power spectrum FFT calculation.
+broadcasting our results
+now to layout
+J FFT: Done slicing for cpt 0
+J FFT: Done slicing for cpt 1
+J FFT: Done slicing for cpt 2
+J power spectrum FFT calculation took 1.240000
+Starting X power spectrum FFT calculation.
+broadcasting our results
+now to layout
+X FFT: Done slicing for cpt 0
+X FFT: Done slicing for cpt 1
+X FFT: Done slicing for cpt 2
+X power spectrum FFT calculation took 1.229952
+Starting GW FFT calculation.
+broadcasting our results
+now to layout
+GW: Done slicing for cpt 0
+Executing GW FFT, cpt 0
+GW: Done slicing for cpt 1
+Executing GW FFT, cpt 1
+GW: Done slicing for cpt 2
+Executing GW FFT, cpt 2
+GW: Done slicing for cpt 3
+Executing GW FFT, cpt 3
+GW: Done slicing for cpt 4
+Executing GW FFT, cpt 4
+GW: Done slicing for cpt 5
+Executing GW FFT, cpt 5
+GW projection...
+Calculating total energy
+Unnormalised GW energy [density] claimed 0.0000157629
+GW FFT calculation took 6.249984
+Doing histogram, 100 bins in [-0.020000,2.019997]
+Histogram stuff took 0.029952
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+Starting vel power spectrum FFT calculation.
+broadcasting our results
+now to layout
+vel FFT: Done slicing for cpt 0
+vel FFT: Done slicing for cpt 1
+vel FFT: Done slicing for cpt 2
+vel power spectrum FFT calculation took 1.300032
+Starting J power spectrum FFT calculation.
+broadcasting our results
+now to layout
+J FFT: Done slicing for cpt 0
+J FFT: Done slicing for cpt 1
+J FFT: Done slicing for cpt 2
+J power spectrum FFT calculation took 1.240000
+Starting X power spectrum FFT calculation.
+broadcasting our results
+now to layout
+X FFT: Done slicing for cpt 0
+X FFT: Done slicing for cpt 1
+X FFT: Done slicing for cpt 2
+X power spectrum FFT calculation took 1.240064
+Starting GW FFT calculation.
+broadcasting our results
+now to layout
+GW: Done slicing for cpt 0
+Executing GW FFT, cpt 0
+GW: Done slicing for cpt 1
+Executing GW FFT, cpt 1
+GW: Done slicing for cpt 2
+Executing GW FFT, cpt 2
+GW: Done slicing for cpt 3
+Executing GW FFT, cpt 3
+GW: Done slicing for cpt 4
+Executing GW FFT, cpt 4
+GW: Done slicing for cpt 5
+Executing GW FFT, cpt 5
+GW projection...
+Calculating total energy
+Unnormalised GW energy [density] claimed 0.0000832869
+GW FFT calculation took 6.259968
+Writing SLICE to /scratch/project_2001563/dcutting/GRASP/silage/alph-0.5-vw-0.44-Nb-8-L-640-dx-1.5//slice-000665.silo
+Slice coord x=0
+Doing histogram, 100 bins in [-0.020000,2.019998]
+Histogram stuff took 0.009984
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+Starting vel power spectrum FFT calculation.
+broadcasting our results
+now to layout
+vel FFT: Done slicing for cpt 0
+vel FFT: Done slicing for cpt 1
+vel FFT: Done slicing for cpt 2
+vel power spectrum FFT calculation took 1.289984
+Starting J power spectrum FFT calculation.
+broadcasting our results
+now to layout
+J FFT: Done slicing for cpt 0
+J FFT: Done slicing for cpt 1
+J FFT: Done slicing for cpt 2
+J power spectrum FFT calculation took 1.230016
+Starting X power spectrum FFT calculation.
+broadcasting our results
+now to layout
+X FFT: Done slicing for cpt 0
+X FFT: Done slicing for cpt 1
+X FFT: Done slicing for cpt 2
+X power spectrum FFT calculation took 1.240000
+Starting GW FFT calculation.
+broadcasting our results
+now to layout
+GW: Done slicing for cpt 0
+Executing GW FFT, cpt 0
+GW: Done slicing for cpt 1
+Executing GW FFT, cpt 1
+GW: Done slicing for cpt 2
+Executing GW FFT, cpt 2
+GW: Done slicing for cpt 3
+Executing GW FFT, cpt 3
+GW: Done slicing for cpt 4
+Executing GW FFT, cpt 4
+GW: Done slicing for cpt 5
+Executing GW FFT, cpt 5
+GW projection...
+Calculating total energy
+Unnormalised GW energy [density] claimed 0.0002746425
+GW FFT calculation took 6.240000
+Doing histogram, 100 bins in [-0.020000,2.019998]
+Histogram stuff took 0.009984
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+Starting vel power spectrum FFT calculation.
+broadcasting our results
+now to layout
+vel FFT: Done slicing for cpt 0
+vel FFT: Done slicing for cpt 1
+vel FFT: Done slicing for cpt 2
+vel power spectrum FFT calculation took 1.300032
+Starting J power spectrum FFT calculation.
+broadcasting our results
+now to layout
+J FFT: Done slicing for cpt 0
+J FFT: Done slicing for cpt 1
+J FFT: Done slicing for cpt 2
+J power spectrum FFT calculation took 1.240000
+Starting X power spectrum FFT calculation.
+broadcasting our results
+now to layout
+X FFT: Done slicing for cpt 0
+X FFT: Done slicing for cpt 1
+X FFT: Done slicing for cpt 2
+X power spectrum FFT calculation took 1.249984
+Starting GW FFT calculation.
+broadcasting our results
+now to layout
+GW: Done slicing for cpt 0
+Executing GW FFT, cpt 0
+GW: Done slicing for cpt 1
+Executing GW FFT, cpt 1
+GW: Done slicing for cpt 2
+Executing GW FFT, cpt 2
+GW: Done slicing for cpt 3
+Executing GW FFT, cpt 3
+GW: Done slicing for cpt 4
+Executing GW FFT, cpt 4
+GW: Done slicing for cpt 5
+Executing GW FFT, cpt 5
+GW projection...
+Calculating total energy
+Unnormalised GW energy [density] claimed 0.0006595524
+GW FFT calculation took 6.260032
+Writing SLICE to /scratch/project_2001563/dcutting/GRASP/silage/alph-0.5-vw-0.44-Nb-8-L-640-dx-1.5//slice-000798.silo
+Slice coord x=0
+Doing histogram, 100 bins in [-0.020000,2.019998]
+Histogram stuff took 0.009984
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+Starting vel power spectrum FFT calculation.
+broadcasting our results
+now to layout
+vel FFT: Done slicing for cpt 0
+vel FFT: Done slicing for cpt 1
+vel FFT: Done slicing for cpt 2
+vel power spectrum FFT calculation took 1.289984
+Starting J power spectrum FFT calculation.
+broadcasting our results
+now to layout
+J FFT: Done slicing for cpt 0
+J FFT: Done slicing for cpt 1
+J FFT: Done slicing for cpt 2
+J power spectrum FFT calculation took 1.239936
+Starting X power spectrum FFT calculation.
+broadcasting our results
+now to layout
+X FFT: Done slicing for cpt 0
+X FFT: Done slicing for cpt 1
+X FFT: Done slicing for cpt 2
+X power spectrum FFT calculation took 1.240000
+Starting GW FFT calculation.
+broadcasting our results
+now to layout
+GW: Done slicing for cpt 0
+Executing GW FFT, cpt 0
+GW: Done slicing for cpt 1
+Executing GW FFT, cpt 1
+GW: Done slicing for cpt 2
+Executing GW FFT, cpt 2
+GW: Done slicing for cpt 3
+Executing GW FFT, cpt 3
+GW: Done slicing for cpt 4
+Executing GW FFT, cpt 4
+GW: Done slicing for cpt 5
+Executing GW FFT, cpt 5
+GW projection...
+Calculating total energy
+Unnormalised GW energy [density] claimed 0.0012738411
+GW FFT calculation took 6.230016
+Doing histogram, 100 bins in [-0.020000,2.019998]
+Histogram stuff took 0.009984
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+Starting vel power spectrum FFT calculation.
+broadcasting our results
+now to layout
+vel FFT: Done slicing for cpt 0
+vel FFT: Done slicing for cpt 1
+vel FFT: Done slicing for cpt 2
+vel power spectrum FFT calculation took 1.289984
+Starting J power spectrum FFT calculation.
+broadcasting our results
+now to layout
+J FFT: Done slicing for cpt 0
+J FFT: Done slicing for cpt 1
+J FFT: Done slicing for cpt 2
+J power spectrum FFT calculation took 1.230016
+Starting X power spectrum FFT calculation.
+broadcasting our results
+now to layout
+X FFT: Done slicing for cpt 0
+X FFT: Done slicing for cpt 1
+X FFT: Done slicing for cpt 2
+X power spectrum FFT calculation took 1.249984
+Starting GW FFT calculation.
+broadcasting our results
+now to layout
+GW: Done slicing for cpt 0
+Executing GW FFT, cpt 0
+GW: Done slicing for cpt 1
+Executing GW FFT, cpt 1
+GW: Done slicing for cpt 2
+Executing GW FFT, cpt 2
+GW: Done slicing for cpt 3
+Executing GW FFT, cpt 3
+GW: Done slicing for cpt 4
+Executing GW FFT, cpt 4
+GW: Done slicing for cpt 5
+Executing GW FFT, cpt 5
+GW projection...
+Calculating total energy
+Unnormalised GW energy [density] claimed 0.0021244921
+GW FFT calculation took 6.270016
+Writing SLICE to /scratch/project_2001563/dcutting/GRASP/silage/alph-0.5-vw-0.44-Nb-8-L-640-dx-1.5//slice-000931.silo
+Slice coord x=0
+Doing histogram, 100 bins in [-0.020000,2.019998]
+Histogram stuff took 0.009984
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+Starting vel power spectrum FFT calculation.
+broadcasting our results
+now to layout
+vel FFT: Done slicing for cpt 0
+vel FFT: Done slicing for cpt 1
+vel FFT: Done slicing for cpt 2
+vel power spectrum FFT calculation took 1.289984
+Starting J power spectrum FFT calculation.
+broadcasting our results
+now to layout
+J FFT: Done slicing for cpt 0
+J FFT: Done slicing for cpt 1
+J FFT: Done slicing for cpt 2
+J power spectrum FFT calculation took 1.230016
+Starting X power spectrum FFT calculation.
+broadcasting our results
+now to layout
+X FFT: Done slicing for cpt 0
+X FFT: Done slicing for cpt 1
+X FFT: Done slicing for cpt 2
+X power spectrum FFT calculation took 1.249984
+Starting GW FFT calculation.
+broadcasting our results
+now to layout
+GW: Done slicing for cpt 0
+Executing GW FFT, cpt 0
+GW: Done slicing for cpt 1
+Executing GW FFT, cpt 1
+GW: Done slicing for cpt 2
+Executing GW FFT, cpt 2
+GW: Done slicing for cpt 3
+Executing GW FFT, cpt 3
+GW: Done slicing for cpt 4
+Executing GW FFT, cpt 4
+GW: Done slicing for cpt 5
+Executing GW FFT, cpt 5
+GW projection...
+Calculating total energy
+Unnormalised GW energy [density] claimed 0.0032241605
+GW FFT calculation took 6.289984
+Doing histogram, 100 bins in [-0.020000,2.019998]
+Histogram stuff took 0.029952
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+Starting vel power spectrum FFT calculation.
+broadcasting our results
+now to layout
+vel FFT: Done slicing for cpt 0
+vel FFT: Done slicing for cpt 1
+vel FFT: Done slicing for cpt 2
+vel power spectrum FFT calculation took 1.300032
+Starting J power spectrum FFT calculation.
+broadcasting our results
+now to layout
+J FFT: Done slicing for cpt 0
+J FFT: Done slicing for cpt 1
+J FFT: Done slicing for cpt 2
+J power spectrum FFT calculation took 1.240000
+Starting X power spectrum FFT calculation.
+broadcasting our results
+now to layout
+X FFT: Done slicing for cpt 0
+X FFT: Done slicing for cpt 1
+X FFT: Done slicing for cpt 2
+X power spectrum FFT calculation took 1.240064
+Starting GW FFT calculation.
+broadcasting our results
+now to layout
+GW: Done slicing for cpt 0
+Executing GW FFT, cpt 0
+GW: Done slicing for cpt 1
+Executing GW FFT, cpt 1
+GW: Done slicing for cpt 2
+Executing GW FFT, cpt 2
+GW: Done slicing for cpt 3
+Executing GW FFT, cpt 3
+GW: Done slicing for cpt 4
+Executing GW FFT, cpt 4
+GW: Done slicing for cpt 5
+Executing GW FFT, cpt 5
+GW projection...
+Calculating total energy
+Unnormalised GW energy [density] claimed 0.0046002474
+GW FFT calculation took 6.230016
+Writing SLICE to /scratch/project_2001563/dcutting/GRASP/silage/alph-0.5-vw-0.44-Nb-8-L-640-dx-1.5//slice-001064.silo
+Slice coord x=0
+Doing histogram, 100 bins in [-0.020000,2.019998]
+Histogram stuff took 0.009984
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+Starting vel power spectrum FFT calculation.
+broadcasting our results
+now to layout
+vel FFT: Done slicing for cpt 0
+vel FFT: Done slicing for cpt 1
+vel FFT: Done slicing for cpt 2
+vel power spectrum FFT calculation took 1.289984
+Starting J power spectrum FFT calculation.
+broadcasting our results
+now to layout
+J FFT: Done slicing for cpt 0
+J FFT: Done slicing for cpt 1
+J FFT: Done slicing for cpt 2
+J power spectrum FFT calculation took 1.229952
+Starting X power spectrum FFT calculation.
+broadcasting our results
+now to layout
+X FFT: Done slicing for cpt 0
+X FFT: Done slicing for cpt 1
+X FFT: Done slicing for cpt 2
+X power spectrum FFT calculation took 1.240064
+Starting GW FFT calculation.
+broadcasting our results
+now to layout
+GW: Done slicing for cpt 0
+Executing GW FFT, cpt 0
+GW: Done slicing for cpt 1
+Executing GW FFT, cpt 1
+GW: Done slicing for cpt 2
+Executing GW FFT, cpt 2
+GW: Done slicing for cpt 3
+Executing GW FFT, cpt 3
+GW: Done slicing for cpt 4
+Executing GW FFT, cpt 4
+GW: Done slicing for cpt 5
+Executing GW FFT, cpt 5
+GW projection...
+Calculating total energy
+Unnormalised GW energy [density] claimed 0.0062928172
+GW FFT calculation took 6.220032
+Doing histogram, 100 bins in [-0.020000,2.019998]
+Histogram stuff took 0.009984
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+Starting vel power spectrum FFT calculation.
+broadcasting our results
+now to layout
+vel FFT: Done slicing for cpt 0
+vel FFT: Done slicing for cpt 1
+vel FFT: Done slicing for cpt 2
+vel power spectrum FFT calculation took 1.289984
+Starting J power spectrum FFT calculation.
+broadcasting our results
+now to layout
+J FFT: Done slicing for cpt 0
+J FFT: Done slicing for cpt 1
+J FFT: Done slicing for cpt 2
+J power spectrum FFT calculation took 1.240064
+Starting X power spectrum FFT calculation.
+broadcasting our results
+now to layout
+X FFT: Done slicing for cpt 0
+X FFT: Done slicing for cpt 1
+X FFT: Done slicing for cpt 2
+X power spectrum FFT calculation took 1.240064
+Starting GW FFT calculation.
+broadcasting our results
+now to layout
+GW: Done slicing for cpt 0
+Executing GW FFT, cpt 0
+GW: Done slicing for cpt 1
+Executing GW FFT, cpt 1
+GW: Done slicing for cpt 2
+Executing GW FFT, cpt 2
+GW: Done slicing for cpt 3
+Executing GW FFT, cpt 3
+GW: Done slicing for cpt 4
+Executing GW FFT, cpt 4
+GW: Done slicing for cpt 5
+Executing GW FFT, cpt 5
+GW projection...
+Calculating total energy
+Unnormalised GW energy [density] claimed 0.0083533730
+GW FFT calculation took 6.240000
+Writing SLICE to /scratch/project_2001563/dcutting/GRASP/silage/alph-0.5-vw-0.44-Nb-8-L-640-dx-1.5//slice-001197.silo
+Slice coord x=0
+Doing histogram, 100 bins in [-0.020000,2.019998]
+Histogram stuff took 0.010112
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+Starting vel power spectrum FFT calculation.
+broadcasting our results
+now to layout
+vel FFT: Done slicing for cpt 0
+vel FFT: Done slicing for cpt 1
+vel FFT: Done slicing for cpt 2
+vel power spectrum FFT calculation took 1.280000
+Starting J power spectrum FFT calculation.
+broadcasting our results
+now to layout
+J FFT: Done slicing for cpt 0
+J FFT: Done slicing for cpt 1
+J FFT: Done slicing for cpt 2
+J power spectrum FFT calculation took 1.249920
+Starting X power spectrum FFT calculation.
+broadcasting our results
+now to layout
+X FFT: Done slicing for cpt 0
+X FFT: Done slicing for cpt 1
+X FFT: Done slicing for cpt 2
+X power spectrum FFT calculation took 1.240064
+Starting GW FFT calculation.
+broadcasting our results
+now to layout
+GW: Done slicing for cpt 0
+Executing GW FFT, cpt 0
+GW: Done slicing for cpt 1
+Executing GW FFT, cpt 1
+GW: Done slicing for cpt 2
+Executing GW FFT, cpt 2
+GW: Done slicing for cpt 3
+Executing GW FFT, cpt 3
+GW: Done slicing for cpt 4
+Executing GW FFT, cpt 4
+GW: Done slicing for cpt 5
+Executing GW FFT, cpt 5
+GW projection...
+Calculating total energy
+Unnormalised GW energy [density] claimed 0.0108902752
+GW FFT calculation took 6.269952
+Doing histogram, 100 bins in [-0.020000,2.019998]
+Histogram stuff took 0.009984
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+Starting vel power spectrum FFT calculation.
+broadcasting our results
+now to layout
+vel FFT: Done slicing for cpt 0
+vel FFT: Done slicing for cpt 1
+vel FFT: Done slicing for cpt 2
+vel power spectrum FFT calculation took 1.310080
+Starting J power spectrum FFT calculation.
+broadcasting our results
+now to layout
+J FFT: Done slicing for cpt 0
+J FFT: Done slicing for cpt 1
+J FFT: Done slicing for cpt 2
+J power spectrum FFT calculation took 1.239936
+Starting X power spectrum FFT calculation.
+broadcasting our results
+now to layout
+X FFT: Done slicing for cpt 0
+X FFT: Done slicing for cpt 1
+X FFT: Done slicing for cpt 2
+X power spectrum FFT calculation took 1.239936
+Starting GW FFT calculation.
+broadcasting our results
+now to layout
+GW: Done slicing for cpt 0
+Executing GW FFT, cpt 0
+GW: Done slicing for cpt 1
+Executing GW FFT, cpt 1
+GW: Done slicing for cpt 2
+Executing GW FFT, cpt 2
+GW: Done slicing for cpt 3
+Executing GW FFT, cpt 3
+GW: Done slicing for cpt 4
+Executing GW FFT, cpt 4
+GW: Done slicing for cpt 5
+Executing GW FFT, cpt 5
+GW projection...
+Calculating total energy
+Unnormalised GW energy [density] claimed 0.0142202349
+GW FFT calculation took 6.240000
+Writing SLICE to /scratch/project_2001563/dcutting/GRASP/silage/alph-0.5-vw-0.44-Nb-8-L-640-dx-1.5//slice-001330.silo
+Slice coord x=0
+Doing histogram, 100 bins in [-0.020000,2.019998]
+Histogram stuff took 0.009984
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+Starting vel power spectrum FFT calculation.
+broadcasting our results
+now to layout
+vel FFT: Done slicing for cpt 0
+vel FFT: Done slicing for cpt 1
+vel FFT: Done slicing for cpt 2
+vel power spectrum FFT calculation took 1.299968
+Starting J power spectrum FFT calculation.
+broadcasting our results
+now to layout
+J FFT: Done slicing for cpt 0
+J FFT: Done slicing for cpt 1
+J FFT: Done slicing for cpt 2
+J power spectrum FFT calculation took 1.240064
+Starting X power spectrum FFT calculation.
+broadcasting our results
+now to layout
+X FFT: Done slicing for cpt 0
+X FFT: Done slicing for cpt 1
+X FFT: Done slicing for cpt 2
+X power spectrum FFT calculation took 1.240064
+Starting GW FFT calculation.
+broadcasting our results
+now to layout
+GW: Done slicing for cpt 0
+Executing GW FFT, cpt 0
+GW: Done slicing for cpt 1
+Executing GW FFT, cpt 1
+GW: Done slicing for cpt 2
+Executing GW FFT, cpt 2
+GW: Done slicing for cpt 3
+Executing GW FFT, cpt 3
+GW: Done slicing for cpt 4
+Executing GW FFT, cpt 4
+GW: Done slicing for cpt 5
+Executing GW FFT, cpt 5
+GW projection...
+Calculating total energy
+Unnormalised GW energy [density] claimed 0.0190738365
+GW FFT calculation took 6.259968
+Doing histogram, 100 bins in [-0.020000,2.019998]
+Histogram stuff took 0.010112
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+Starting vel power spectrum FFT calculation.
+broadcasting our results
+now to layout
+vel FFT: Done slicing for cpt 0
+vel FFT: Done slicing for cpt 1
+vel FFT: Done slicing for cpt 2
+vel power spectrum FFT calculation took 1.300096
+Starting J power spectrum FFT calculation.
+broadcasting our results
+now to layout
+J FFT: Done slicing for cpt 0
+J FFT: Done slicing for cpt 1
+J FFT: Done slicing for cpt 2
+J power spectrum FFT calculation took 1.229952
+Starting X power spectrum FFT calculation.
+broadcasting our results
+now to layout
+X FFT: Done slicing for cpt 0
+X FFT: Done slicing for cpt 1
+X FFT: Done slicing for cpt 2
+X power spectrum FFT calculation took 1.229952
+Starting GW FFT calculation.
+broadcasting our results
+now to layout
+GW: Done slicing for cpt 0
+Executing GW FFT, cpt 0
+GW: Done slicing for cpt 1
+Executing GW FFT, cpt 1
+GW: Done slicing for cpt 2
+Executing GW FFT, cpt 2
+GW: Done slicing for cpt 3
+Executing GW FFT, cpt 3
+GW: Done slicing for cpt 4
+Executing GW FFT, cpt 4
+GW: Done slicing for cpt 5
+Executing GW FFT, cpt 5
+GW projection...
+Calculating total energy
+Unnormalised GW energy [density] claimed 0.0267875940
+GW FFT calculation took 6.240000
+Writing SLICE to /scratch/project_2001563/dcutting/GRASP/silage/alph-0.5-vw-0.44-Nb-8-L-640-dx-1.5//slice-001463.silo
+Slice coord x=0
+Doing histogram, 100 bins in [-0.020000,2.019998]
+Histogram stuff took 0.030080
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+Starting vel power spectrum FFT calculation.
+broadcasting our results
+now to layout
+vel FFT: Done slicing for cpt 0
+vel FFT: Done slicing for cpt 1
+vel FFT: Done slicing for cpt 2
+vel power spectrum FFT calculation took 1.299968
+Starting J power spectrum FFT calculation.
+broadcasting our results
+now to layout
+J FFT: Done slicing for cpt 0
+J FFT: Done slicing for cpt 1
+J FFT: Done slicing for cpt 2
+J power spectrum FFT calculation took 1.240064
+Starting X power spectrum FFT calculation.
+broadcasting our results
+now to layout
+X FFT: Done slicing for cpt 0
+X FFT: Done slicing for cpt 1
+X FFT: Done slicing for cpt 2
+X power spectrum FFT calculation took 1.239936
+Starting GW FFT calculation.
+broadcasting our results
+now to layout
+GW: Done slicing for cpt 0
+Executing GW FFT, cpt 0
+GW: Done slicing for cpt 1
+Executing GW FFT, cpt 1
+GW: Done slicing for cpt 2
+Executing GW FFT, cpt 2
+GW: Done slicing for cpt 3
+Executing GW FFT, cpt 3
+GW: Done slicing for cpt 4
+Executing GW FFT, cpt 4
+GW: Done slicing for cpt 5
+Executing GW FFT, cpt 5
+GW projection...
+Calculating total energy
+Unnormalised GW energy [density] claimed 0.0393147506
+GW FFT calculation took 6.260096
+Doing histogram, 100 bins in [-0.020000,2.019998]
+Histogram stuff took 0.009984
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+Starting vel power spectrum FFT calculation.
+broadcasting our results
+now to layout
+vel FFT: Done slicing for cpt 0
+vel FFT: Done slicing for cpt 1
+vel FFT: Done slicing for cpt 2
+vel power spectrum FFT calculation took 1.289984
+Starting J power spectrum FFT calculation.
+broadcasting our results
+now to layout
+J FFT: Done slicing for cpt 0
+J FFT: Done slicing for cpt 1
+J FFT: Done slicing for cpt 2
+J power spectrum FFT calculation took 1.239936
+Starting X power spectrum FFT calculation.
+broadcasting our results
+now to layout
+X FFT: Done slicing for cpt 0
+X FFT: Done slicing for cpt 1
+X FFT: Done slicing for cpt 2
+X power spectrum FFT calculation took 1.249920
+Starting GW FFT calculation.
+broadcasting our results
+now to layout
+GW: Done slicing for cpt 0
+Executing GW FFT, cpt 0
+GW: Done slicing for cpt 1
+Executing GW FFT, cpt 1
+GW: Done slicing for cpt 2
+Executing GW FFT, cpt 2
+GW: Done slicing for cpt 3
+Executing GW FFT, cpt 3
+GW: Done slicing for cpt 4
+Executing GW FFT, cpt 4
+GW: Done slicing for cpt 5
+Executing GW FFT, cpt 5
+GW projection...
+Calculating total energy
+Unnormalised GW energy [density] claimed 0.0589262918
+GW FFT calculation took 6.240000
+Writing SLICE to /scratch/project_2001563/dcutting/GRASP/silage/alph-0.5-vw-0.44-Nb-8-L-640-dx-1.5//slice-001596.silo
+Slice coord x=0
+Doing histogram, 100 bins in [-0.020000,2.019998]
+Histogram stuff took 0.009984
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+Starting vel power spectrum FFT calculation.
+broadcasting our results
+now to layout
+vel FFT: Done slicing for cpt 0
+vel FFT: Done slicing for cpt 1
+vel FFT: Done slicing for cpt 2
+vel power spectrum FFT calculation took 1.300096
+Starting J power spectrum FFT calculation.
+broadcasting our results
+now to layout
+J FFT: Done slicing for cpt 0
+J FFT: Done slicing for cpt 1
+J FFT: Done slicing for cpt 2
+J power spectrum FFT calculation took 1.249920
+Starting X power spectrum FFT calculation.
+broadcasting our results
+now to layout
+X FFT: Done slicing for cpt 0
+X FFT: Done slicing for cpt 1
+X FFT: Done slicing for cpt 2
+X power spectrum FFT calculation took 1.249920
+Starting GW FFT calculation.
+broadcasting our results
+now to layout
+GW: Done slicing for cpt 0
+Executing GW FFT, cpt 0
+GW: Done slicing for cpt 1
+Executing GW FFT, cpt 1
+GW: Done slicing for cpt 2
+Executing GW FFT, cpt 2
+GW: Done slicing for cpt 3
+Executing GW FFT, cpt 3
+GW: Done slicing for cpt 4
+Executing GW FFT, cpt 4
+GW: Done slicing for cpt 5
+Executing GW FFT, cpt 5
+GW projection...
+Calculating total energy
+Unnormalised GW energy [density] claimed 0.0878995657
+GW FFT calculation took 6.270080
+Doing histogram, 100 bins in [-0.020000,2.019998]
+Histogram stuff took 0.009984
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+Starting vel power spectrum FFT calculation.
+broadcasting our results
+now to layout
+vel FFT: Done slicing for cpt 0
+vel FFT: Done slicing for cpt 1
+vel FFT: Done slicing for cpt 2
+vel power spectrum FFT calculation took 1.300096
+Starting J power spectrum FFT calculation.
+broadcasting our results
+now to layout
+J FFT: Done slicing for cpt 0
+J FFT: Done slicing for cpt 1
+J FFT: Done slicing for cpt 2
+J power spectrum FFT calculation took 1.229952
+Starting X power spectrum FFT calculation.
+broadcasting our results
+now to layout
+X FFT: Done slicing for cpt 0
+X FFT: Done slicing for cpt 1
+X FFT: Done slicing for cpt 2
+X power spectrum FFT calculation took 1.250048
+Starting GW FFT calculation.
+broadcasting our results
+now to layout
+GW: Done slicing for cpt 0
+Executing GW FFT, cpt 0
+GW: Done slicing for cpt 1
+Executing GW FFT, cpt 1
+GW: Done slicing for cpt 2
+Executing GW FFT, cpt 2
+GW: Done slicing for cpt 3
+Executing GW FFT, cpt 3
+GW: Done slicing for cpt 4
+Executing GW FFT, cpt 4
+GW: Done slicing for cpt 5
+Executing GW FFT, cpt 5
+GW projection...
+Calculating total energy
+Unnormalised GW energy [density] claimed 0.1286115944
+GW FFT calculation took 6.230016
+slurmstepd: error: *** STEP 204708.0 ON r07c01 CANCELLED AT 2019-09-17T07:59:24 DUE TO TIME LIMIT ***
+srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
+slurmstepd: error: *** JOB 204708 ON r07c01 CANCELLED AT 2019-09-17T07:59:24 DUE TO TIME LIMIT ***

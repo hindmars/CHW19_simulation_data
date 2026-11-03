@@ -1,0 +1,108 @@
+ncores = 120
+3D hydro port with MPI
+Built: Mar 21 2019 15:15:01
+Disabled sbrk
+-- Read parameters from /homeappl/home/dcutting/Projects/single-precision-3d-hydro-new-eta/run/data/alph-0.005-vw-0.44-Nb-8-L-960-dx-1.0-seed-2/input-test-BAG:
+-- dx 1, dt 0.2, steps 14000
+-- Lx 960, Ly 960, Lz 960
+-- Cav 0, C 0.338,
+-- alpha 0.167705, gamma 0.0427051, lambda 0.0731763
+-- gstar 106.75
+-- T0 0.707107, Tconst 0.792023
+-- interval 100, fftinterval 100
+-- silointerval 0, silosliceinterval 200,checkpointinterval -1
+-- uetcstart -1
+-- bubbles 8, scale 2
+-- initnorm -1
+-- initcutoff -1
+-- initlength -1
+-- silodir "/wrk/dcutting/silage/alph-0.005-vw-0.44-Nb-8-L-960-dx-1.0-seed-2/"
+-- checkpointdir "cp/"
+-- seed 4321
+-- bubble
+-- gws sourced by FLUID only
+<No nucleation>
+phimin not set, defaulting to broken phase value. 
+R_critical not set, defaulting to gaussian ansatz. 
+-- Calculated bubble profile parameters: 
+-- surface_tension 0.25504, phimin 2 
+-- R_critical 12.1715, R_scaled 24.343 
+Constant potential term found 
+-- V0 -0.0690983 
+Putting 884736000 sites on 120 nodes
+slicing: size of x=80 y=96
+(meaning 12 nodes in x, 10 nodes in y)
+Each node will need 7714560 = 7372800 + 341760 entries to store halo
+- Allocated fields.
+Checking for valid checkpoint
+Unable to access "cp//checkpoint-integrity"
+- Zeroed fields.
+Nucleating first bubble
+Nucleating at (0, 0, 0)
+Nucleation attempt took 0.160000
+Trying to nucleate a bubble (safe distance = 34)
+Nucleating at (234, 664, 137)
+Nucleation attempt took 0.120000
+Trying to nucleate a bubble (safe distance = 34)
+Nucleating at (71, 771, 478)
+Nucleation attempt took 0.130000
+Trying to nucleate a bubble (safe distance = 34)
+Nucleating at (182, 128, 549)
+Nucleation attempt took 0.140000
+Trying to nucleate a bubble (safe distance = 34)
+Nucleating at (819, 735, 865)
+Nucleation attempt took 0.130000
+Trying to nucleate a bubble (safe distance = 34)
+Nucleating at (369, 258, 133)
+Nucleation attempt took 0.130000
+Trying to nucleate a bubble (safe distance = 34)
+Nucleating at (528, 441, 847)
+Nucleation attempt took 0.130000
+Trying to nucleate a bubble (safe distance = 34)
+Nucleating at (468, 793, 559)
+Nucleation attempt took 0.140000
+Initial conditions done
+Initial avg energy per site: 13.9032
+/wrk/dcutting/silage/alph-0.005-vw-0.44-Nb-8-L-960-dx-1.0-seed-2/: File exists
+created directory /wrk/dcutting/silage/alph-0.005-vw-0.44-Nb-8-L-960-dx-1.0-seed-2/, where the silo will go
+Starting main loop.
+Writing SLICE to /wrk/dcutting/silage/alph-0.005-vw-0.44-Nb-8-L-960-dx-1.0-seed-2//slice-000000.silo
+Slice coord x=0
+Doing histogram, 100 bins in [-0.020000,2.020000]
+Histogram stuff took 0.030000
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+broadcasting our results
+now to layout
+FFT: Done slicing
+Basic FFT done
+Starting velocity power spectrum FFT calculation.
+broadcasting our results
+now to layout
+Vel FFT: Done slicing for cpt 0
+Vel FFT: Done slicing for cpt 1
+Vel FFT: Done slicing for cpt 2
+Velocity power spectrum FFT calculation took 6.100000
+Starting GW FFT calculation.
+broadcasting our results
+now to layout
+GW: Done slicing for cpt 0
+Executing GW FFT, cpt 0
+GW: Done slicing for cpt 1
+Executing GW FFT, cpt 1
+GW: Done slicing for cpt 2
+Executing GW FFT, cpt 2
+GW: Done slicing for cpt 3
+Executing GW FFT, cpt 3
+GW: Done slicing for cpt 4
+Executing GW FFT, cpt 4
+GW: Done slicing for cpt 5
+Executing GW FFT, cpt 5
+GW projection...
+Calculating total energy
+Unnormalised GW energy [density] claimed 0.0000000000
+GW FFT calculation took 29.709999
+srun: error: *** STEP 1036306.0 CANCELLED AT 2019-03-21T15:42:58 DUE TO TIME LIMIT ***
+slurmstepd: error: *** JOB 1036306 ON login1 CANCELLED AT 2019-03-21T15:42:58 DUE TO TIME LIMIT ***

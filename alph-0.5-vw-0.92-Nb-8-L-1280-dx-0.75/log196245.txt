@@ -1,0 +1,200 @@
+ncores = 2560
+3D hydro port with MPI
+Built: Sep 13 2019 16:32:33
+Disabled sbrk
+Looks like there are 8 bubbles in locfile.txt
+-- Read parameters from /users/dcutting/Projects/single-precision-3d-hydro-new-eta/run/data/prl-runs/alph-0.5-vw-0.92-Nb-8-L-1280-dx-0.75/input-test-BAG:
+-- dx 0.75, dt 0.15, steps 18670
+-- Lx 1280, Ly 1280, Lz 1280
+-- Cav 0, C 0.13181,
+-- alpha 0.167705, gamma 0.0427051, lambda 0.0731763
+-- gstar 106.75
+-- T0 0.707107, Tconst 0.25046
+-- interval 133, fftinterval 133
+-- silointerval 0, silosliceinterval 267,checkpointinterval -1
+-- uetcstart -1
+-- bubbles 8, scale 2
+-- initnorm -1
+-- initcutoff -1
+-- initlength -1
+-- silodir "/scratch/project_2001563/dcutting/GRASP/silage/alph-0.5-vw-0.92-Nb-8-L-1280-dx-0.75/"
+-- checkpointdir "./"
+-- seed 1234
+-- bubble
+-- gws sourced by FLUID only
+<List nucleation
+At steps: [0,...0]bubbles will be nucleated>
+phimin not set, defaulting to broken phase value. 
+R_critical not set, defaulting to gaussian ansatz. 
+-- Calculated bubble profile parameters: 
+-- surface_tension 0.25504, phimin 2 
+-- R_critical 7.41112, R_scaled 14.8222 
+Constant potential term found 
+-- V0 -0.0690983 
+Putting 2097152000 sites on 2560 nodes
+slicing: size of x=20 y=32
+(meaning 64 nodes in x, 40 nodes in y)
+Each node will need 957440 = 819200 + 138240 entries to store halo
+- Allocated fields.
+Checking for valid checkpoint
+Unable to access ".//checkpoint-integrity"
+- Zeroed fields.
+Using nucleation location file: 
+Ignoring initial bubbles parameter (bubbles 8). 
+Initial conditions done
+Initial avg energy per site: 0.0872826
+/scratch/project_2001563/dcutting/GRASP/silage/alph-0.5-vw-0.92-Nb-8-L-1280-dx-0.75/: File exists
+created directory /scratch/project_2001563/dcutting/GRASP/silage/alph-0.5-vw-0.92-Nb-8-L-1280-dx-0.75/, where the silo will go
+Starting main loop.
+Parameter file requires nucleation at t=0.000000 step=0
+Parameter file requires nucleation at t=0.000000 step=0
+Parameter file requires nucleation at t=0.000000 step=0
+Parameter file requires nucleation at t=0.000000 step=0
+Parameter file requires nucleation at t=0.000000 step=0
+Parameter file requires nucleation at t=0.000000 step=0
+Parameter file requires nucleation at t=0.000000 step=0
+Parameter file requires nucleation at t=0.000000 step=0
+Nucleating a bubble on step 0 at (0, 0, 0) without any checks.
+Nucleating at (0, 0, 0)
+Nucleating a bubble on step 0 at (871, 1198, 99) without any checks.
+Nucleating at (871, 1198, 99)
+Nucleating a bubble on step 0 at (835, 1253, 667) without any checks.
+Nucleating at (835, 1253, 667)
+Nucleating a bubble on step 0 at (953, 610, 922) without any checks.
+Nucleating at (953, 610, 922)
+Nucleating a bubble on step 0 at (497, 819, 747) without any checks.
+Nucleating at (497, 819, 747)
+Nucleating a bubble on step 0 at (861, 1110, 863) without any checks.
+Nucleating at (861, 1110, 863)
+Nucleating a bubble on step 0 at (654, 1250, 553) without any checks.
+Nucleating at (654, 1250, 553)
+Nucleating a bubble on step 0 at (1125, 507, 306) without any checks.
+Nucleating at (1125, 507, 306)
+Writing SLICE to /scratch/project_2001563/dcutting/GRASP/silage/alph-0.5-vw-0.92-Nb-8-L-1280-dx-0.75//slice-000000.silo
+Slice coord x=0
+Doing histogram, 100 bins in [-0.020000,2.020000]
+Histogram stuff took 0.000000
+broadcasting our results
+now to layout
+srun: error: r06c15: task 1277: Segmentation fault
+srun: Terminating job step 196245.0
+srun: error: r17c02: task 2046: Segmentation fault
+srun: error: r04c25: task 190: Segmentation fault
+srun: error: r06c07: task 1186: Segmentation fault
+slurmstepd: error: *** STEP 196245.0 ON r04c02 CANCELLED AT 2019-09-14T12:17:08 ***
+srun: error: r17c35: task 2212: Segmentation fault
+srun: error: r05c31: task 922: Segmentation fault
+srun: error: r04c14: task 135: Segmentation fault
+srun: error: r05c10: task 509: Segmentation fault
+srun: error: r06c47: tasks 1835-1840,1842-1843: Segmentation fault
+srun: error: r17c09: tasks 2111-2112: Segmentation fault
+srun: error: r05c11: tasks 515,530: Segmentation fault
+srun: error: r06c18: tasks 1318-1321,1323-1325: Segmentation fault
+srun: error: r05c04: tasks 467,476-477,480: Segmentation fault
+srun: error: r04c34: tasks 295-298: Segmentation fault
+srun: error: r04c20: tasks 166-169: Segmentation fault
+srun: error: r04c32: tasks 271-274: Segmentation fault
+srun: error: r06c39: tasks 1750-1754: Segmentation fault
+srun: error: r04c13: tasks 129-134: Segmentation fault
+srun: error: r04c04: tasks 69-74: Segmentation fault
+srun: error: r04c41: tasks 330-333,335-339: Segmentation fault
+srun: error: r17c04: tasks 2065-2070: Segmentation fault
+srun: error: r05c09: task 481: Terminated
+srun: error: r05c09: tasks 482-488: Segmentation fault
+srun: error: r06c14: tasks 1267-1272,1274-1276: Segmentation fault
+srun: error: r06c14: task 1273: Terminated
+srun: error: r06c18: task 1322: Terminated
+srun: error: r04c40: tasks 319-328: Segmentation fault
+srun: error: r04c40: task 329: Terminated
+srun: error: r07c05: tasks 1884-1893: Segmentation fault
+srun: error: r05c17: tasks 591-598,600-601: Segmentation fault
+srun: error: r05c17: task 599: Terminated
+srun: error: r04c17: tasks 136-151: Segmentation fault
+srun: error: r06c21: tasks 1406-1421: Segmentation fault
+srun: error: r04c41: task 334: Terminated
+srun: error: r04c19: tasks 152-163,165: Segmentation fault
+srun: error: r04c19: task 164: Terminated
+srun: error: r07c06: tasks 1894-1909: Segmentation fault
+srun: error: r17c43: tasks 2372-2381,2383-2387: Segmentation fault
+srun: error: r17c43: task 2382: Terminated
+srun: error: r06c36: tasks 1718-1733: Segmentation fault
+srun: error: r06c37: tasks 1734-1745,1747-1749: Segmentation fault
+srun: error: r06c37: task 1746: Terminated
+srun: error: r07c07: tasks 1910-1922,1924-1925: Segmentation fault
+srun: error: r07c07: task 1923: Terminated
+srun: error: r07c13: tasks 1950-1965: Segmentation fault
+srun: error: r06c35: tasks 1702-1717: Segmentation fault
+srun: error: r17c44: tasks 2388-2403: Segmentation fault
+srun: error: r17c03: tasks 2047-2064: Segmentation fault
+srun: error: r04c09: tasks 111,113-128: Segmentation fault
+srun: error: r04c09: task 112: Terminated
+srun: error: r07c09: tasks 1926-1949: Segmentation fault
+srun: error: r17c24: tasks 2153-2171: Segmentation fault
+srun: error: r04c06: tasks 75-92: Segmentation fault
+srun: error: r04c07: tasks 94-103,105-110: Segmentation fault
+srun: error: r04c06: task 93: Terminated
+srun: error: r04c07: task 104: Terminated
+srun: error: r05c10: tasks 489-508: Segmentation fault
+srun: error: r06c17: tasks 1298-1313,1315-1317: Segmentation fault
+srun: error: r06c16: tasks 1278-1295,1297: Segmentation fault
+srun: error: r06c17: task 1314: Terminated
+srun: error: r06c16: task 1296: Terminated
+srun: error: r04c35: tasks 299-318: Segmentation fault
+srun: error: r05c12: tasks 531-550: Segmentation fault
+srun: error: r05c48: tasks 1123-1146: Segmentation fault
+srun: error: r04c33: tasks 275-294: Segmentation fault
+srun: error: r05c11: tasks 510-514,516-529: Segmentation fault
+srun: error: r04c21: tasks 170-189: Segmentation fault
+srun: error: r05c04: tasks 460-466,468-475,478-479: Segmentation fault
+srun: error: r17c47: tasks 2482-2520: Segmentation fault
+srun: error: r05c18: tasks 602-641: Segmentation fault
+srun: error: r05c23: tasks 802-841: Segmentation fault
+srun: error: r05c44: tasks 1043-1082: Segmentation fault
+srun: error: r06c12: tasks 1187-1226: Segmentation fault
+srun: error: r05c14: tasks 551-590: Segmentation fault
+srun: error: r04c29: tasks 231-270: Segmentation fault
+srun: error: r06c30: tasks 1662-1701: Segmentation fault
+srun: error: r05c42: tasks 1003-1042: Segmentation fault
+srun: error: r06c22: tasks 1422-1461: Segmentation fault
+srun: error: r17c42: tasks 2333-2371: Segmentation fault
+srun: error: r06c48: tasks 1844-1883: Segmentation fault
+srun: error: r06c46: tasks 1795-1834: Segmentation fault
+srun: error: r17c48: tasks 2521-2559: Segmentation fault
+srun: error: r17c46: tasks 2443-2481: Segmentation fault
+srun: error: r05c38: tasks 923-962: Segmentation fault
+srun: error: r05c40: tasks 963-1002: Segmentation fault
+srun: error: r05c20: tasks 682-721: Segmentation fault
+srun: error: r04c28: tasks 191-230: Segmentation fault
+srun: error: r05c19: tasks 642-681: Segmentation fault
+srun: error: r07c19: tasks 1966,1968-2005: Segmentation fault
+srun: error: r06c13: tasks 1227-1266: Segmentation fault
+srun: error: r06c47: task 1841: Terminated
+srun: error: r05c01: tasks 340-379: Segmentation fault
+srun: error: r17c01: tasks 2006-2045: Segmentation fault
+srun: error: r17c05: tasks 2071-2110: Segmentation fault
+srun: error: r04c02: tasks 0-33: Segmentation fault
+srun: error: r06c19: tasks 1326-1365: Segmentation fault
+srun: error: r17c45: tasks 2404-2442: Segmentation fault
+srun: error: r07c19: task 1967: Terminated
+srun: error: r17c38: tasks 2293-2332: Segmentation fault
+srun: error: r05c22: tasks 762-801: Segmentation fault
+srun: error: r17c37: tasks 2253-2292: Segmentation fault
+srun: error: r05c21: tasks 722-761: Segmentation fault
+srun: error: r06c26: tasks 1582-1621: Segmentation fault
+srun: error: r06c24: tasks 1502-1541: Segmentation fault
+srun: error: r05c24: tasks 842-881: Segmentation fault
+srun: error: r05c47: tasks 1083-1122: Segmentation fault
+srun: error: r06c44: tasks 1755-1794: Segmentation fault
+srun: error: r05c02: tasks 380-419: Segmentation fault
+srun: error: r06c20: tasks 1366-1405: Segmentation fault
+srun: error: r17c33: tasks 2172-2211: Segmentation fault
+srun: error: r17c16: tasks 2113-2152: Segmentation fault
+srun: error: r05c25: tasks 882-921: Segmentation fault
+srun: error: r06c27: tasks 1622-1661: Segmentation fault
+srun: error: r05c03: tasks 420-459: Segmentation fault
+srun: error: r06c23: tasks 1462-1501: Segmentation fault
+srun: error: r17c36: tasks 2213-2252: Segmentation fault
+srun: error: r06c25: tasks 1542-1581: Segmentation fault
+srun: error: r04c03: tasks 34-68: Segmentation fault
+srun: error: r06c06: tasks 1147-1185: Segmentation fault
+srun: Force Terminated job step 196245.0

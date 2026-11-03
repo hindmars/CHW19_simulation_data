@@ -1,0 +1,69 @@
+ncores = 40
+3D hydro port with MPI
+Built: Sep 13 2019 16:32:33
+Disabled sbrk
+Looks like there are 8 bubbles in locfile.txt
+Bubble sort iteration necessary!
+Bubble sort iteration necessary!
+Bubble sort iteration necessary!
+Bubble sort iteration necessary!
+Bubble sort iteration necessary!
+Bubble sort iteration necessary!
+Bubble sort iteration necessary!
+Bubble sort iteration necessary!
+Bubble sort iteration necessary!
+Bubble sort iteration necessary!
+-- Read parameters from /users/dcutting/Projects/single-precision-3d-hydro-new-eta/run/data/prl-runs/alph-0.5-vw-0.44-Nb-8-L-640-dx-1.5/input-test-BAG:
+-- dx 1.5, dt 0.3, steps 9340
+-- Lx 640, Ly 640, Lz 640
+-- Cav 0, C 3.4541,
+-- alpha 0.167705, gamma 0.0427051, lambda 0.0731763
+-- gstar 106.75
+-- T0 0.707107, Tconst 0.25046
+-- interval 67, fftinterval 67
+-- silointerval 0, silosliceinterval 133,checkpointinterval -1
+-- uetcstart -1
+-- bubbles 8, scale 2
+-- initnorm -1
+-- initcutoff -1
+-- initlength -1
+-- silodir "/scratch/project_2001563/dcutting/GRASP/silage/alph-0.5-vw-0.44-Nb-8-L-640-dx-1.5/"
+-- checkpointdir "./"
+-- seed 1234
+-- bubble
+-- gws sourced by FLUID only
+<List nucleation
+At steps: [0,...562]bubbles will be nucleated>
+phimin not set, defaulting to broken phase value. 
+R_critical not set, defaulting to gaussian ansatz. 
+-- Calculated bubble profile parameters: 
+-- surface_tension 0.25504, phimin 2 
+-- R_critical 7.41112, R_scaled 14.8222 
+Constant potential term found 
+-- V0 -0.0690983 
+Putting 262144000 sites on 40 nodes
+slicing: size of x=80 y=128
+(meaning 8 nodes in x, 5 nodes in y)
+Each node will need 6822400 = 6553600 + 268800 entries to store halo
+- Allocated fields.
+Checking for valid checkpoint
+Unable to access ".//checkpoint-integrity"
+- Zeroed fields.
+Using nucleation location file: 
+Ignoring initial bubbles parameter (bubbles 8). 
+Initial conditions done
+Initial avg energy per site: 0.702963
+/scratch/project_2001563/dcutting/GRASP/silage/alph-0.5-vw-0.44-Nb-8-L-640-dx-1.5/: File exists
+created directory /scratch/project_2001563/dcutting/GRASP/silage/alph-0.5-vw-0.44-Nb-8-L-640-dx-1.5/, where the silo will go
+Starting main loop.
+Parameter file requires nucleation at t=0.000000 step=0
+Nucleating a bubble on step 0 at (0, 0, 0) without any checks.
+Nucleating at (0, 0, 0)
+Writing SLICE to /scratch/project_2001563/dcutting/GRASP/silage/alph-0.5-vw-0.44-Nb-8-L-640-dx-1.5//slice-000000.silo
+Slice coord x=0
+Doing histogram, 100 bins in [-0.020000,2.020000]
+Histogram stuff took 0.030000
+broadcasting our results
+now to layout
+srun: error: r07c04: tasks 0-39: Segmentation fault
+srun: Terminating job step 195905.1
